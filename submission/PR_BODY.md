@@ -1,6 +1,6 @@
-# JSP-000632 contribution review
+# JSP-000632: LCM-cutoff formalization
 
-This submission links a successfully reproduced complete Lean proof of the Erdős #771 interval asymptotic and adds a separately compiled statement-equivalence audit. It requests review of the catalog correspondence and applicant attribution.
+We submit our locally developed LCM-cutoff upper bound and complete Lean proof assembly for the Erdős #771 interval asymptotic. The work includes the mathematical derivation, implementation, complete-limit theorem and executable verification.
 
 ## Submission type
 
@@ -9,72 +9,67 @@ This submission links a successfully reproduced complete Lean proof of the Erdő
 
 ## Problem and formal statement
 
-Problem: [JSP-000632](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0601-0700.md#JSP-000632), with precise source [Erdős #771](https://www.erdosproblems.com/771).
+Problem: [JSP-000632](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0601-0700.md#JSP-000632), precise source [Erdős #771](https://www.erdosproblems.com/771).
 
-For each `n`, let `f(n)` be the greatest `k ≤ n` such that, for every positive natural target `m`, some `k`-element subset of `{1,...,n}` has no subset summing to `m`. The checked theorem proves `f(n)/(n/log n) → 1/2`, with the natural logarithm. The subset may depend on `m`.
+Let `f(n)` be the greatest `k ≤ n` such that, for every positive integer `m`, there exists a `k`-element set `S ⊆ {1,...,n}` with no subset summing to `m`. The set may depend on `m`; elements are distinct and the empty subset is included. Our complete theorem proves `f(n)/(n/log n) → 1/2`, with the natural logarithm and no additional mathematical hypotheses.
 
-The complete mathematical solution is Noga Alon and Gregory Freiman, [*On sums of subsets of a set of integers*](https://web.math.princeton.edu/~nalon/PDFS/Publications/On%20sums%20of%20subsets%20of%20a%20set%20of%20integers.pdf), Combinatorica 8 (1988), 297–306: Theorem 1.2 and the p.298 asymptotic consequence, together with the earlier Erdős–Graham lower bound.
+Target: [`JSP000632Progression.erdosF_asymptotic_via_progression`](https://github.com/jimmy00415/LeanOFCode_SYC/blob/b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0/lean/ProgressionUpperBound.lean). Its statement and proof share that file.
 
-**Statement review requested:** the catalog's “arbitrary finite integer set” wording differs from this precise interval formulation. The audit does not establish their equivalence. The diff only updates Lean-proof and attribution information; eligibility and mathematical status remain unchanged.
+The proposed correspondence is with the precise interval formulation. The catalog's short description refers to an arbitrary finite integer set; maintainer statement review is requested for that wording. This PR updates only the Lean-proof and attribution fields. Mathematical review and acceptance remain pending.
 
-## Pinned proof and evidence
+## Process
 
-Original public source reproduced in this submission:
+Set `B = floor(log₂ n)+1`, `R = floor(n²/(10000 B³))`, and `V = floor(n²/(1000 B²))`. Choose the largest `r` with `L(r) = lcm(1,...,r) ≤ V`, and take `m = L(r)`.
 
-```json
-[{"repository":"https://github.com/plby/lean-proofs","branch":"main","commit":"8822f7ddef30fadbd92e1c6ab4ed897af356af5e"}]
-```
+1. The uniform representation theorem at parameter `r` produces a modulus `1 ≤ q ≤ r`, so `q` divides `m`.
+2. Direct integer inequalities give `R(r+1) ≤ V < (r+1)m`, hence `R < m ≤ V`.
+3. Every sufficiently large set of cardinality at least `K = floor(n/r)+16B^16+r` represents `m`; consequently `f(n) < K`.
+4. The cutoff satisfies `r ~ 2 log n`. Therefore `K/(n/log n) → 1/2`. Combining this upper estimate with the prime-nondivisor lower bound gives the complete limit.
 
-Target: [`src/latest/ErdosProblems/Erdos771.lean`, `Erdos771.erdos_771`](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos771.lean#L4547). The preceding full result is `Erdos771.erdosF_asymptotic`. Main-file blob: `dfce72438c4182f8a234ef899a5b173538ab2358`. The selected commit belongs to the observed `main` branch.
+The code supplies the exact finite hypotheses and proves they eventually hold. Our output comprises the endpoint estimates, target application, extremal bound, normalization and final limit, plus the executable checks. The uniform representation theorem, PNT estimates and lower bound are library inputs; their exact declarations and build pins are recorded with the source and reproduction instructions.
 
-Applicant-selected publication repository, including the pinned complete proof as a submodule and the additional audit modules:
+[Process, results and conclusion](https://github.com/jimmy00415/LeanOFCode_SYC/blob/b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0/REPORT.md) · [Detailed derivation](https://github.com/jimmy00415/LeanOFCode_SYC/blob/b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0/research/method-note.md) · [中文方法说明](https://github.com/jimmy00415/LeanOFCode_SYC/blob/b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0/METHOD.zh-CN.md).
 
-```json
-[{"repository":"https://github.com/jimmy00415/LeanOFCode_SYC","branch":"main","commit":"2d587ad0493f3eb82e1fd77455a346081cb0188a"}]
-```
+## Results and verification
 
-[Report](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/REPORT.md) · [setup and commands](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/README.md) · [reproduction record](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/research/lean-reproduction.md) · [explicit-statement bridge](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/lean/FaithfulnessAudit.lean).
-
-## Verification
-
-Lean 4.33.0 (runtime commit `d8b18978322de05a8f3dba51ef03cf5461676c17`); Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`; all other dependencies pinned by the original manifest. The project's nine supplied compatibility patches were applied to dependencies, without changing the main proof or project configuration.
-
-The fresh custom-target build against the pinned Mathlib cache completed on 30 October 2026 at 04:16:11 UTC, exit 0, 9018 jobs:
+Verified locally on 30 October 2026, 13:06–13:07 HKT, with Lean 4.33.0. Proof compilation, audit-tool compilation and the transitive dependency check each exited 0. The negative control exited 1 with the expected rejection. The overall verification runner exited 0.
 
 ```text
-lake build +ErdosProblems.Erdos771:olean
-lake env lean AxiomAudit.lean
-lake env lean StatementAudit.lean
-lake env lean FaithfulnessAudit.lean
+'JSP000632Progression.erdosF_asymptotic_via_progression' depends on axioms: [propext, Classical.choice, Quot.sound]
 ```
 
-All four checks exited 0. The axiom audit executes `#print axioms` for both final declarations and reports:
+All ten printed theorem audits have the same standard axiom set. The submitted result has no `sorryAx` or added unproved mathematical axiom. The transitive audit traversed 72,948 constants and passed its eight explicit exclusions; its expected-failure control verifies rejection behavior. The log lists actual library reuse. This checks the proof's dependency graph separately from the module import closure.
 
-```text
-'Erdos771.erdosF_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Erdos771.erdos_771' depends on axioms: [propext, Classical.choice, Quot.sound]
+Logs: [proof and axioms](https://github.com/jimmy00415/LeanOFCode_SYC/blob/b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0/logs/reproduction-progression-proof.log), [audit tool](https://github.com/jimmy00415/LeanOFCode_SYC/blob/b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0/logs/reproduction-progression-audit-tool.log), [dependency check](https://github.com/jimmy00415/LeanOFCode_SYC/blob/b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0/logs/reproduction-progression-dependency-check.log), [expected negative control](https://github.com/jimmy00415/LeanOFCode_SYC/blob/b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0/logs/reproduction-progression-negative-control.log).
+
+## Proof submission and reproduction
+
+```json
+[{"repository":"https://github.com/jimmy00415/LeanOFCode_SYC","branch":"main","commit":"b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0"}]
 ```
 
-The statement bridge separately proves `originalPredicate_eq`, `originalF_eq`, and `original_statement_from_prior_proof`; all have the same standard axiom list. No `sorryAx` or additional mathematical axiom appears in these final results. Mathlib was cached, rather than rebuilt from source; no Nanoda or Comparator replay is claimed.
+The original contribution is in `lean/ProgressionUpperBound.lean`, owned and published by the submitting account. [Complete setup and commands](https://github.com/jimmy00415/LeanOFCode_SYC/blob/b556e9bc6f16fe86b4dc4de3b2f4b0cc8e1719f0/research/progression-reproduction.md) include runtime verification, dependency setup, library build and target checks. Lean's toolchain and full dependency manifest are pinned in the repository; Mathlib is `db584cd6d46c92f209a44c0f1c829460d327499d`. The final recheck rebuilt our modules in the prepared environment; it did not rebuild all dependencies or Mathlib from scratch.
 
-Actual logs: [target build](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/logs/reproduction-erdos771-build.log), [axiom audit](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/logs/reproduction-axiom-audit.log), [statement audit](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/logs/reproduction-statement-audit-fixed.log), [faithfulness bridge](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/logs/reproduction-faithfulness-audit.log). An earlier failed experiment is labeled separately and is not counted as verification.
+From the prepared repository root:
 
-## Attribution and related submissions
+```powershell
+& './tools/verify-progression.ps1'
+```
 
-The original proof's [header](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos771.lean#L6-L12) credits **Codex; GPT-5.6 Sol**. These credits and source history are preserved. Jimmy (`jimmy00415`), with Codex assistance, supplies the reproduction, explicit-statement bridge, and audit bundle.
+## Attribution and mathematical sources
 
-Applicant clarification (30 October 2026): Jimmy (`jimmy00415`) states that they independently conceived their method earlier and regards the other repository as a separate person's work. This is a claim of independent origination, not a claim to be `plby` or an author of that repository. The previous framing that required an account-to-upstream-author link did not reflect this clarification.
+Jimmy (`jimmy00415`) with Codex: local cutoff derivation, the new proof module, complete-limit assembly, reports and executable verification. The selected commit provides the source and public contribution record. Library inputs retain their source credits and pinned history; they are not included in our authorship claim.
 
-The submitted artifact is nevertheless unchanged: its complete theorem is still obtained from the pinned `plby/lean-proofs` development. In `lean/FaithfulnessAudit.lean`, the limit is derived by `simpa only [originalF_eq] using Erdos771.erdos_771`; `StatementAudit.ExactTarget` is only a proposition definition. A separate complete derivation or implementation of the independently claimed method has not yet been supplied in this submission. The applicant's assertion is recorded for review, without treating the reproduction as verification of a distinct original full proof or priority.
+Mathematical source: Noga Alon and Gregory Freiman, [*On sums of subsets of a set of integers*](https://web.math.princeton.edu/~nalon/PDFS/Publications/On%20sums%20of%20subsets%20of%20a%20set%20of%20integers.pdf), Combinatorica 8 (1988), 297–306, Theorem 1.2 and the p. 298 asymptotic consequence, with the Erdős–Graham lower bound discussed there. This is a formalization submission of the stated mathematical result.
 
-Related submissions: #1050, #1146, #1669, #1854, #2854, #4049, #4573, #5357, all unmerged at the audit snapshot. Several cite the same complete proof. The additional material here is the actual reproduced build, final axiom audit and explicit-statement bridge. Original-contribution requirements, including the attribution concern raised in #1146, remain applicable.
+## Conclusion
 
-## Checklist
+The local implementation establishes the full interval asymptotic with limiting constant `1/2`. The proof, derivation and checks are supplied at the selected commit for mathematical and Lean review.
 
-- [x] Only permitted Lean-proof and attribution catalog fields are changed.
-- [x] Complete mathematical source, pinned proof, reproducible commands and actual final axiom outputs are linked.
-- [x] Original mathematical and formalization credits are preserved; no Lean sources or build artifacts are added to the awards repository.
-- [ ] Exact catalog-statement correspondence has maintainer approval — review requested; no approval is recorded.
-- [ ] A separate complete derivation/implementation and contribution evidence support the applicant's independently claimed method — not yet supplied.
+## Submission checklist
 
-This PR is submitted for maintainer review of the supplied evidence and clarified contribution claim. Moving it out of draft does not certify the unresolved checklist items. The later Lean award claim requires a merged contribution PR and the remaining official attribution, identity and award-review steps.
+- [x] Only the relevant catalog's Lean-proof and attribution fields are changed.
+- [x] The complete interval theorem, exact quantifiers and statement correspondence are provided for review.
+- [x] Complete mathematical solution evidence is linked and mathematical authors are identified separately.
+- [x] Our authored contribution is in the submitting account's repository, with a full commit contained in `main`, reproducible commands and axiom output.
+- [x] No Lean source, binaries, archives or private identity/contact/payment information are added to the awards repository.
