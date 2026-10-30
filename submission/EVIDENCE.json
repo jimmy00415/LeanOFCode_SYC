@@ -22,14 +22,19 @@
       "sha256": "0c5beb524ef0390a679f8334ee0a44420eee9e6810ff6fd7e4162a8aeea48bdf"
     },
     {
+      "path": ".gitmodules",
+      "bytes": 119,
+      "sha256": "3ff215c1a6b8b14b972b744e56b3d4e4868f57de658c286777717ce768506d6e"
+    },
+    {
       "path": "README.md",
-      "bytes": 3057,
-      "sha256": "e5b039229f1f152127bc87b0a0e434601be5b6529929eb179a12a0afbeb07ced"
+      "bytes": 3881,
+      "sha256": "3a2d6ef79f993bf9113182be743e3f9419a19df25a350546016a862a12ed2678"
     },
     {
       "path": "REPORT.md",
-      "bytes": 19106,
-      "sha256": "fa98f3e8849d4b3ff3fee0aa905ce26321d864c58e856580c3f8d94e2ed2b780"
+      "bytes": 19245,
+      "sha256": "317cc6695ebeb856742325f9b01d0a08159a3f306216d3b7cda812b49f10900a"
     },
     {
       "path": "docs/superpowers/plans/2026-10-30-jsp-000632-audit.md",
@@ -82,6 +87,21 @@
       "sha256": "2b7670791261c2d4c1ebd1b17a471b7415267dfafc3e9c9e100944d1ff704975"
     },
     {
+      "path": "logs/reproduction-pinned-metadata.log",
+      "bytes": 1464,
+      "sha256": "a5ece011d81d1a5ace938c9be1b8297cfc771b79c02764abd20ab8e053d34966"
+    },
+    {
+      "path": "logs/reproduction-runtime-sha256.log",
+      "bytes": 66,
+      "sha256": "46d754c4b3f93fd59072204ce200ad1ecf5ee7529b6e666c14ddf757d663f490"
+    },
+    {
+      "path": "logs/reproduction-runtime-versions.log",
+      "bytes": 3855,
+      "sha256": "6db92fb096543feb10961a64109a1eddac77e117f548ca3332cb763d2bd6d976"
+    },
+    {
       "path": "logs/reproduction-statement-audit-fixed.log",
       "bytes": 1958,
       "sha256": "3ffd96b699a148d0a08698df9d1fa8fafa3a0d76c234912cacdf0b65f750bb18"
@@ -90,6 +110,26 @@
       "path": "logs/reproduction-statement-audit.log",
       "bytes": 2185,
       "sha256": "40d28e6c9ee8b917767630de420a408df4f25dc0fe1d0aa09d47bdd383305483"
+    },
+    {
+      "path": "logs/reproduction-submission-recheck-axiom.log",
+      "bytes": 1592,
+      "sha256": "acbb275ffbbe955ee8b1b3b83eaac872c7cc087ac5e463c4ce09377023a4bd3f"
+    },
+    {
+      "path": "logs/reproduction-submission-recheck-faithfulness.log",
+      "bytes": 1558,
+      "sha256": "d1e0741b34a2b1bd3dd42f6653ee7d84925bca48b9535b1998670e7abdb94d9d"
+    },
+    {
+      "path": "logs/reproduction-submission-recheck-full-target.log",
+      "bytes": 1414,
+      "sha256": "b29aa2a4e9eccb903384d369c29e5732e715f4d4dfe5ca73e4e94e8d4e7bb6e3"
+    },
+    {
+      "path": "logs/reproduction-submission-recheck-provenance.log",
+      "bytes": 3571,
+      "sha256": "de216b8151a8cc59d3ee090f3842eb270cba0189c962421a61162273222a3993"
     },
     {
       "path": "reproduction/import-audit-with-dependencies.json",
@@ -158,18 +198,18 @@
     },
     {
       "path": "submission/CLAIM_DRAFT.md",
-      "bytes": 1008,
-      "sha256": "948065e10931656828753df920bc1c2312dcdc949e0233b718a16f2b84138435"
+      "bytes": 1247,
+      "sha256": "ea5787005a426bdc51ba444101513dc5721aaa8abb7b6ecfb50b11ecda94552d"
     },
     {
       "path": "submission/PR_BODY.md",
-      "bytes": 2589,
-      "sha256": "0f2da8f6581eb49e673822d9ad036b1f314622069110a617d848bd2555f44129"
+      "bytes": 6664,
+      "sha256": "9d1c4be2067256959899f8e49b78e1357a128f4267e1f4d76cab3e9dcea0eb71"
     },
     {
       "path": "submission/STATUS.md",
-      "bytes": 2210,
-      "sha256": "c56ec2c355dadadf1bd9d2999e180a0fb9e14d391c118de7e4b50e0c76186bf6"
+      "bytes": 2832,
+      "sha256": "f04b3e2e5c27d17450a6948e912058ba2e33a5262d3bae8bb68644b0d75a5650"
     },
     {
       "path": "tools/lean-apply-patches.py",
@@ -190,6 +230,15 @@
       "path": "tools/lean-run.ps1",
       "bytes": 1162,
       "sha256": "ff44a51dac5810532095ede540014991b1ac7f114c609de99d069fceb85055b4"
+    }
+  ],
+  "publication_repository": "https://github.com/jimmy00415/LeanOFCode_SYC",
+  "publication_branch": "main",
+  "manifest_scope": "Git index bytes at publication preparation; excludes this manifest and records submodule commits separately",
+  "submodules": [
+    {
+      "path": "reproduction/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e"
     }
   ]
 }

@@ -1,0 +1,52 @@
+UTC: 2026-10-30T04:32:39.2553062Z
+Submodule HEAD:
+8822f7ddef30fadbd92e1c6ab4ed897af356af5e
+Submodule index pin:
+160000 8822f7ddef30fadbd92e1c6ab4ed897af356af5e 0	reproduction/lean-proofs
+Pinned proof/config diff exit: 0
+Submodule config parse:
+submodule.reproduction/lean-proofs.path=reproduction/lean-proofs
+submodule.reproduction/lean-proofs.url=https://github.com/plby/lean-proofs.git
+Submodule config parse exit: 0
+AxiomAudit.lean: byte identical = True
+  root SHA256:   CDDF7AAA054AB320E991C6FA39FD527559B1121E9829CDA3416ACE67D067AB0C
+  nested SHA256: CDDF7AAA054AB320E991C6FA39FD527559B1121E9829CDA3416ACE67D067AB0C
+FaithfulnessAudit.lean: byte identical = True
+  root SHA256:   1F0984E3079B8BF95176EAA2DE38C1C4ED59939BB46540EEAFDDE2D3D4CC4A1B
+  nested SHA256: 1F0984E3079B8BF95176EAA2DE38C1C4ED59939BB46540EEAFDDE2D3D4CC4A1B
+StatementAudit.lean: byte identical = True
+  root SHA256:   80D54D0F506BDF31A61C2F6EC48BEB1F58121FB8490E1332482AB6430743C4BD
+  nested SHA256: 80D54D0F506BDF31A61C2F6EC48BEB1F58121FB8490E1332482AB6430743C4BD
+Root audit declarations:
+lean\StatementAudit.lean:36:theorem avoids_iff_not_mem_subsetSum {m : ℕ} {S : Finset ℕ} :
+lean\StatementAudit.lean:41:theorem even_pair_avoids_three : Avoids 3 {2, 4} := by
+lean\StatementAudit.lean:45:theorem initial_pair_does_not_avoid_three : ¬ Avoids 3 {1, 2} := by
+lean\StatementAudit.lean:49:theorem avoids_mono {m : ℕ} {S T : Finset ℕ}
+lean\StatementAudit.lean:55:theorem avoids_of_common_divisor {m d : ℕ} {S : Finset ℕ}
+lean\StatementAudit.lean:65:theorem exists_avoiding_of_nondivisor (n m q : ℕ) (hqm : ¬q ∣ m) :
+lean\StatementAudit.lean:81:theorem admissibleCard_zero (n : ℕ) : AdmissibleCard n 0 := by
+lean\StatementAudit.lean:89:theorem admissibleCard_le {n k : ℕ} (hk : AdmissibleCard n k) : k ≤ n := by
+lean\StatementAudit.lean:94:theorem admissibleCard_mono {n k l : ℕ}
+lean\StatementAudit.lean:102:theorem extremal_spec (n : ℕ) : AdmissibleCard n (extremal n) := by
+lean\StatementAudit.lean:106:theorem admissibleCard_iff_le_extremal {n k : ℕ} (hk : k ≤ n) :
+lean\StatementAudit.lean:115:theorem avoids_every_positive_iff_empty {S : Finset ℕ}
+lean\StatementAudit.lean:129:#check ExactTarget
+lean\StatementAudit.lean:130:#print axioms avoids_iff_not_mem_subsetSum
+lean\StatementAudit.lean:131:#print axioms even_pair_avoids_three
+lean\StatementAudit.lean:132:#print axioms initial_pair_does_not_avoid_three
+lean\StatementAudit.lean:133:#print axioms avoids_of_common_divisor
+lean\StatementAudit.lean:134:#print axioms exists_avoiding_of_nondivisor
+lean\StatementAudit.lean:135:#print axioms admissibleCard_le
+lean\StatementAudit.lean:136:#print axioms admissibleCard_mono
+lean\StatementAudit.lean:137:#print axioms admissibleCard_iff_le_extremal
+lean\StatementAudit.lean:138:#print axioms avoids_every_positive_iff_empty
+lean\FaithfulnessAudit.lean:25:theorem originalPredicate_eq (n : ℕ) :
+lean\FaithfulnessAudit.lean:32:theorem originalF_eq (n : ℕ) : originalF n = Erdos771.erdosF n := by
+lean\FaithfulnessAudit.lean:39:theorem original_statement_from_prior_proof :
+lean\FaithfulnessAudit.lean:46:#print axioms originalPredicate_eq
+lean\FaithfulnessAudit.lean:47:#print axioms originalF_eq
+lean\FaithfulnessAudit.lean:48:#print axioms original_statement_from_prior_proof
+lean\AxiomAudit.lean:8:#check Erdos771.erdosF_asymptotic
+lean\AxiomAudit.lean:9:#check Erdos771.erdos_771
+lean\AxiomAudit.lean:10:#print axioms Erdos771.erdosF_asymptotic
+lean\AxiomAudit.lean:11:#print axioms Erdos771.erdos_771

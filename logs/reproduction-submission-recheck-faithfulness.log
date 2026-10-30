@@ -1,0 +1,23 @@
+Started UTC: 2026-10-30T04:32:55.8039263Z
+Working directory: D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest
+Command: D:\VS_Project\LeanCode\tools\lean-4.33.0-windows\bin\lake.exe env lean FaithfulnessAudit.lean
+warning: Waring: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\Waring' has local changes
+warning: BoundedGaps: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\BoundedGaps' has local changes
+warning: AINTLIB: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\AINTLIB' has local changes
+warning: leancert: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\leancert' has local changes
+theorem JSP000632Faithfulness.original_statement_from_prior_proof : Tendsto
+  (fun n => ↑(originalF n) / (↑n / Real.log ↑n)) atTop (𝓝 (1 / 2)) :=
+Eq.mpr
+  (id
+    (congrFun'
+      (congrFun'
+        (congrArg Tendsto
+          (funext fun n => congrFun' (congrArg HDiv.hDiv (congrArg Nat.cast (originalF_eq n))) (↑n / Real.log ↑n)))
+        atTop)
+      (𝓝 (1 / 2))))
+  Erdos771.erdos_771
+'JSP000632Faithfulness.originalPredicate_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Faithfulness.originalF_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Faithfulness.original_statement_from_prior_proof' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exit code: 0
+Finished UTC: 2026-10-30T04:33:15.5872832Z

@@ -8,7 +8,7 @@ Research date: 30 October 2026 (Hong Kong). Verification completed at 12:17 HKT.
 
 The applicant states that they are the original Lean formalization contributor and wishes to pursue the award. The earlier decision assumed that the public proof was unrelated to the applicant; that personal attribution inference was not established. This revision records the applicant's statement and authorizes the application workflow. It does not describe first authorship, priority, eligibility or payment as independently adjudicated facts.
 
-The authenticated GitHub account is `jimmy00415`. The verified complete source is in `plby/lean-proofs`; the authenticated account currently has read-only access to that repository. The applicant's original repository/branch/commit or contribution evidence linking this account to the selected proof is still required before a public author claim can be submitted. A push destination has not yet been supplied; the workspace root initially had no Git remote.
+The authenticated GitHub account is `jimmy00415`. The verified complete source is in `plby/lean-proofs`; the authenticated account currently has read-only access to that repository. The applicant subsequently selected `jimmy00415/LeanOFCode_SYC`, branch `main`, for publication and authorized push and an official contribution PR. The complete source is preserved as a pinned Git submodule. The applicant identifies the local proof as their work; their relationship to the earlier public formalization remains an attribution question for review, rather than an established first-priority finding.
 
 The intended interval problem, Erdős #771, has a complete mathematical solution **and an earlier public Lean formalization that we independently compiled successfully**. Both final theorem axiom audits returned only `propext`, `Classical.choice`, and `Quot.sound`. A separate compiled bridge checks the original explicit subset-sum formulation against that proof's definitions.
 
@@ -205,7 +205,7 @@ The paper's Lemma 4.3 prints a lower endpoint with coefficient `1`, while its im
 
 For an independent development from stock Mathlib, the main barriers are the local Fourier positivity result and progression extraction, together with a verified PNT dependency. This is substantial infrastructure work, not a few missing tactic calls. The 4,563-line main candidate and much larger dependency closure give no basis for forecasting a fresh complete proof inside a 90–120 minute session. No defensible numerical success probability or calendar completion estimate follows from this audit.
 
-A second reasoning model could challenge a specific lemma or translation. **There is no remaining mathematical or Lean build blocker for the reproduced interval theorem.** The current application blockers are the original-source/account attribution, the intended push destination, and the official review/merge prerequisites. The catalogue wording discrepancy must be disclosed in the statement review. No weaker theorem is being substituted for the verified interval target.
+A second reasoning model could challenge a specific lemma or translation. **There is no remaining mathematical or Lean build blocker for the reproduced interval theorem.** The publication destination is now supplied. Original-source/account attribution and the official review/merge prerequisites remain for the application. The catalogue wording discrepancy is disclosed for statement review. No weaker theorem is being substituted for the verified interval target.
 
 ## F. Priority and prize eligibility
 
@@ -219,4 +219,4 @@ The rules provide a route for qualifying formalizations, subject to verification
 
 ## G. One next action
 
-**Submit the verified complete Lean contribution through the legacy prize workflow after linking the applicant's account to the original proof repository and selecting its push destination.**
+**Publish the verified source and audit bundle to the applicant's selected repository and open the legacy contribution PR for statement and attribution review, preserving the original source credits.**

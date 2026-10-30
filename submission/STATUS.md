@@ -1,6 +1,6 @@
 # JSP-000632 submission status
 
-Decision: **GO for preparing the application and resolving its source attribution.**
+Decision: **GO for contribution submission and source-attribution review.**
 
 The applicant has stated that they are the original contributor and authorized commit, push and award-application work. The complete interval theorem, supporting statement equivalence and axiom audit have passed. This document does not independently certify the applicant's authorship or first priority.
 
@@ -11,12 +11,13 @@ The applicant has stated that they are the original contributor and authorized c
 - Exact declaration: `Erdos771.erdos_771`.
 - Final axiom list: `[propext, Classical.choice, Quot.sound]`.
 - The authenticated account has no push permission to `plby/lean-proofs`.
-- The workspace root originally had no Git repository or push remote.
+- The workspace root originally had no Git repository or push remote. The applicant subsequently selected `https://github.com/jimmy00415/LeanOFCode_SYC`, branch `main`, and explicitly authorized commit, push, and a PR to the official awards repository.
+- The publication repository includes the full verified proof as a pinned Git submodule, retaining its upstream history and source credits, plus the new audit modules, reports and build evidence.
 - No matching JSP-000632 PR by `jimmy00415` was found in the current official-repository search.
 
-## Information required before publishing the applicant's claim
+## Attribution to be reviewed
 
-The applicant's original proof repository URL, branch and full commit SHA, or public contribution evidence connecting `jimmy00415` to the verified complete proof; and the intended repository to receive this audit/submission commit. These were requested together. No adverse conclusion about authorship is inferred merely from the different account name.
+The applicant identifies the local proof and `jimmy00415/LeanOFCode_SYC` as their work. This session obtained the unchanged main proof from the earlier public `plby/lean-proofs` commit; its header credits Codex and GPT-5.6 Sol. The relationship between the applicant and that earlier formalization remains for maintainer review. The new repository and its publication date are evidence for this audit bundle, not independent evidence of the earlier proof's authorship or first priority. No adverse conclusion about authorship is inferred merely from the different account name.
 
 ## Official process
 
@@ -24,4 +25,4 @@ JSP-000632 is outside the current MathDB pilot. The legacy process requires a co
 
 Sources: [contribution guide](https://github.com/TheJustinSunPrize/awards/blob/main/CONTRIBUTING.md), [award process](https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process.md), [attribution requirements](https://github.com/TheJustinSunPrize/awards/blob/main/docs/attribution.md).
 
-The local submission drafts are not yet filed. No third-party source will be relabeled as the applicant's work solely by copying it to a new repository.
+The official catalog PR is being prepared as a draft for statement and attribution review. The later award claim remains a local draft pending the required contribution merge. Original source credits are preserved.

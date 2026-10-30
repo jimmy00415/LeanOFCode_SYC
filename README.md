@@ -2,7 +2,7 @@
 
 Start with [REPORT.md](REPORT.md). It distinguishes the original mathematical statement, the official catalogue wording, prior public work, and actual verification results.
 
-Current decision: **GO for submission preparation and attribution verification**, following the applicant's statement that they are the original contributor. See [submission status](submission/STATUS.md). The applicant's original source/commit and push destination remain to be linked; the drafts do not claim official priority or eligibility.
+Current decision: **GO for contribution submission and attribution review**, following the applicant's statement that they are the original contributor. The applicant selected [jimmy00415/LeanOFCode_SYC](https://github.com/jimmy00415/LeanOFCode_SYC) as the publication repository. See [submission status](submission/STATUS.md). Official priority and eligibility remain subject to review.
 
 ## Evidence
 
@@ -16,7 +16,18 @@ Current decision: **GO for submission preparation and attribution verification**
 - [Unmodified pinned main proof](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos771.lean)
 - [Contribution PR draft](submission/PR_BODY.md) and [later claim draft](submission/CLAIM_DRAFT.md)
 
-`logs/` preserves successful and failed commands. The local-only `sources/` and `research/eligibility/` directories preserve retrieved primary evidence and are excluded from Git. The failed initial elementary experiment is retained separately under `research/experiments/`; it is not an accepted proof. The runtime, caches and full external proof clone are also excluded from this audit repository; their exact pins and recreation steps are recorded in the reproduction report.
+`logs/` preserves successful and failed commands. The local-only `sources/` and `research/eligibility/` directories preserve retrieved primary evidence and are excluded from Git. The failed initial elementary experiment is retained separately under `research/experiments/`; it is not an accepted proof. The complete proof project is linked as the `reproduction/lean-proofs` Git submodule at the verified commit. Its source history and credits are preserved. Runtime and caches are excluded; their exact pins and recreation steps are recorded in the reproduction report.
+
+## Obtain the complete source
+
+```powershell
+git clone --recurse-submodules https://github.com/jimmy00415/LeanOFCode_SYC.git
+Set-Location LeanOFCode_SYC
+Copy-Item -LiteralPath lean/AxiomAudit.lean,lean/StatementAudit.lean,lean/FaithfulnessAudit.lean `
+  -Destination reproduction/lean-proofs/src/latest/
+```
+
+The submodule is pinned to `plby/lean-proofs@8822f7ddef30fadbd92e1c6ab4ed897af356af5e`; the audit files are additional modules in this repository. Follow [environment setup](research/lean-reproduction.md) before running the commands below. The new publication repository records this verification work and does not by itself establish authorship of the pre-existing main proof.
 
 ## Recheck in the prepared Windows workspace
 

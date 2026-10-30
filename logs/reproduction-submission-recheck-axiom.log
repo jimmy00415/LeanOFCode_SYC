@@ -1,0 +1,20 @@
+Started UTC: 2026-10-30T04:32:55.8042470Z
+Working directory: D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest
+Command: D:\VS_Project\LeanCode\tools\lean-4.33.0-windows\bin\lake.exe env lean AxiomAudit.lean
+warning: Waring: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\Waring' has local changes
+warning: BoundedGaps: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\BoundedGaps' has local changes
+warning: AINTLIB: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\AINTLIB' has local changes
+warning: leancert: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\leancert' has local changes
+def Erdos771.AvoidsSubsetSum : ℕ → Finset ℕ → Prop :=
+fun m S => m ∉ S.subsetSum
+def Erdos771.AdmissibleCard : ℕ → ℕ → Prop :=
+fun n k => ∀ (m : ℕ), 0 < m → ∃ S ⊆ Finset.Icc 1 n, S.card = k ∧ Erdos771.AvoidsSubsetSum m S
+def Erdos771.erdosF : ℕ → ℕ :=
+fun n => Nat.findGreatest (Erdos771.AdmissibleCard n) n
+Erdos771.erdosF_asymptotic :
+  Filter.Tendsto (fun n => ↑(Erdos771.erdosF n) / (↑n / Real.log ↑n)) Filter.atTop (nhds (1 / 2))
+Erdos771.erdos_771 : Filter.Tendsto (fun n => ↑(Erdos771.erdosF n) / (↑n / Real.log ↑n)) Filter.atTop (nhds (1 / 2))
+'Erdos771.erdosF_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos771.erdos_771' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exit code: 0
+Finished UTC: 2026-10-30T04:33:15.2255091Z
