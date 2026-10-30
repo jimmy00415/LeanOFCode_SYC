@@ -2,9 +2,9 @@
 
 Start with [REPORT.md](REPORT.md). It distinguishes the original mathematical statement, the official catalogue wording, prior public work, and actual verification results.
 
-Current decision: **GO for contribution submission and attribution review**, following the applicant's statement that they are the original contributor. The applicant selected [jimmy00415/LeanOFCode_SYC](https://github.com/jimmy00415/LeanOFCode_SYC) as the publication repository. See [submission status](submission/STATUS.md). Official priority and eligibility remain subject to review.
+Current decision: **GO for contribution submission and review**. The applicant asserts independent origination of a method, without claiming to be an author of the upstream repository; see the [clarification and current artifact scope](submission/APPLICANT_STATEMENT.md). The applicant selected [jimmy00415/LeanOFCode_SYC](https://github.com/jimmy00415/LeanOFCode_SYC) as the publication repository. See [submission status](submission/STATUS.md). A separate implementation of the independently claimed method is not yet supplied; official priority and eligibility remain subject to review.
 
-Published evidence: [`2d587ad0493f3eb82e1fd77455a346081cb0188a`](https://github.com/jimmy00415/LeanOFCode_SYC/commit/2d587ad0493f3eb82e1fd77455a346081cb0188a). Official contribution review: [TheJustinSunPrize/awards#5508](https://github.com/TheJustinSunPrize/awards/pull/5508), opened as a draft on 30 October 2026. The award claim follows the required contribution merge and attribution review.
+Published evidence: [`2d587ad0493f3eb82e1fd77455a346081cb0188a`](https://github.com/jimmy00415/LeanOFCode_SYC/commit/2d587ad0493f3eb82e1fd77455a346081cb0188a). Official contribution review: [TheJustinSunPrize/awards#5508](https://github.com/TheJustinSunPrize/awards/pull/5508), opened on 30 October 2026 and now **ready for review**. The award claim follows the required contribution merge and review.
 
 ## Evidence
 
@@ -16,7 +16,7 @@ Published evidence: [`2d587ad0493f3eb82e1fd77455a346081cb0188a`](https://github.
 - [Public-proof axiom audit](lean/AxiomAudit.lean)
 - [Literal-statement bridge to the verified proof](lean/FaithfulnessAudit.lean)
 - [Unmodified pinned main proof](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos771.lean)
-- [Contribution PR draft](submission/PR_BODY.md) and [later claim draft](submission/CLAIM_DRAFT.md)
+- [Submitted PR body](submission/PR_BODY.md) and [later claim draft](submission/CLAIM_DRAFT.md)
 
 `logs/` preserves successful and failed commands. The local-only `sources/` and `research/eligibility/` directories preserve retrieved primary evidence and are excluded from Git. The failed initial elementary experiment is retained separately under `research/experiments/`; it is not an accepted proof. The complete proof project is linked as the `reproduction/lean-proofs` Git submodule at the verified commit. Its source history and credits are preserved. Runtime and caches are excluded; their exact pins and recreation steps are recorded in the reproduction report.
 

@@ -1,6 +1,6 @@
 # JSP-000632 contribution review
 
-This draft links a successfully reproduced complete Lean proof of the Erdős #771 interval asymptotic and adds a separately compiled statement-equivalence audit. It requests review of the catalog correspondence and applicant attribution.
+This submission links a successfully reproduced complete Lean proof of the Erdős #771 interval asymptotic and adds a separately compiled statement-equivalence audit. It requests review of the catalog correspondence and applicant attribution.
 
 ## Submission type
 
@@ -63,7 +63,9 @@ Actual logs: [target build](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d
 
 The original proof's [header](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos771.lean#L6-L12) credits **Codex; GPT-5.6 Sol**. These credits and source history are preserved. Jimmy (`jimmy00415`), with Codex assistance, supplies the reproduction, explicit-statement bridge, and audit bundle.
 
-The applicant identifies the local proof as their original contribution. Public evidence linking that claim to the earlier source attribution remains for review. The new repository establishes publication of this audit; it does not itself establish first priority or authorship of the earlier full proof. The bridge derives its limit from the pinned theorem, and `StatementAudit.ExactTarget` is a proposition definition, not an independent proof.
+Applicant clarification (30 October 2026): Jimmy (`jimmy00415`) states that they independently conceived their method earlier and regards the other repository as a separate person's work. This is a claim of independent origination, not a claim to be `plby` or an author of that repository. The previous framing that required an account-to-upstream-author link did not reflect this clarification.
+
+The submitted artifact is nevertheless unchanged: its complete theorem is still obtained from the pinned `plby/lean-proofs` development. In `lean/FaithfulnessAudit.lean`, the limit is derived by `simpa only [originalF_eq] using Erdos771.erdos_771`; `StatementAudit.ExactTarget` is only a proposition definition. A separate complete derivation or implementation of the independently claimed method has not yet been supplied in this submission. The applicant's assertion is recorded for review, without treating the reproduction as verification of a distinct original full proof or priority.
 
 Related submissions: #1050, #1146, #1669, #1854, #2854, #4049, #4573, #5357, all unmerged at the audit snapshot. Several cite the same complete proof. The additional material here is the actual reproduced build, final axiom audit and explicit-statement bridge. Original-contribution requirements, including the attribution concern raised in #1146, remain applicable.
 
@@ -72,7 +74,7 @@ Related submissions: #1050, #1146, #1669, #1854, #2854, #4049, #4573, #5357, all
 - [x] Only permitted Lean-proof and attribution catalog fields are changed.
 - [x] Complete mathematical source, pinned proof, reproducible commands and actual final axiom outputs are linked.
 - [x] Original mathematical and formalization credits are preserved; no Lean sources or build artifacts are added to the awards repository.
-- [ ] Exact catalog-statement correspondence has maintainer approval — review requested.
-- [ ] Applicant's own contribution to the earlier complete formalization has corroborating public attribution evidence — review requested.
+- [ ] Exact catalog-statement correspondence has maintainer approval — review requested; no approval is recorded.
+- [ ] A separate complete derivation/implementation and contribution evidence support the applicant's independently claimed method — not yet supplied.
 
-This PR is a draft pending those reviews. The later Lean award claim requires a merged contribution PR and the remaining official attribution, identity and award-review steps.
+This PR is submitted for maintainer review of the supplied evidence and clarified contribution claim. Moving it out of draft does not certify the unresolved checklist items. The later Lean award claim requires a merged contribution PR and the remaining official attribution, identity and award-review steps.

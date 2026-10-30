@@ -9,7 +9,7 @@
     "Quot.sound"
   ],
   "applicant_account": "jimmy00415",
-  "applicant_attribution_status": "Applicant states original contribution; source-account link pending",
+  "applicant_attribution_status": "Applicant asserts independent origination, without claiming upstream authorship; separate complete derivation/implementation not supplied in current artifacts",
   "file_hashes": [
     {
       "path": ".gitattributes",
@@ -242,5 +242,7 @@
     }
   ],
   "publication_evidence_commit": "2d587ad0493f3eb82e1fd77455a346081cb0188a",
-  "official_pr": "https://github.com/TheJustinSunPrize/awards/pull/5508"
+  "official_pr": "https://github.com/TheJustinSunPrize/awards/pull/5508",
+  "official_pr_status": "Open, ready for review; REVIEW_REQUIRED",
+  "official_pr_head": "c69b53d88dc2aba127a8fea69cb4c8d0df68d516"
 }
