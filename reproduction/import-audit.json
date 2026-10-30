@@ -1,0 +1,550 @@
+{
+  "root_module": "ErdosProblems.Erdos771",
+  "source_root": "D:\\VS_Project\\LeanCode\\reproduction\\lean-proofs\\src\\latest",
+  "modules": {
+    "ErdosProblems.Erdos13.Erdos13Kneser": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos13\\Erdos13Kneser.lean",
+      "sha256": "616b82e8e85bb83216876dd358998ee294fce6942bc7cf3e30e82bbf6d309ce3",
+      "line_count": 537,
+      "imports": [
+        "Mathlib.Algebra.Ring.Divisibility.Basic",
+        "Mathlib.Tactic.Abel",
+        "Mathlib.Tactic.Linarith",
+        "ErdosProblems.Erdos13.Erdos13MulStab"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos13.Erdos13MulStab": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos13\\Erdos13MulStab.lean",
+      "sha256": "9f57d1e93cee87a828af61d79ad383ed7a3e7e52f34ccb862f8003b4ce027c61",
+      "line_count": 417,
+      "imports": [
+        "Mathlib.Algebra.Pointwise.Stabilizer",
+        "Mathlib.GroupTheory.Coset.Card",
+        "Mathlib.GroupTheory.GroupAction.Blocks",
+        "Mathlib.GroupTheory.GroupAction.Quotient"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos285.PrimePowers": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos285\\PrimePowers.lean",
+      "sha256": "c4c084d894658dfebe70678733ddd37019de1dd4c1ff5a3dc9154e7dcdf660fc",
+      "line_count": 253,
+      "imports": [
+        "Mathlib",
+        "UnitFractions.AuxiliaryLemmas",
+        "UnitFractions.Fourier"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos285.RoughCounts": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos285\\RoughCounts.lean",
+      "sha256": "52bad7f50933ee51fb33cd805a8232da7a6294c66be0e31f3419c553d1499c61",
+      "line_count": 1289,
+      "imports": [
+        "ErdosProblems.Erdos285.PrimePowers",
+        "UnitFractions.Fourier"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos38": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos38.lean",
+      "sha256": "bb9ab7a428c388a8bb2a5e7ceb0d97516eb902ea693c7614e3d603a128088c33",
+      "line_count": 2439,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos387.AnalyticInputs": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos387\\AnalyticInputs.lean",
+      "sha256": "11c45002deb5dc27653f3a9afcfe7949d9e37907be823db5e01305c93d3023ae",
+      "line_count": 683,
+      "imports": [
+        "PrimeNumberTheoremAnd.Consequences"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos387.CoverAlgebra": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos387\\CoverAlgebra.lean",
+      "sha256": "a004815cfd49428dc7a721895b5f0351f862d7ed12c8a1292b10162e25d611c7",
+      "line_count": 299,
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Algebra.BigOperators.Intervals",
+        "Mathlib.Algebra.GCDMonoid.Nat",
+        "Mathlib.Data.Finset.Card",
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Data.Nat.Basic",
+        "Mathlib.Data.Nat.ChineseRemainder",
+        "Mathlib.Data.Nat.Choose.Basic",
+        "Mathlib.Data.Nat.Factorial.Basic",
+        "Mathlib.Data.Nat.Factorial.BigOperators",
+        "Mathlib.Data.Nat.Factorization.Basic",
+        "Mathlib.Data.Nat.Prime.Basic",
+        "Mathlib.Data.Nat.Prime.Factorial",
+        "Mathlib.Order.Interval.Finset.Basic",
+        "Mathlib.Order.Interval.Finset.Nat"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos387.LocalDensity": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos387\\LocalDensity.lean",
+      "sha256": "72335280bf3cc07875bd95015ae54f5962d42c4b2a821e7d352f4eb098f37f39",
+      "line_count": 458,
+      "imports": [
+        "ErdosProblems.Erdos387.CoverAlgebra",
+        "Mathlib.Data.Int.CardIntervalMod",
+        "Mathlib.Data.Nat.Squarefree",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos387.UniformAnalyticInputs": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos387\\UniformAnalyticInputs.lean",
+      "sha256": "4543d689c3aceb8b1ddbcf90c7a8ba6b559a50b97c508e194a9086113bf0f03c",
+      "line_count": 659,
+      "imports": [
+        "ErdosProblems.Erdos387.AnalyticInputs",
+        "BoundedGaps.BombieriVinogradov.Proof.MainTheorem"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos469": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos469.lean",
+      "sha256": "8e95b8924ec7359949bc2268b330fff6619d95caf7d3579f0d92f2017e142865",
+      "line_count": 20580,
+      "imports": [
+        "Mathlib",
+        "Util.Density"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.AlmostPeriods": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\AlmostPeriods.lean",
+      "sha256": "1c086653f43d0030b942cf7be48f8a8dcfe8de574f892a21ba2e83fc92cbdefa",
+      "line_count": 246,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.Core": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\Core.lean",
+      "sha256": "fcc441512d52f86ef7eb9b61caf1d9c80922f5435bb74e240a1e91e457c3356e",
+      "line_count": 195,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.CyclicGrowth": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\CyclicGrowth.lean",
+      "sha256": "0d7807ff3993a2049838e8043650db10c85161dfabdb7afe7d03d47b6d3d0994",
+      "line_count": 762,
+      "imports": [
+        "ErdosProblems.Erdos54.AlmostPeriods",
+        "ErdosProblems.Erdos54.CyclicGrowthArithmetic",
+        "ErdosProblems.Erdos54.CyclicGrowthParameters",
+        "ErdosProblems.Erdos54.CyclicGrowthTail",
+        "ErdosProblems.Erdos54.FiniteSums",
+        "ErdosProblems.Erdos54.IteratedSumset",
+        "ErdosProblems.Erdos54.Probability",
+        "ErdosProblems.Erdos54.RoughNumbers"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.CyclicGrowthArithmetic": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\CyclicGrowthArithmetic.lean",
+      "sha256": "011fd8f8924951253187b5f048d1745ba235640ba458b116cf3b82b7f5dff2d5",
+      "line_count": 406,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.CyclicGrowthParameters": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\CyclicGrowthParameters.lean",
+      "sha256": "4000c8b6f7e3561b5ecf134e88593b190b38238ea551db64e7375d8b5fffb7cf",
+      "line_count": 533,
+      "imports": [
+        "ErdosProblems.Erdos54.RoughNumbers"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.CyclicGrowthTail": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\CyclicGrowthTail.lean",
+      "sha256": "ef9137d788a6b552e682a05fb53d38600b02e10cd2fb673c3fde238fd212e5e6",
+      "line_count": 90,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.FiniteSums": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\FiniteSums.lean",
+      "sha256": "00daf0109ebfd5061a65f6f11cd937643c07b57b42e893c487ff9e2cdefd016b",
+      "line_count": 315,
+      "imports": [
+        "ErdosProblems.Erdos54.Core",
+        "Mathlib.Combinatorics.Additive.SubsetSum"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.IteratedSumset": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\IteratedSumset.lean",
+      "sha256": "57860ff04f41d4eaf202ad6478fd6c4bff30d3ef6b8153ceafbbd6077e605923",
+      "line_count": 188,
+      "imports": [
+        "Mathlib",
+        "ErdosProblems.Erdos13.Erdos13Kneser"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.MertensLower": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\MertensLower.lean",
+      "sha256": "1ed7affc4ccafe7e73927113f3f17413479e74b2a24956005515833c85aba79b",
+      "line_count": 101,
+      "imports": [
+        "Mathlib",
+        "UnitFractions.ForMathlib.BasicEstimates"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.Probability": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\Probability.lean",
+      "sha256": "be7efd4b06c45afd4015d3d65ef4edcc2de7ab1dd98071dfd0a26319e3a4895a",
+      "line_count": 587,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.RoughNumbers": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\RoughNumbers.lean",
+      "sha256": "18c163691152d1f1aef10131f95fe62fda84e136779ee76d3a34d2b9029582c9",
+      "line_count": 409,
+      "imports": [
+        "Mathlib",
+        "ErdosProblems.Erdos54.MertensLower"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos55.FiniteSums": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos55\\FiniteSums.lean",
+      "sha256": "db4b84c1ecf53f2707a7ef7c33ddf007476c9fc0d273ac27a1967bbae2b04a08",
+      "line_count": 284,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos771": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos771.lean",
+      "sha256": "ad58725be7d9216fb46dd5b80b48a2246482d1744d23b00dc6ec86fcbc701540",
+      "line_count": 4562,
+      "imports": [
+        "Mathlib",
+        "PrimeNumberTheoremAnd.Consequences",
+        "ErdosProblems.Erdos469",
+        "ErdosProblems.Erdos38",
+        "ErdosProblems.Erdos285.RoughCounts",
+        "ErdosProblems.Erdos55.FiniteSums",
+        "ErdosProblems.Erdos54.CyclicGrowth",
+        "ErdosProblems.Erdos88.Fourier",
+        "ErdosProblems.Erdos387.LocalDensity",
+        "ErdosProblems.Erdos387.UniformAnalyticInputs"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos88.Fourier": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos88\\Fourier.lean",
+      "sha256": "63aa18112f21b843548326b9864788e3bd3ec60e7028fe2475ad4bcf1a8ba0fb",
+      "line_count": 2006,
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Analysis.Complex.Exponential",
+        "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds",
+        "Mathlib.Data.Fintype.OfMap",
+        "Mathlib.Data.Fintype.Pi",
+        "Mathlib.Data.Fintype.Powerset",
+        "Mathlib.Data.Nat.Choose.Vandermonde",
+        "Mathlib.Logic.Equiv.Fintype",
+        "Mathlib.Logic.Equiv.Set",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Consequences": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Consequences.lean",
+      "sha256": "1f49f1d25d0ed79141ce5bbf4b4d0a0c2548f69ff21b22d4a73f9b59356d429c",
+      "line_count": 2339,
+      "imports": [
+        "Mathlib.NumberTheory.Harmonic.Bounds",
+        "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "PrimeNumberTheoremAnd.Defs",
+        "PrimeNumberTheoremAnd.Wiener"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Defs": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Defs.lean",
+      "sha256": "65d7d40de0ed9e39f8d817adfbc8b5bc7536504a0a15418355cb030edd76fd0a",
+      "line_count": 203,
+      "imports": [
+        "PrimeNumberTheoremAnd.Fourier",
+        "Mathlib.NumberTheory.Chebyshev"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Fourier": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Fourier.lean",
+      "sha256": "0e4ffad6b71404d8d8b3d033228d72e86b5d7caa1368b0dec570e66cdecf6701",
+      "line_count": 80,
+      "imports": [
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+        "Mathlib.MeasureTheory.Integral.IntegralEqImproper",
+        "Mathlib.Topology.ContinuousMap.Bounded.Basic",
+        "Mathlib.Order.Filter.ZeroAndBoundedAtFilter",
+        "Mathlib.Analysis.Fourier.FourierTransformDeriv",
+        "PrimeNumberTheoremAnd.Sobolev"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Mathlib\\Algebra\\Notation\\Support.lean",
+      "sha256": "39ab214528ac8a3831230b2906ee15f9faf9aff5d8ce2fa1f21564b0fe2e3397",
+      "line_count": 18,
+      "imports": [
+        "Mathlib.Algebra.Notation.Support"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Mathlib\\Analysis\\Asymptotics\\Asymptotics.lean",
+      "sha256": "e87532f1d4f32939fe7d86b29d10bd2de1cdc94ea00322ceb323c8b8907f6e56",
+      "line_count": 46,
+      "imports": [
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Topology.Order.Compact"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Mathlib\\Analysis\\SpecialFunctions\\Log\\Basic.lean",
+      "sha256": "905978d247b678df8630ae9604d1dfb3903d536c9a884e78355622d5fcbe5411",
+      "line_count": 22,
+      "imports": [
+        "Mathlib.Algebra.Order.Floor.Defs",
+        "Mathlib.Algebra.Order.Floor.Ring",
+        "Mathlib.Algebra.Order.Floor.Semiring",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Continuity"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.SmoothExistence": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\SmoothExistence.lean",
+      "sha256": "d612da13afab26cfcbc9f1fb5d85da0e8137edc503e06cf52c94b52e5a3dfc53",
+      "line_count": 96,
+      "imports": [
+        "Batteries.Tactic.Lemma",
+        "Mathlib.Geometry.Manifold.PartitionOfUnity",
+        "Mathlib.Tactic.Bound",
+        "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Sobolev": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Sobolev.lean",
+      "sha256": "5e57038348188790f3deff2c87ce5f3ea43e4d828b3c8edb480804572cad55dd",
+      "line_count": 381,
+      "imports": [
+        "Mathlib.Analysis.Calculus.Deriv.Support",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+        "Mathlib.Order.Filter.ZeroAndBoundedAtFilter"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Wiener": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Wiener.lean",
+      "sha256": "fe58248a229ac8927a65bcbb0385f0653f2b03375088cb505edbea0796c2acfa",
+      "line_count": 3758,
+      "imports": [
+        "Mathlib.Analysis.Fourier.RiemannLebesgueLemma",
+        "Mathlib.Analysis.Normed.Group.Tannery",
+        "Mathlib.Analysis.SumIntegralComparisons",
+        "Mathlib.NumberTheory.Chebyshev",
+        "Mathlib.NumberTheory.LSeries.PrimesInAP",
+        "Mathlib.NumberTheory.MulChar.Lemmas",
+        "Mathlib.Topology.EMetricSpace.BoundedVariation",
+        "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics",
+        "PrimeNumberTheoremAnd.Fourier",
+        "PrimeNumberTheoremAnd.SmoothExistence",
+        "Mathlib.Analysis.Convolution"
+      ],
+      "flags": []
+    },
+    "UnitFractions.AuxiliaryLemmas": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\AuxiliaryLemmas.lean",
+      "sha256": "2f4fdcd0ed1ea48d72cca3f33302ec0242230807de1a13c4c0c22ced25c87011",
+      "line_count": 4717,
+      "imports": [
+        "Mathlib.Algebra.Order.Monoid.Defs",
+        "Mathlib.Algebra.Order.Ring.Defs",
+        "UnitFractions.Definitions",
+        "UnitFractions.ForMathlib.BasicEstimates",
+        "UnitFractions.ForMathlib.Misc"
+      ],
+      "flags": []
+    },
+    "UnitFractions.Definitions": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\Definitions.lean",
+      "sha256": "ee2358069aa2a17d77e487c3c3c331840ed9050d353d1ff954616cd159b702ae",
+      "line_count": 395,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "UnitFractions.ForMathlib.BasicEstimates": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\ForMathlib\\BasicEstimates.lean",
+      "sha256": "6f0ba5d3ea2642aa0e66cf9868d5d04b726d37b575fa65a9f7e7e977c80bcd5d",
+      "line_count": 3345,
+      "imports": [
+        "Mathlib",
+        "UnitFractions.ForMathlib.IntegralRPow",
+        "UnitFractions.ForMathlib.Misc"
+      ],
+      "flags": []
+    },
+    "UnitFractions.ForMathlib.IntegralRPow": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\ForMathlib\\IntegralRPow.lean",
+      "sha256": "aab38aeb568c48422f8428a8cf456b7d5c649be5359896c48c401dbf73de7bee",
+      "line_count": 83,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ],
+      "flags": []
+    },
+    "UnitFractions.ForMathlib.Misc": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\ForMathlib\\Misc.lean",
+      "sha256": "0529a95d028e862dd584ff7a921a427de264f20a4f18ea809543e54382a13bcc",
+      "line_count": 140,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "UnitFractions.Fourier": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\Fourier.lean",
+      "sha256": "e7f0af203c7ecd8f5d344a672e1e42da4ba315096258b13e4e512b4e0468cc44",
+      "line_count": 2599,
+      "imports": [
+        "Mathlib",
+        "UnitFractions.Definitions",
+        "UnitFractions.AuxiliaryLemmas",
+        "UnitFractions.ForMathlib.BasicEstimates",
+        "UnitFractions.ForMathlib.Misc"
+      ],
+      "flags": []
+    },
+    "Util.Density": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\Util\\Density.lean",
+      "sha256": "34ae99edca1e9314933b9180fa601c09c06da86bd2406f2f5e98285034a66a56",
+      "line_count": 116,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    }
+  },
+  "external_imports": [
+    "Batteries.Tactic.Lemma",
+    "BoundedGaps.BombieriVinogradov.Proof.MainTheorem",
+    "Mathlib",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.Algebra.BigOperators.Intervals",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.GCDMonoid.Nat",
+    "Mathlib.Algebra.Notation.Support",
+    "Mathlib.Algebra.Order.Floor.Defs",
+    "Mathlib.Algebra.Order.Floor.Ring",
+    "Mathlib.Algebra.Order.Floor.Semiring",
+    "Mathlib.Algebra.Order.Monoid.Defs",
+    "Mathlib.Algebra.Order.Ring.Defs",
+    "Mathlib.Algebra.Pointwise.Stabilizer",
+    "Mathlib.Algebra.Ring.Divisibility.Basic",
+    "Mathlib.Analysis.Asymptotics.Lemmas",
+    "Mathlib.Analysis.Calculus.Deriv.Support",
+    "Mathlib.Analysis.Complex.Exponential",
+    "Mathlib.Analysis.Convolution",
+    "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+    "Mathlib.Analysis.Fourier.FourierTransformDeriv",
+    "Mathlib.Analysis.Fourier.RiemannLebesgueLemma",
+    "Mathlib.Analysis.Normed.Group.Tannery",
+    "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+    "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+    "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Continuity",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds",
+    "Mathlib.Analysis.SumIntegralComparisons",
+    "Mathlib.Combinatorics.Additive.SubsetSum",
+    "Mathlib.Data.Finset.Card",
+    "Mathlib.Data.Fintype.BigOperators",
+    "Mathlib.Data.Fintype.OfMap",
+    "Mathlib.Data.Fintype.Pi",
+    "Mathlib.Data.Fintype.Powerset",
+    "Mathlib.Data.Int.CardIntervalMod",
+    "Mathlib.Data.Nat.Basic",
+    "Mathlib.Data.Nat.ChineseRemainder",
+    "Mathlib.Data.Nat.Choose.Basic",
+    "Mathlib.Data.Nat.Choose.Vandermonde",
+    "Mathlib.Data.Nat.Factorial.Basic",
+    "Mathlib.Data.Nat.Factorial.BigOperators",
+    "Mathlib.Data.Nat.Factorization.Basic",
+    "Mathlib.Data.Nat.Prime.Basic",
+    "Mathlib.Data.Nat.Prime.Factorial",
+    "Mathlib.Data.Nat.Squarefree",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Geometry.Manifold.PartitionOfUnity",
+    "Mathlib.GroupTheory.Coset.Card",
+    "Mathlib.GroupTheory.GroupAction.Blocks",
+    "Mathlib.GroupTheory.GroupAction.Quotient",
+    "Mathlib.Logic.Equiv.Fintype",
+    "Mathlib.Logic.Equiv.Set",
+    "Mathlib.MeasureTheory.Integral.IntegralEqImproper",
+    "Mathlib.NumberTheory.Chebyshev",
+    "Mathlib.NumberTheory.Harmonic.Bounds",
+    "Mathlib.NumberTheory.LSeries.PrimesInAP",
+    "Mathlib.NumberTheory.MulChar.Lemmas",
+    "Mathlib.Order.Filter.ZeroAndBoundedAtFilter",
+    "Mathlib.Order.Interval.Finset.Basic",
+    "Mathlib.Order.Interval.Finset.Nat",
+    "Mathlib.Tactic.Abel",
+    "Mathlib.Tactic.Bound",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Topology.ContinuousMap.Bounded.Basic",
+    "Mathlib.Topology.EMetricSpace.BoundedVariation",
+    "Mathlib.Topology.Order.Compact"
+  ]
+}

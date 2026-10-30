@@ -1,0 +1,1 @@
+The initial failed source snapshot is reconstructed from the retained edits before the first compiler read. Its old line numbers agree with logs/reproduction-statement-audit.log. The successful current source, if verified, is StatementAudit.lean in the pinned project. No error-recovery proof placeholder from a failed run is an accepted proof.

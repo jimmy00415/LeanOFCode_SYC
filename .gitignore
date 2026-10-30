@@ -1,0 +1,16 @@
+# Preserve large/local evidence on disk without uploading runtime or cache trees.
+/reproduction/lean-proofs/
+/reproduction/mathlib-cache/
+/reproduction/lake-cache/
+/reproduction/patches-lf/
+/tools/lean-4.33.0-windows/
+/tools/lean-download/
+/sources/
+/research/eligibility/
+/research/math-audit-sources/
+/research/submission/snapshots/
+/research/submission/templates/
+/research/mission.txt
+/EVIDENCE-SHA256.json
+__pycache__/
+*.pyc

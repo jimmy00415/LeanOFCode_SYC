@@ -1,0 +1,195 @@
+{
+  "purpose": "Prepared submission evidence; no official attribution, priority or eligibility determination",
+  "verified_source": "https://github.com/plby/lean-proofs",
+  "verified_commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "target": "Erdos771.erdos_771",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "applicant_account": "jimmy00415",
+  "applicant_attribution_status": "Applicant states original contribution; source-account link pending",
+  "file_hashes": [
+    {
+      "path": ".gitattributes",
+      "bytes": 261,
+      "sha256": "222e4c1849694c48e0dac381404f97b9e87cdc7cae191b53bd65f3b3fbf54ae8"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 430,
+      "sha256": "0c5beb524ef0390a679f8334ee0a44420eee9e6810ff6fd7e4162a8aeea48bdf"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3057,
+      "sha256": "e5b039229f1f152127bc87b0a0e434601be5b6529929eb179a12a0afbeb07ced"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 19106,
+      "sha256": "fa98f3e8849d4b3ff3fee0aa905ce26321d864c58e856580c3f8d94e2ed2b780"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-30-jsp-000632-audit.md",
+      "bytes": 3581,
+      "sha256": "6cb9100019840a92efac94bafe57fd9d9034d5242d24f37d1f0beaf9be057178"
+    },
+    {
+      "path": "lean/AxiomAudit.lean",
+      "bytes": 376,
+      "sha256": "cddf7aaa054ab320e991c6fa39fd527559b1121e9829cda3416ace67d067ab0c"
+    },
+    {
+      "path": "lean/FaithfulnessAudit.lean",
+      "bytes": 1668,
+      "sha256": "1f0984e3079b8bf95176eaa2de38c1c4ed59939bb46540eeafdde2d3d4cc4a1b"
+    },
+    {
+      "path": "lean/StatementAudit.lean",
+      "bytes": 5163,
+      "sha256": "80d54d0f506bdf31a61c2f6ec48beb1f58121fb8490e1332482ab6430743c4bd"
+    },
+    {
+      "path": "logs/reproduction-axiom-audit.log",
+      "bytes": 1592,
+      "sha256": "cb5a0658a5973806d4ab615c74f4ee87bc4b60ec6e0b00e1284bd4ab03b2a666"
+    },
+    {
+      "path": "logs/reproduction-erdos771-build.log",
+      "bytes": 30156,
+      "sha256": "7c423f81c51c02d7db81f5cdc7d0d21fce4a0652d71e51f828d74d1f2d88fd3c"
+    },
+    {
+      "path": "logs/reproduction-faithfulness-audit.log",
+      "bytes": 1558,
+      "sha256": "7a1558c5ce2cb52d762cf2b169af00dd4d21bc318519bccfe91e984f1778a41f"
+    },
+    {
+      "path": "logs/reproduction-final-provenance.log",
+      "bytes": 831,
+      "sha256": "ef380d5f6e3d6f158aa13cdce525de7c6d0939e9096c619f6e6805bb3f801ea8"
+    },
+    {
+      "path": "logs/reproduction-patches-lf.log",
+      "bytes": 760,
+      "sha256": "bbd2c704ce491982d04eb1376b171276c57fd67e2bd4696960df78126780a9a8"
+    },
+    {
+      "path": "logs/reproduction-patches.log",
+      "bytes": 265,
+      "sha256": "2b7670791261c2d4c1ebd1b17a471b7415267dfafc3e9c9e100944d1ff704975"
+    },
+    {
+      "path": "logs/reproduction-statement-audit-fixed.log",
+      "bytes": 1958,
+      "sha256": "3ffd96b699a148d0a08698df9d1fa8fafa3a0d76c234912cacdf0b65f750bb18"
+    },
+    {
+      "path": "logs/reproduction-statement-audit.log",
+      "bytes": 2185,
+      "sha256": "40d28e6c9ee8b917767630de420a408df4f25dc0fe1d0aa09d47bdd383305483"
+    },
+    {
+      "path": "reproduction/import-audit-with-dependencies.json",
+      "bytes": 187330,
+      "sha256": "f3e0e3c584e4332fd82b6143f8a99c4238102512124ceb6572f9b63775e2b52d"
+    },
+    {
+      "path": "reproduction/import-audit.json",
+      "bytes": 22325,
+      "sha256": "fd57f10ce32a0637237ce528b70be6fdf7a534a019b0421ab436f87e21e3c255"
+    },
+    {
+      "path": "reproduction/pinned-lake-manifest.json",
+      "bytes": 6278,
+      "sha256": "88334cc96de4bd0451f5202cfe9d5c44012440fc74bab93a1f2651420cebda17"
+    },
+    {
+      "path": "reproduction/pinned-lakefile.lean",
+      "bytes": 3100,
+      "sha256": "be1fe13a49a52536bf453fb0d4a11192610d95136f2cf6984c269d5c178ae266"
+    },
+    {
+      "path": "reproduction/pinned-lean-toolchain",
+      "bytes": 25,
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "path": "research/eligibility-audit.md",
+      "bytes": 16347,
+      "sha256": "a1ae4abcbce305cf38af56718d09adfbe36b239c8bb560981f6b5555a62e3453"
+    },
+    {
+      "path": "research/experiments/README.md",
+      "bytes": 345,
+      "sha256": "88a73e64c94965616d1dd59544f1db1fcf857adc7db1e1ff5575bef7c2ccbaa1"
+    },
+    {
+      "path": "research/experiments/StatementAudit.initial-failed.lean.txt",
+      "bytes": 4347,
+      "sha256": "f386a7105f0a10b0dadcaf2f51c13da9ba10aebf9a7fb895ef39d223abb2996e"
+    },
+    {
+      "path": "research/history/2026-10-30-initial-feasibility-audit.md",
+      "bytes": 17737,
+      "sha256": "b77fdcb17a940fed78db07dae1a68dc29c6a31e4f6fc70e1e81477dd52664830"
+    },
+    {
+      "path": "research/lean-reproduction.md",
+      "bytes": 9214,
+      "sha256": "4c93fa5499f6e049b314d3ca8f81f6da181625f469666fc2aec66a80bc084c67"
+    },
+    {
+      "path": "research/mathematical-audit.md",
+      "bytes": 26150,
+      "sha256": "856d006c0e628172a5e998b4788d7d99e20c1f90797211fce8d5cabea4ede6b1"
+    },
+    {
+      "path": "research/referee-audit.md",
+      "bytes": 12936,
+      "sha256": "c876a130d37bffa89d612f55fc3de5006e74479957799d1d45d21ba2edcbb944"
+    },
+    {
+      "path": "research/submission/current-process.md",
+      "bytes": 11997,
+      "sha256": "006de30c59f2d4ee0123bc9c404bfa8e0ba7f9439bd0db04e19f65427d353289"
+    },
+    {
+      "path": "submission/CLAIM_DRAFT.md",
+      "bytes": 1008,
+      "sha256": "948065e10931656828753df920bc1c2312dcdc949e0233b718a16f2b84138435"
+    },
+    {
+      "path": "submission/PR_BODY.md",
+      "bytes": 2589,
+      "sha256": "0f2da8f6581eb49e673822d9ad036b1f314622069110a617d848bd2555f44129"
+    },
+    {
+      "path": "submission/STATUS.md",
+      "bytes": 2210,
+      "sha256": "c56ec2c355dadadf1bd9d2999e180a0fb9e14d391c118de7e4b50e0c76186bf6"
+    },
+    {
+      "path": "tools/lean-apply-patches.py",
+      "bytes": 1277,
+      "sha256": "899e6ac9e4f54d102a3b071014a5f43a878fc3d62169f45270d488b21a12c933"
+    },
+    {
+      "path": "tools/lean-audit-imports.py",
+      "bytes": 3247,
+      "sha256": "199cbf8225ac06a70f45b6c8d6c06b581927a1d70683601578349f25aa1b2e8b"
+    },
+    {
+      "path": "tools/lean-fetch-dependencies.py",
+      "bytes": 1682,
+      "sha256": "5a2140193aa5f76866e0c6f97517ff39018626c7167e0eee67979bd1b3f38515"
+    },
+    {
+      "path": "tools/lean-run.ps1",
+      "bytes": 1162,
+      "sha256": "ff44a51dac5810532095ede540014991b1ac7f114c609de99d069fceb85055b4"
+    }
+  ]
+}

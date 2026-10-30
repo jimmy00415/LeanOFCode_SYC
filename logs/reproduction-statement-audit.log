@@ -1,0 +1,32 @@
+Started UTC: 2026-10-30T04:07:47.0257733Z
+Working directory: D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest
+Command: D:\VS_Project\LeanCode\tools\lean-4.33.0-windows\bin\lake.exe env lean StatementAudit.lean
+warning: Waring: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\Waring' has local changes
+warning: BoundedGaps: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\BoundedGaps' has local changes
+warning: AINTLIB: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\AINTLIB' has local changes
+warning: leancert: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\leancert' has local changes
+StatementAudit.lean:68:2: error: Type mismatch: After simplification, term
+  LT.lt.ne' hm
+ has type
+  ¬m = 0
+but is expected to have type
+  ¬0 = m
+StatementAudit.lean:101:10: error(lean.unknownIdentifier): Unknown constant `Finset.eq_empty_iff_forall_not_mem.mpr`
+StatementAudit.lean:102:10: error: No goals to be solved
+StatementAudit.lean:108:4: error: Type mismatch: After simplification, term
+  LT.lt.ne' hm
+ has type
+  ¬m = 0
+but is expected to have type
+  ¬0 = m
+JSP000632Audit.ExactTarget : Prop
+'JSP000632Audit.avoids_iff_not_mem_subsetSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Audit.even_pair_avoids_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Audit.initial_pair_does_not_avoid_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Audit.avoids_of_common_divisor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Audit.admissibleCard_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Audit.admissibleCard_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Audit.admissibleCard_iff_le_extremal' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'JSP000632Audit.avoids_every_positive_iff_empty' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Exit code: 1
+Finished UTC: 2026-10-30T04:08:31.6158516Z

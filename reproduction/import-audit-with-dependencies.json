@@ -1,0 +1,3466 @@
+{
+  "root_module": "ErdosProblems.Erdos771",
+  "source_root": "D:\\VS_Project\\LeanCode\\reproduction\\lean-proofs\\src\\latest",
+  "modules": {
+    "BoundedGaps.Arithmetic.ReciprocalTotientPrefix": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\Arithmetic\\ReciprocalTotientPrefix.lean",
+      "sha256": "5a666e4cae08f3e1fb9059017218b9a63653ce647efd8e90fc0e6b9fa3559b06",
+      "line_count": 282,
+      "imports": [
+        "BoundedGaps.Arithmetic.SquarefreeReciprocalCoefficient",
+        "Mathlib.NumberTheory.Harmonic.Bounds",
+        "Mathlib.RingTheory.Radical.NatInt"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.Arithmetic.SquarefreeReciprocalCoefficient": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\Arithmetic\\SquarefreeReciprocalCoefficient.lean",
+      "sha256": "1d17332df346bdf655b839eea44ef35dff2e86e8adffe1a55337f48c7e90533c",
+      "line_count": 251,
+      "imports": [
+        "Mathlib.Analysis.PSeries",
+        "Mathlib.Data.Nat.Squarefree",
+        "Mathlib.Data.Nat.Totient",
+        "Mathlib.NumberTheory.ArithmeticFunction.Misc"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\AdditiveLargeSieve.lean",
+      "sha256": "45f59948c0dd06bb4750dce5c578ae91e9c11eede2c3853e80760ad5a3a10317",
+      "line_count": 10,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.CharacterLargeSieve"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.CharacterLargeSieve": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\AdditiveLargeSieve\\CharacterLargeSieve.lean",
+      "sha256": "5bfb2cdff08153d465292d420f49a10285063f343dd74fda9ae5afc5db8e69bb",
+      "line_count": 168,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.ReducedFractionLargeSieve",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveCharacterAdditiveReduction"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.ConsecutiveInterval": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\AdditiveLargeSieve\\ConsecutiveInterval.lean",
+      "sha256": "8d558ec5f0ec56d55b6acc434e7e3f2544ec69c14d06eedaf90fcd1023bec191",
+      "line_count": 372,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert",
+        "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.FiniteDuality",
+        "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.ConsecutiveIntervalKernel"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.ConsecutiveIntervalKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\AdditiveLargeSieve\\ConsecutiveIntervalKernel.lean",
+      "sha256": "dda5db9030a0f4617bc649f75faf73e8ff5c64f5c35e3fb300d7c7dab37e05e2",
+      "line_count": 259,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ReducedFractionFrequencies",
+        "Mathlib.Algebra.Field.GeomSum",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.FiniteDuality": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\AdditiveLargeSieve\\FiniteDuality.lean",
+      "sha256": "8b5b300f6f435bcc2b7d34681bbdaaf0cbe3d2c4e1d2e5b4a0e3be6ad659b2ff",
+      "line_count": 128,
+      "imports": [
+        "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.Tactic.Ring"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.ReducedFractionLargeSieve": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\AdditiveLargeSieve\\ReducedFractionLargeSieve.lean",
+      "sha256": "7a821137faa0bb8f5ba8398561b6061245f677dd8e230041703d5395c9545be9",
+      "line_count": 45,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve.ConsecutiveInterval",
+        "BoundedGaps.BombieriVinogradov.Analytic.ReducedFractionFrequencies"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.AllModulusConductorSplit": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\AllModulusConductorSplit.lean",
+      "sha256": "896b4e745640e1984f21b44a8b3cde148eaf61e38dca80b849976b2b6654eecf",
+      "line_count": 238,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredProgressionCorrection"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.BelowCutoffLogSaving": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\BelowCutoffLogSaving.lean",
+      "sha256": "f1faa61c136fde4230be50ce05f8c6f240971408e2a98b5a20b235ee3271b715",
+      "line_count": 143,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.SmallTermLogSaving"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.BilinearLargeSieve": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\BilinearLargeSieve.lean",
+      "sha256": "071fe8bf08e42cfe3e8cbe1d1aa974b492d81200ec65f184362529919e10ba9a",
+      "line_count": 218,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.AdditiveLargeSieve",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+        "Mathlib.Analysis.Real.Sqrt"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.BilinearPerronAggregate": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\BilinearPerronAggregate.lean",
+      "sha256": "1fb3ddfe61afd5f40cbf225df3f37a3a1f8f3e56955f6cf06801f1145fbea9b3",
+      "line_count": 321,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.BilinearProductCutoffMaximum",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveConductorFibers"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.BilinearProductCutoffMaximum": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\BilinearProductCutoffMaximum.lean",
+      "sha256": "3529a477d96631f3a3000916091303b7f608c19b0d599d921cadd379b035b77f",
+      "line_count": 223,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.FiniteBilinearPerron"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CenteredCharacterReduction": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CenteredCharacterReduction.lean",
+      "sha256": "f76af525365e907f71079783c5b972a8e72e0061b6fc057554d8c9c2db894b7f",
+      "line_count": 266,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimePowerCorrectionBound",
+        "Mathlib.NumberTheory.Chebyshev",
+        "Mathlib.NumberTheory.DirichletCharacter.Orthogonality",
+        "Mathlib.NumberTheory.DirichletCharacter.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CenteredPrimeAbel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CenteredPrimeAbel.lean",
+      "sha256": "614bded477ad13487e35c5c5efe29b24bb89a40759cb8ae5d195cfeaa3229f16",
+      "line_count": 427,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredPrimePowerRemoval",
+        "Mathlib.Analysis.SpecialFunctions.Log.InvLog"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CenteredPrimeCountingComposition": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CenteredPrimeCountingComposition.lean",
+      "sha256": "98f65e11d43615e640a0f473ca1a96aea370d4c37f788dafc619c571aad7eea1",
+      "line_count": 38,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredPrimeAbel"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CenteredPrimePowerRemoval": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CenteredPrimePowerRemoval.lean",
+      "sha256": "2516bfe0c1372c60f22993d72972595181664801f2229ffdd022bf78489b6164",
+      "line_count": 245,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredProgressionCorrection"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CenteredPrimitiveMaxima": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CenteredPrimitiveMaxima.lean",
+      "sha256": "daafc95752aa55615d910273a5f3fea44a24d94eb65020c1f81271972bb23247",
+      "line_count": 257,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredCharacterReduction",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveConductorFibers"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CenteredProgressionCorrection": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CenteredProgressionCorrection.lean",
+      "sha256": "9510710358a5a6afcdf2d4b654b667fbb6e24ab81803bd5ab9e8d872278a1c48",
+      "line_count": 154,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedConductorReindex"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CharacterOrthogonality": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CharacterOrthogonality.lean",
+      "sha256": "c919b0d77376e86b9845cf51b0d58c3d1982cc964021e23fe96c73a9ca5046fa",
+      "line_count": 86,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedStatement",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.NumberTheory.DirichletCharacter.Orthogonality"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CharacterPartialSummation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CharacterPartialSummation.lean",
+      "sha256": "a2e2aa5ea3db93d2a7dd8445a70fc020af86fc212bba6984b6490146ba59027c",
+      "line_count": 356,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ImprimitivePolyaVinogradovPrefix",
+        "Mathlib.Analysis.Complex.RealDeriv",
+        "Mathlib.NumberTheory.AbelSummation"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CircleReciprocalSquarePacking": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CircleReciprocalSquarePacking.lean",
+      "sha256": "72f3f029d0bc6139457593b825892bd8c6d4463f23a1d866bac62f8ff5a8eead",
+      "line_count": 269,
+      "imports": [
+        "Mathlib.Analysis.Normed.Group.AddCircle",
+        "Mathlib.NumberTheory.ZetaValues"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CosecantHilbert.lean",
+      "sha256": "9857edea1f471478f05e71fd23e73584a471458d5c551ef8b4290537ee026d02",
+      "line_count": 30,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.AnalyticEstimate"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.AnalyticEstimate": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CosecantHilbert\\AnalyticEstimate.lean",
+      "sha256": "0b59528b5ed6ec675aabca0dbd6c5617080ba3933cd6142bff819045cda89487",
+      "line_count": 285,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.EigenvectorCancellation",
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.TrigonometricIdentity",
+        "BoundedGaps.BombieriVinogradov.Analytic.CircleReciprocalSquarePacking",
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantPointwise"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.Basic": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CosecantHilbert\\Basic.lean",
+      "sha256": "4192028c6749768cd8c4f32cb1804541dc3dce63f8fa449ddbb1c59f4f51ff91",
+      "line_count": 144,
+      "imports": [
+        "Mathlib.Analysis.Matrix.Hermitian",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.EigenvectorCancellation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CosecantHilbert\\EigenvectorCancellation.lean",
+      "sha256": "809dedd3a0b94eb32014b985ba75c46caf749dbcf5ac92dc1589a32213efd485",
+      "line_count": 93,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.FiniteCancellation",
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.Spectral"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.FiniteCancellation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CosecantHilbert\\FiniteCancellation.lean",
+      "sha256": "3e99cd3bf25c5ffcf8038b880bb7cf9ef78a6f8f3bb30d9254332034a2b145b0",
+      "line_count": 386,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.FiniteExpansion",
+        "Mathlib.Tactic.LinearCombination"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.FiniteExpansion": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CosecantHilbert\\FiniteExpansion.lean",
+      "sha256": "08baefeaa7b408ba81eaf2ab088ca12043269019930579c9707ebba56aa8c48a",
+      "line_count": 119,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.Spectral": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CosecantHilbert\\Spectral.lean",
+      "sha256": "c449fb610795bf1e4ca986ddfb1fe700505f6de4966a6241080b95ed62f94285",
+      "line_count": 156,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.Basic",
+        "Mathlib.Analysis.Matrix.Spectrum"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.TrigonometricIdentity": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CosecantHilbert\\TrigonometricIdentity.lean",
+      "sha256": "7c75249a14dddcc351d45d643684896c95352c9e1a63b1a986bdd8f047449699",
+      "line_count": 63,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CosecantHilbert.FiniteCancellation",
+        "Mathlib.Analysis.Normed.Group.AddCircle"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CosecantPointwise": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CosecantPointwise.lean",
+      "sha256": "71a92798a4146873dd52ff7f948cd4ef6ed4c58a82a49b491d126a3a0d7c7305",
+      "line_count": 167,
+      "imports": [
+        "Mathlib.Analysis.Normed.Group.AddCircle",
+        "Mathlib.Analysis.Real.Pi.Bounds",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.CrossCharacterPositivity": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\CrossCharacterPositivity.lean",
+      "sha256": "6f7e81f2deccdc903890c684498ac82fc8fc0b3c7e92d3261e068cdd7091f0fb",
+      "line_count": 134,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ThreeFourOne"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExceptionalZeroKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExceptionalZeroKernel.lean",
+      "sha256": "fa5187fdbf0df6026dd7ff935cbc188a4aeb4031327fc5bd1a39b208b71a8754",
+      "line_count": 123,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ExceptionalZeroDenominator",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletNonexceptionalZeroSum"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormula": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormula.lean",
+      "sha256": "c8b9a11dd8eb5889a06e95a427676b92dfb8da714baa77a0e16487e1017e4659",
+      "line_count": 168,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPrimitiveExplicitFormula",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletNontrivialZeroTransport",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimePowerCorrectionBound"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateCircleContribution": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaCandidateCircleContribution.lean",
+      "sha256": "ae382e4daef1f253ee18a63a291ed1e15905b16b908c39454593b2ef3763bd05",
+      "line_count": 125,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateSingularities",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroCircleIntegral",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrincipalZeroCircleIntegral"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateCircleSum": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaCandidateCircleSum.lean",
+      "sha256": "12b97c91ed9ed888350e87aade305ecd07f756d06f83d06647084ee8d2e15e5c",
+      "line_count": 66,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateCircleContribution"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateInterior": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaCandidateInterior.lean",
+      "sha256": "6932d1a904dbe60de76cbc5b036a8a87d42f31de5a1ef281f5994ec2da1a49cc",
+      "line_count": 170,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateSingularities",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaVerticalEdges",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletGoodHeightZeroCoverage"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateSingularities": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaCandidateSingularities.lean",
+      "sha256": "15415d6d9355013a8c458a8a4123ab67a824fb761c9f30a6ec610a7e5bdabc87",
+      "line_count": 109,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLZeroDivisor"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaContourEdges": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaContourEdges.lean",
+      "sha256": "349d265c8980f560efc041033ebfd45608fb2f50eb594ee8b329d1209619a37f",
+      "line_count": 234,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrimitiveShallowCandidates",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaRectangleBoundary"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaHorizontalKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaHorizontalKernel.lean",
+      "sha256": "5461f55a04f456495d44ccdf605da768d2cac3bfd38a7f73f43bfc56fc48adb6",
+      "line_count": 132,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroResidue",
+        "Mathlib.Analysis.Complex.ExponentialBounds",
+        "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaKernel.lean",
+      "sha256": "55dbf640e198338a0cf612ab74755d7b61aa033edc02045518a8c6b22d86b45b",
+      "line_count": 62,
+      "imports": [
+        "Mathlib.Analysis.Complex.RemovableSingularity",
+        "Mathlib.Analysis.SpecialFunctions.Exponential",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Complex"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaLeftKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaLeftKernel.lean",
+      "sha256": "b95cfab4f9330ca81e8e6b7303fb3fc27ebbe13654b0c36ba1e9c62c8a8f98ab",
+      "line_count": 166,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroResidue",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPerforatedRegularity": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaPerforatedRegularity.lean",
+      "sha256": "7f2ba09493d13fd3ab3cd139ab6dfab6f2325c85857e3fe4115a41182d07eb07",
+      "line_count": 85,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateCircleSum"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrimitiveShallowCandidates": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaPrimitiveShallowCandidates.lean",
+      "sha256": "8f3b8b4f36cbc8a45e80c9e3d4d6cad53a48ab400430d48de3e699d3d5a3d919",
+      "line_count": 235,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaVerticalEdges",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletNontrivialZeroTransport",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPrimitiveShallowZeros"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrincipalCircleIntegral": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaPrincipalCircleIntegral.lean",
+      "sha256": "9f8e77855f0c9b2d84a58b42442069ea52312dbb3b3f206274165d71383333d8",
+      "line_count": 119,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrincipalPoleResidue"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrincipalPoleResidue": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaPrincipalPoleResidue.lean",
+      "sha256": "68192ac2c93bbdf29514fe1d214f3d060b0daecbf1b9a0dc35247a416917f847",
+      "line_count": 140,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroResidue"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrincipalZeroCircleIntegral": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaPrincipalZeroCircleIntegral.lean",
+      "sha256": "ea803ed1fc7f7933414d7ccc940933b1a7a1909a2531532e84ad34a764e5ef16",
+      "line_count": 130,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrincipalCircleIntegral"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaRectangleBoundary": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaRectangleBoundary.lean",
+      "sha256": "dfb3e92521b92af75b990315f0e3410240fe49d4b4b64ec2f723fe376bb4283c",
+      "line_count": 278,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaRemovableRemainder",
+        "BoundedGaps.BombieriVinogradov.Analytic.RectangleFinitePrincipalPartSum"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaRemovableRemainder": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaRemovableRemainder.lean",
+      "sha256": "7f199679251e8f1d246f56f6f7ced307f302b14bb453fa5a06caa6d3e8d7b5b8",
+      "line_count": 250,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPerforatedRegularity"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaSelectedContour": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaSelectedContour.lean",
+      "sha256": "a4f83f358ab67e9aa703c204366d6e79892e362f3a96de156f74baf5757d60d6",
+      "line_count": 289,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateInterior",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaContourEdges",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaSelectedHeight",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaShallowCorrection",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionHorizontalEdge",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionLeftEdge",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaHorizontalEdge",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaLeftEdge"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaSelectedHeight": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaSelectedHeight.lean",
+      "sha256": "e22363b75ee0cb4b4e1e15b267e46bb38b4ed47f69faa68a3389c3d84c1c563f",
+      "line_count": 159,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaShallowCorrection",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionZeroShell",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaZeroShell"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaShallowCorrection": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaShallowCorrection.lean",
+      "sha256": "f561bfd76d2d72ea430b2e48bcc2bf2aeba3b12db1e29a69718206d75f635c1d",
+      "line_count": 182,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrimitiveShallowCandidates"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaVerticalEdges": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaVerticalEdges.lean",
+      "sha256": "79d521c7d2a7054c58e9899373eeaceff97112267dffafb82fca8ca5315b1ff0",
+      "line_count": 184,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProductZeroGeometry",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveFunctionalEquation",
+        "Mathlib.NumberTheory.LSeries.Nonvanishing"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroCircleIntegral": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaZeroCircleIntegral.lean",
+      "sha256": "fb74e741853a80a8867b256668c7744998d8740a3216ca594614d68ee876c792",
+      "line_count": 65,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroResidue"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroResidue": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaZeroResidue.lean",
+      "sha256": "e0b17ff3b7eabf5e08de6b7c4fc7dedd34cae252e7670cb090f691706c889f77",
+      "line_count": 92,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.LocalLogarithmicResidue"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroShell": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletExplicitFormulaZeroShell.lean",
+      "sha256": "8a99e22d0d611794a7296d341fab7b65cecbdae7ca46317efdccb82c55684549",
+      "line_count": 182,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaHorizontalKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletNontrivialZeroTransport"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletGoodHeightSelector": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletGoodHeightSelector.lean",
+      "sha256": "a95d6e8c87e762518a51b762e2b0ba7dd3e1649c70b3a765017939255a79429b",
+      "line_count": 165,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletTwoSidedBadHeights",
+        "Mathlib.Data.Fintype.Pigeonhole"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletGoodHeightZeroCoverage": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletGoodHeightZeroCoverage.lean",
+      "sha256": "804a3a557719b563cedfeaebc16aca6bc9295fac00300f520f93e893ee68e7ca",
+      "line_count": 364,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletGoodHeightSelector",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveFunctionalEquation",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionNontrivialSelection",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrincipalLFunctionZeroTransport"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletLFunctionAbelContinuation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletLFunctionAbelContinuation.lean",
+      "sha256": "9db39eeed45597b98c5470546b1b353a1b9782790ac2d6a0745a289301dd98e9",
+      "line_count": 196,
+      "imports": [
+        "Mathlib.Analysis.Analytic.Uniqueness",
+        "Mathlib.Analysis.Convex.PathConnected",
+        "Mathlib.Analysis.MellinTransform",
+        "Mathlib.MeasureTheory.Function.Floor",
+        "Mathlib.NumberTheory.LSeries.DirichletContinuation",
+        "Mathlib.NumberTheory.LSeries.SumCoeff"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletLFunctionClosedStripGrowth": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletLFunctionClosedStripGrowth.lean",
+      "sha256": "78cb457e184432d9f3b6b67b77cdd5b07a565f361d70453f9cb1105990414a1f",
+      "line_count": 180,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProduct",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionFixedStrip"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletLFunctionConjugation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletLFunctionConjugation.lean",
+      "sha256": "e1ba926bb2e276ba6b8c62079f24320159e825fd07b0f42c06545b8d9d38796b",
+      "line_count": 106,
+      "imports": [
+        "Mathlib.Analysis.Calculus.Deriv.Star",
+        "Mathlib.NumberTheory.MulChar.Lemmas",
+        "BoundedGaps.BombieriVinogradov.Analytic.ImprimitiveLFunctionTransport"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletLZeroDivisor": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletLZeroDivisor.lean",
+      "sha256": "239f2ede02feb419498ef6c195f64dfd81865e2bc8b0995d54eb9e1fb9f91c9c",
+      "line_count": 136,
+      "imports": [
+        "Mathlib.Analysis.Meromorphic.Divisor",
+        "Mathlib.NumberTheory.LSeries.Nonvanishing"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletLocalDivisorMass": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletLocalDivisorMass.lean",
+      "sha256": "64360653827ce227ff6a6c7089ae2527da7d0e834615db88735d8eb6940f7282",
+      "line_count": 264,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionRadiusTwelve",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusFour",
+        "Mathlib.Analysis.Complex.ExponentialBounds",
+        "Mathlib.Analysis.Complex.JensenFormula"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletLocalDivisorSupport": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletLocalDivisorSupport.lean",
+      "sha256": "743591514b1efb67f3005de04069eb58672bd514a8bb6eaf792c985c16a31f43",
+      "line_count": 84,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLZeroDivisor",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLocalDivisorMass",
+        "BoundedGaps.BombieriVinogradov.Analytic.DivisorSupportCardinality"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletModifiedPerron": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletModifiedPerron.lean",
+      "sha256": "40b09d3cc09b9db4a62b30752f7a7e9f578401961c1aae417dcacfd5038540bc",
+      "line_count": 444,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CharacterOrthogonality",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaContourEdges",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaShallowCorrection",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronVonMangoldt",
+        "BoundedGaps.BombieriVinogradov.Analytic.ThreeFourOne",
+        "Mathlib.Analysis.Complex.ExponentialBounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletNonexceptionalZeroKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletNonexceptionalZeroKernel.lean",
+      "sha256": "a0e2802d891fdefe4e5d2ac60950412e2dc9c1d468c763e73c521b7d6c45c1d0",
+      "line_count": 373,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletNontrivialZeroTransport",
+        "BoundedGaps.BombieriVinogradov.Analytic.RegularizedProductExceptionalZero",
+        "Mathlib.Analysis.Calculus.MeanValue"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletNonexceptionalZeroSum": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletNonexceptionalZeroSum.lean",
+      "sha256": "0b0c8d2f385a4f8a4c599c13fd96f187b05d9d71b8a1892e8f5f234634ebe938",
+      "line_count": 254,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletNonexceptionalZeroKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletZeroReciprocalSum"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletNontrivialZeroTransport": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletNontrivialZeroTransport.lean",
+      "sha256": "08dd429a5c7c4a50b528ee5bff8b9edfeb9ae00514203c42e0ce53f01f96a7ed",
+      "line_count": 215,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaCandidateCircleSum",
+        "BoundedGaps.BombieriVinogradov.Analytic.ImprimitiveLFunctionTransport"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronCentral": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPerronCentral.lean",
+      "sha256": "ebc2ea4ff966cce47296b71b7c87eaae234b282b0c78dccdec91a88a6e5dfb9a",
+      "line_count": 367,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletSineRemainder",
+        "Mathlib.Analysis.Complex.CauchyIntegral",
+        "Mathlib.Analysis.Real.Pi.Bounds",
+        "Mathlib.MeasureTheory.Integral.Prod"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronCentralNatural": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPerronCentralNatural.lean",
+      "sha256": "d8d3127b2572808275656cffb75aac06c803f70c62014363147d6ae284b13d61",
+      "line_count": 269,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronCentral"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronHighBase": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPerronHighBase.lean",
+      "sha256": "be1dc8acc389007ec62aa5d02d7a4465c2e2f2f3bfe7ef0942ecf0a0713a0cec",
+      "line_count": 398,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronLowBase",
+        "BoundedGaps.BombieriVinogradov.Analytic.RectangleReciprocalWedgeIntegral",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPerronKernel.lean",
+      "sha256": "8d14a72a4602be83753d3bca21d56d196166cb285aa36b6b130b32eb75402953",
+      "line_count": 190,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronLowBase": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPerronLowBase.lean",
+      "sha256": "d4a9c047192ba5a41c2d031f774dae8031c08d1dfff9326f07ebd0a08e48a9be",
+      "line_count": 265,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronKernel",
+        "Mathlib.Analysis.Complex.CauchyIntegral",
+        "Mathlib.Analysis.Complex.ExponentialBounds",
+        "Mathlib.Analysis.Real.Pi.Bounds",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronOneTerm": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPerronOneTerm.lean",
+      "sha256": "42017a616f7319d0bdc62363ec3f3a5d7b7399d984338a77f15ab31b777d2e40",
+      "line_count": 173,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronCentralNatural",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronHighBase"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronSeries": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPerronSeries.lean",
+      "sha256": "075be33fc3ff6c2d157c6f5f84e430c8d0bc7e0ddec47943b7740b2139333849",
+      "line_count": 427,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronOneTerm",
+        "Mathlib.NumberTheory.LSeries.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronVonMangoldt": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPerronVonMangoldt.lean",
+      "sha256": "a05d512b1bc62f02caafbeef4d9d140d9b16e36e0a74857a35c225637b3fb014",
+      "line_count": 422,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPerronSeries",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrincipalZetaPole",
+        "Mathlib.NumberTheory.Harmonic.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPrimitiveExplicitFormula": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPrimitiveExplicitFormula.lean",
+      "sha256": "71d9ecf554f4be28adfe0ffe877ce581ce51bad187901ec8e3071de45979d35c",
+      "line_count": 69,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaSelectedContour",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletModifiedPerron"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletPrimitiveShallowZeros": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletPrimitiveShallowZeros.lean",
+      "sha256": "242ddbbd0db5fc92265bc8205b9cd265933dfe1d0f71fd8f75bf9ad2af894203",
+      "line_count": 270,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveFunctionalEquation",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionCentralStrip",
+        "Mathlib.Analysis.Calculus.Deriv.Slope",
+        "Mathlib.NumberTheory.LSeries.Nonvanishing"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletSineRemainder": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletSineRemainder.lean",
+      "sha256": "8e1f157b6d35097cca247c46e178b5d77f534481039a5df9869e946a07e09a1f",
+      "line_count": 253,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+        "Mathlib.Data.Real.Sign",
+        "Mathlib.MeasureTheory.Integral.Prod"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletTwoSidedBadHeights": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletTwoSidedBadHeights.lean",
+      "sha256": "063b35381013de5f6272b42f7cc0fe645ac4075db10398efb6d8bc6059fc94b5",
+      "line_count": 323,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLocalDivisorSupport",
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProductZeroOrdinates"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletZeroReciprocalSum": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletZeroReciprocalSum.lean",
+      "sha256": "4ab6d770ea8ce8ada4a9cc36a7760126ba78ad6c68b1227de049a68320c4c311",
+      "line_count": 335,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletZeroWindowMultiplicity",
+        "Mathlib.NumberTheory.Harmonic.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DirichletZeroWindowMultiplicity": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DirichletZeroWindowMultiplicity.lean",
+      "sha256": "d5f89a5a2f9053c4009d4d88412af5993a0042cd0afb6f3783cea9f1248684d2",
+      "line_count": 214,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroShell",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLocalDivisorMass",
+        "BoundedGaps.BombieriVinogradov.Analytic.FiniteDivisorSubmassBound",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaFixedDisk",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusSixDivisorMass",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaZeroShell"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.DivisorSupportCardinality": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\DivisorSupportCardinality.lean",
+      "sha256": "f5d76722e034bbb5c6ec7a9216ed0c19e859f345ef108a224a41a38f3e891404",
+      "line_count": 56,
+      "imports": [
+        "Mathlib.Analysis.Meromorphic.Divisor"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.Dyadic": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\Dyadic.lean",
+      "sha256": "c3b414c96b2392c60f60c8a3ebe68f89d7e93b1864162b1ee0aa6189ba26d6ab",
+      "line_count": 107,
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Data.Nat.Log"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ElementaryCorrectionAbsorption": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ElementaryCorrectionAbsorption.lean",
+      "sha256": "8255ed84627782147d217aff7764a471854be8ebfdcc446c0899105b396ab99d",
+      "line_count": 95,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.LogarithmicConductorComposition",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanProgressionConclusion"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ExceptionalZeroAbsorption": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ExceptionalZeroAbsorption.lean",
+      "sha256": "e929cae26df22770b61e3d4031c151cd311fb580e4071581ffa1b4772c424912",
+      "line_count": 76,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ExceptionalZeroDenominator": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ExceptionalZeroDenominator.lean",
+      "sha256": "9ed25a4cce886649bc071fd182ba9f79092db1c638d192ac9479934a58a2048e",
+      "line_count": 106,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ExceptionalZeroAbsorption",
+        "BoundedGaps.BombieriVinogradov.Analytic.RegularizedProductExceptionalZero"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.FarRightLFunctionCenter": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\FarRightLFunctionCenter.lean",
+      "sha256": "79f7bedcf9eb75a72bb11a42e143ec297abd421801aeb503101055b1e7befca6",
+      "line_count": 81,
+      "imports": [
+        "Mathlib.NumberTheory.LSeries.DirichletContinuation",
+        "Mathlib.NumberTheory.ZetaValues"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.FarRightLogDerivative": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\FarRightLogDerivative.lean",
+      "sha256": "101aadbf5c4f142ece972091959887a61a5c6f1c4988d166f6470deb4cf15361",
+      "line_count": 80,
+      "imports": [
+        "Mathlib.NumberTheory.LSeries.DirichletContinuation"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.FiniteBilinearPerron": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\FiniteBilinearPerron.lean",
+      "sha256": "dca53d6b89b85c30ec59d61f5b048d9797b9453c1e21bd256e405baea71b5a94",
+      "line_count": 276,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PerronEnvelope",
+        "Mathlib.NumberTheory.DirichletCharacter.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.FiniteDivisorReciprocalBound": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\FiniteDivisorReciprocalBound.lean",
+      "sha256": "dcb10a510461ab2397bdf6075027c332c7ed6ebbc05aad16a862ffbbb6af5033",
+      "line_count": 62,
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Field",
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.Analysis.Meromorphic.Divisor"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.FiniteDivisorSubmassBound": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\FiniteDivisorSubmassBound.lean",
+      "sha256": "6eb36c5404e68d6d0cb57a070df4c6e2e190bee9ebb14b15d465b67216a178d3",
+      "line_count": 61,
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Finprod",
+        "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+        "Mathlib.Data.Real.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.FixedDiskLogDerivative": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\FixedDiskLogDerivative.lean",
+      "sha256": "904e7b3e1a9ea069f4093f1b41cdad4ac567468125b89891e2f7df199bd42542",
+      "line_count": 498,
+      "imports": [
+        "Mathlib.Analysis.Meromorphic.FactorizedRational",
+        "Mathlib.Analysis.Calculus.LogDeriv",
+        "Mathlib.Analysis.Complex.HasPrimitives",
+        "Mathlib.Analysis.Complex.BorelCaratheodory",
+        "Mathlib.Analysis.Complex.Liouville"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.FixedStripGammaRatio": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\FixedStripGammaRatio.lean",
+      "sha256": "8522bd546ba4bd3f0b0125ab32ffa82917b661b746d67252bba57d127c341439",
+      "line_count": 337,
+      "imports": [
+        "Mathlib.NumberTheory.LSeries.DirichletContinuation"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldCoefficient": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldCoefficient.lean",
+      "sha256": "f23169f7433928bab9e81fd08abbc48909e7b339b31382dd26710a56bfef8c3f",
+      "line_count": 321,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldCrossLevelCharacters",
+        "Mathlib.NumberTheory.LSeries.Nonvanishing"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldContourLimit": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldContourLimit.lean",
+      "sha256": "d432ff1cc2dea89c1c9b9927d17897bc2dbcea7abdf404ecc22ec2701bb327bd",
+      "line_count": 314,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldContourRectangle",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldHorizontalEdgeLimit",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLeftLineIntegral",
+        "Mathlib.MeasureTheory.Integral.IntegralEqImproper"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldContourRectangle": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldContourRectangle.lean",
+      "sha256": "1c9fc90295aca10edace5ee94d7e91df3052da22d4e0b75b3e7127d1774ac347",
+      "line_count": 440,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldHorizontalEdge",
+        "BoundedGaps.BombieriVinogradov.Analytic.RectangleReciprocalWedgeIntegral"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldCrossLevelCharacters": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldCrossLevelCharacters.lean",
+      "sha256": "cf7a79f97da032a300068b52ac2ca46ed637482cf9f67babb6829b7563091a61",
+      "line_count": 118,
+      "imports": [
+        "Mathlib.Data.Complex.Basic",
+        "Mathlib.NumberTheory.DirichletCharacter.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldDistinctLValueLower": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldDistinctLValueLower.lean",
+      "sha256": "013056205cba58d4b1785e2dc3bbf413f918600c87857cbd107b0a2af187d37f",
+      "line_count": 179,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldCrossLevelCharacters",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLeftLineIntegral",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldQuantitativeResidue"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldExceptionalCharacter": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldExceptionalCharacter.lean",
+      "sha256": "e862bf742127a2ca4310655a45b249b0a51ca17ee33c74b750d670f9824975db",
+      "line_count": 322,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldDistinctLValueLower",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLValueUpper",
+        "Mathlib.Data.Set.Subsingleton"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldFourFactorClosedStrip": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldFourFactorClosedStrip.lean",
+      "sha256": "df3791c0698fcf0e1a9fa56837a5ea481fa108f865401096347db8b955f60173",
+      "line_count": 128,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLFunctionClosedStripGrowth",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldSmoothedSum",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaClosedStripGrowth"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldHorizontalEdge": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldHorizontalEdge.lean",
+      "sha256": "1b99843eaa65eddca1cc97467bf5c2a0e62d6d989e99be489d3c1b71281c1bdd",
+      "line_count": 323,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLocalCancellation",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldFourFactorClosedStrip",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldMellinStripDecay"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldHorizontalEdgeLimit": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldHorizontalEdgeLimit.lean",
+      "sha256": "98b8c3cd93213293d03ce93e954c0355121b4531a3445c173eb7474360f0a7c6",
+      "line_count": 168,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldHorizontalEdge"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLValueUpper": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldLValueUpper.lean",
+      "sha256": "3efff264ef1a288e41c60917b41d096a92f549eb3b96219baca325588a6ce4b6",
+      "line_count": 71,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticRealZeroGap"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLeftLineBounds": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldLeftLineBounds.lean",
+      "sha256": "4f6d04d14f0a595cb7e84a686de337956bb862cdd09edaac729dce4a84b7d963",
+      "line_count": 228,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldFourFactorClosedStrip"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLeftLineIntegral": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldLeftLineIntegral.lean",
+      "sha256": "5bd062f00e4acb08b13ff01ece3e060006801a3a0ddc9703f9b29456f012eb24",
+      "line_count": 199,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLeftLineBounds",
+        "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLocalCancellation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldLocalCancellation.lean",
+      "sha256": "b133c2509ccf84e988f4da82c5c8f0398d4dc38907f531d607e3c7512d3bc7fc",
+      "line_count": 280,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldSmoothedSum"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldMellinInversion": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldMellinInversion.lean",
+      "sha256": "47fa6d56d2ce04393e3733eced8849212f224f9425975acd2b422d2eaac0d1cd",
+      "line_count": 177,
+      "imports": [
+        "Mathlib.Analysis.MellinInversion",
+        "Mathlib.NumberTheory.LSeries.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldMellinPositiveBound": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldMellinPositiveBound.lean",
+      "sha256": "25d29b1d8213d643b277761d88ccc72767fe3c6db856952914c0b0a71768943e",
+      "line_count": 92,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldPlateauMellinDecay",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldMellinPositiveLine": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldMellinPositiveLine.lean",
+      "sha256": "8e3e2613ca7250d09f8629c2b13f16762a973afb00683fd44bb1b0e77a2d6a12",
+      "line_count": 160,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldPlateauMellinDecay"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldMellinStripDecay": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldMellinStripDecay.lean",
+      "sha256": "dbae8637b8d9d8d0798275d534a1e7d809c7c8cff8dfe76ee6d54b7f1690f007",
+      "line_count": 447,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldPlateauMellinDecay",
+        "Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Fourier",
+        "Mathlib.Analysis.Fourier.FourierTransformDeriv",
+        "Mathlib.Analysis.MellinInversion",
+        "Mathlib.Analysis.SpecialFunctions.ExpDeriv"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldPlateauMellin": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldPlateauMellin.lean",
+      "sha256": "65cca443a4eb65aba910f6b0b9cd9f9fc597b71f48005a08ce141ce46b7fe843",
+      "line_count": 407,
+      "imports": [
+        "Mathlib.Analysis.MellinTransform",
+        "Mathlib.Analysis.Complex.CauchyIntegral",
+        "Mathlib.Analysis.Calculus.BumpFunction.InnerProduct",
+        "Mathlib.MeasureTheory.Integral.IntegralEqImproper"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldPlateauMellinDecay": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldPlateauMellinDecay.lean",
+      "sha256": "164040653c3e8baa790473e4f77bdc6755d4c3743800b57b4ebca80102231845",
+      "line_count": 204,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldPlateauMellin",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Fourier",
+        "Mathlib.Analysis.MellinInversion"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldQuantitativeResidue": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldQuantitativeResidue.lean",
+      "sha256": "0426eb4e6de228e6306803915fcfca2a115adfcdc513033f9e5dcc2988d9de86",
+      "line_count": 169,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldContourLimit",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldLValueUpper",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldMellinPositiveBound",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldSmoothedSumLowerBound"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldSmoothedSum": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldSmoothedSum.lean",
+      "sha256": "5e1be3df1f8a34c0a4b9483e9baecec4fbe20c7af2c3e8c8d0a2ed121522550b",
+      "line_count": 155,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldCoefficient",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldMellinInversion",
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldMellinPositiveLine"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldSmoothedSumLowerBound": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GoldfeldSmoothedSumLowerBound.lean",
+      "sha256": "9061e64e7adf22419fe96a0db36e352b9c1112a698a56e30d495d84ef640aff1",
+      "line_count": 89,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldSmoothedSum"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamareCoprimeMoebius": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GranvilleRamareCoprimeMoebius.lean",
+      "sha256": "3f5c95f2ef5b622742cd92ffecb7b9a2c06d462a3ed23bcb5e73577405363976",
+      "line_count": 288,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthCoefficient"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamareLcmMain": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GranvilleRamareLcmMain.lean",
+      "sha256": "a8a4160044633690aff70f88edea49b6ca354659de1e2369ec09adba31d7e4bc",
+      "line_count": 228,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamareCoprimeMoebius",
+        "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamareMoments",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Sigma"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamareMoments": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GranvilleRamareMoments.lean",
+      "sha256": "8538ccb195732735842f10e6d70c0468b4eb7bd8f865550085c90ee086e62610",
+      "line_count": 365,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthCoefficient",
+        "Mathlib.Algebra.BigOperators.Module",
+        "Mathlib.NumberTheory.Harmonic.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamarePairMass": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GranvilleRamarePairMass.lean",
+      "sha256": "cf9da4ef6a39062cdeee2a541daee9eba9c4fcea20bc76a9e35141f729045767",
+      "line_count": 222,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamareMoments",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Sigma"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamarePrefix": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GranvilleRamarePrefix.lean",
+      "sha256": "cf50a78982eb32c59cac4a427cc1b11c91469e8c9665f570e47639fc7e17a668",
+      "line_count": 185,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamareProposition",
+        "Mathlib.Analysis.Complex.Norm"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamareProposition": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\GranvilleRamareProposition.lean",
+      "sha256": "f02bf1ce40100a6be302c295304dbfe9e7a8e07170b43fb09f3c60fa3a817703",
+      "line_count": 331,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamareLcmMain",
+        "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamarePairMass",
+        "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+        "Mathlib.Algebra.Order.Floor.Semifield",
+        "Mathlib.Data.Nat.Cast.Order.Field"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.HalfIntegerPerronKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\HalfIntegerPerronKernel.lean",
+      "sha256": "c8de7844c4588a9ac1d991b7210cb69fbfc3eca9e73712fa817c6fa33eaa4e0a",
+      "line_count": 195,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.TwoFrequencyPerronKernel"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ImprimitiveLFunctionTransport": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ImprimitiveLFunctionTransport.lean",
+      "sha256": "bb6aa052f4908b3408e7133318f28eb10cdc9edce2edb27e92beb2cbeec2fd70",
+      "line_count": 442,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProduct",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionNontrivialSelection"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ImprimitivePolyaVinogradovPrefix": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ImprimitivePolyaVinogradovPrefix.lean",
+      "sha256": "eb0f56dd867c82d7c6e2ad616a272bbfd642c89cf8f86e787e1bcd77189eceff",
+      "line_count": 357,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermPolyaVinogradov",
+        "Mathlib.NumberTheory.ArithmeticFunction.Moebius"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProduct": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\InducingEulerProduct.lean",
+      "sha256": "1b45f6071f4dea997329aaf5ecab8c7cf689db7c71ce054fe2b815a9bf16a990",
+      "line_count": 122,
+      "imports": [
+        "Mathlib.NumberTheory.LSeries.DirichletContinuation"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProductLocalDivisorMass": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\InducingEulerProductLocalDivisorMass.lean",
+      "sha256": "90e5dc743b5200ed167c1acd6ce92843a7d34667b0298618007cb90da784956d",
+      "line_count": 229,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProduct",
+        "Mathlib.Analysis.Complex.ExponentialBounds",
+        "Mathlib.Analysis.Complex.JensenFormula"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProductLocalDivisorSupport": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\InducingEulerProductLocalDivisorSupport.lean",
+      "sha256": "961811db2d5970c3d1ee55ae33269c88d91aa695cf932e78f18278ee7e5cd5b4",
+      "line_count": 46,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DivisorSupportCardinality",
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProductLocalDivisorMass"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProductZeroGeometry": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\InducingEulerProductZeroGeometry.lean",
+      "sha256": "0a71b0db4395bd1ec5ece83101fb05d833ac7d704b3f767108ffbd9008c7646f",
+      "line_count": 85,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProduct"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProductZeroOrdinates": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\InducingEulerProductZeroOrdinates.lean",
+      "sha256": "ac379a8453bffaf141d91d871db01094011c0cabce26c78e8ed3955f9e6bac01",
+      "line_count": 132,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProductLocalDivisorSupport",
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProductZeroGeometry"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.LargeConductorMassBound": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\LargeConductorMassBound.lean",
+      "sha256": "3792177e3161de90fdc785c671bb51cec49b4becd052183abdc5c49817e7f184",
+      "line_count": 253,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.AllModulusConductorSplit",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanConductorConclusion"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.LocalLogarithmicResidue": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\LocalLogarithmicResidue.lean",
+      "sha256": "ec6a0ccd9753a46000d6b724ea660c9db4abb7e648bfa11ec6311b9f2ead0114",
+      "line_count": 162,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLZeroDivisor",
+        "Mathlib.Analysis.Calculus.LogDeriv"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.LogarithmicConductorComposition": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\LogarithmicConductorComposition.lean",
+      "sha256": "60b670e1c57444d2e9198d803583aa8650241a8ef07883e40c827d190e3c341a",
+      "line_count": 111,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.LargeConductorMassBound",
+        "BoundedGaps.BombieriVinogradov.Analytic.SmallConductorMassBound"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.MaximalBilinearConclusion": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\MaximalBilinearConclusion.lean",
+      "sha256": "ec00b02d6c935215769504b733b72f77044d39e37e0e49a46fcb25cae96038cc",
+      "line_count": 141,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.MaximalBilinearLargeSieve"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.MaximalBilinearLargeSieve": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\MaximalBilinearLargeSieve.lean",
+      "sha256": "d5a9cd6d91e4fb5f65195671203162b38ad8c7359ce431e77224682f8683b6b8",
+      "line_count": 424,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.BilinearLargeSieve",
+        "BoundedGaps.BombieriVinogradov.Analytic.BilinearPerronAggregate",
+        "BoundedGaps.BombieriVinogradov.Analytic.PerronEnvelopeIntegral"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.MultiplicativeCharacterParseval": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\MultiplicativeCharacterParseval.lean",
+      "sha256": "3551e840459299bae6672cd136956de04eb580661ad51c14702067cdb6843ba8",
+      "line_count": 180,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveConductorFibers"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.NearOneLFunction": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\NearOneLFunction.lean",
+      "sha256": "4a4b0edb89104f98343d7953e20aee918cafa57ce4a1ccf3da930e6901968131",
+      "line_count": 399,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.NonprincipalLFunctionAbel",
+        "Mathlib.Analysis.Complex.ExponentialBounds",
+        "Mathlib.Analysis.Complex.Liouville",
+        "Mathlib.NumberTheory.DirichletCharacter.Orthogonality"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.NonprincipalExceptionalZero": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\NonprincipalExceptionalZero.lean",
+      "sha256": "5dd4ba440f52b6ea6a6dc480f5d327bff5a92b4861c74b59a34745489437fcb3",
+      "line_count": 159,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.SquareNonprincipalZeroFreeRegion",
+        "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalFixedCharacter",
+        "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalCharacterUniqueness"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.NonprincipalLFunctionAbel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\NonprincipalLFunctionAbel.lean",
+      "sha256": "f8cd6ec436c8efaa3a26bad9ac3686eae0b85c9985af4353f780fe4ee2668157",
+      "line_count": 206,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CharacterPartialSummation",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLFunctionAbelContinuation",
+        "Mathlib.NumberTheory.LSeries.SumCoeff"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PerronEnvelope": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PerronEnvelope.lean",
+      "sha256": "9b5f201bbbff90aad9ac0a2081af1b5a905f1695e2b1f8b72f2c03034c47c06f",
+      "line_count": 137,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.HalfIntegerPerronKernel"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PerronEnvelopeIntegral": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PerronEnvelopeIntegral.lean",
+      "sha256": "bb933538439a4bb2df7f5171162b08bc7d0c69b061dee57b3f769c64af6ca5df",
+      "line_count": 87,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PerronEnvelope",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PositiveDivisorPairReindex": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PositiveDivisorPairReindex.lean",
+      "sha256": "b8f3f48ab98cc19df44f7e0d6c4feb7233a9c549636bc2da86e53ffac76bb4f9",
+      "line_count": 234,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveConductorFibers",
+        "Mathlib.NumberTheory.Divisors"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimePowerCorrection": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimePowerCorrection.lean",
+      "sha256": "1a4073d49df40880d35ea53655d484437285f4263e526f6b2ee19e64cafc17a3",
+      "line_count": 71,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveCharacterReduction"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimePowerCorrectionBound": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimePowerCorrectionBound.lean",
+      "sha256": "dff836122652408210385b73c4207034ab0efc5de0a7a07881ff4ba3dbac1c31",
+      "line_count": 226,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimePowerCorrection",
+        "Mathlib.Analysis.SpecialFunctions.Log.Base",
+        "Mathlib.NumberTheory.DirichletCharacter.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveCharacterAdditiveReduction": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveCharacterAdditiveReduction.lean",
+      "sha256": "c57bda8c5a15514827b8456bab599b1c5dbf5c85710946731362845bf8f604f6",
+      "line_count": 141,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.MultiplicativeCharacterParseval",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveGaussSum"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveCharacterInterval": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveCharacterInterval.lean",
+      "sha256": "0007d92c9b5b6e18e842f889250678e9f665f49079d8a7c85fa01f75b5c09653",
+      "line_count": 201,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveGaussSum",
+        "BoundedGaps.BombieriVinogradov.Analytic.StandardAddCharInterval"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveCharacterReduction": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveCharacterReduction.lean",
+      "sha256": "50c4f1ea6b3170a39e8fa25bca43b66150e6629594c0012f952afc5119795114",
+      "line_count": 80,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CharacterOrthogonality",
+        "Mathlib.NumberTheory.DirichletCharacter.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveConductorFibers": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveConductorFibers.lean",
+      "sha256": "92a9fd036264b2e4ae370df3c39eb015f953c55583d249ba34a15d4a6a5ef16c",
+      "line_count": 163,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.NumberTheory.DirichletCharacter.Orthogonality"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveFunctionalEquation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveFunctionalEquation.lean",
+      "sha256": "4beb094a3fa61f9b43bb8511a6848652a44cb04071cbc380afa2b51683e790e6",
+      "line_count": 96,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveGaussSum",
+        "Mathlib.NumberTheory.LSeries.DirichletContinuation"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveGaussSum": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveGaussSum.lean",
+      "sha256": "09f07a75cf413c1b6f0633ea4c8d93e05e736a7469129656bb4ac9ef04771894",
+      "line_count": 154,
+      "imports": [
+        "Mathlib.Analysis.Fourier.ZMod",
+        "Mathlib.NumberTheory.DirichletCharacter.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionCentralStrip": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionCentralStrip.lean",
+      "sha256": "2621b629ba5bcc257b4a81cbae615bf9dd0e327863ca184622fdf5ac30d7663b",
+      "line_count": 192,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLFunctionAbelContinuation",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermPolyaVinogradov"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionFixedDisk": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionFixedDisk.lean",
+      "sha256": "c741be707e313bb15d989f5d4200039deb3c46862ca322f8d6341d6149972621",
+      "line_count": 143,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLZeroDivisor",
+        "BoundedGaps.BombieriVinogradov.Analytic.FixedDiskLogDerivative",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionCentralStrip",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionRadiusTwelve"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionFixedStrip": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionFixedStrip.lean",
+      "sha256": "5e1869b5de15fc8a8700e877308912a460ffc74b686c9836c11bed9494e8fa41",
+      "line_count": 199,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.FixedStripGammaRatio",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveFunctionalEquation",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionCentralStrip",
+        "Mathlib.NumberTheory.ZetaValues"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionHorizontalEdge": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionHorizontalEdge.lean",
+      "sha256": "5ad9df3039851360d36566aee3cf5159397caa6cb56a2ffe68fdbf1602b8851e",
+      "line_count": 273,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaHorizontalKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionHorizontalLogDerivative"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionHorizontalLogDerivative": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionHorizontalLogDerivative.lean",
+      "sha256": "eeb33a81e1a07cf7598c9a7d46c3a0e77f734faf88c07f41f1196e2c7e179536",
+      "line_count": 259,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLocalDivisorMass",
+        "BoundedGaps.BombieriVinogradov.Analytic.FiniteDivisorReciprocalBound",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionFixedDisk"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionLeftEdge": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionLeftEdge.lean",
+      "sha256": "46342ea2342ed28ecefe21c16d27b90dbf49a157340e9b88964d74f134cc782d",
+      "line_count": 323,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaLeftKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLocalDivisorMass",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPrimitiveShallowZeros",
+        "BoundedGaps.BombieriVinogradov.Analytic.FiniteDivisorReciprocalBound",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionFixedDisk"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionNontrivialSelection": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionNontrivialSelection.lean",
+      "sha256": "8379e67717abf279ed9236bc6ce331c51532667dad9585d9da108c21bb23e281",
+      "line_count": 196,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveFunctionalEquation",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionSelectedSubdivisor"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionRadiusTwelve": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionRadiusTwelve.lean",
+      "sha256": "f1fb5c59a4e609b450263cedf390e7de6c5395c907c7c11f46231905998213ef",
+      "line_count": 209,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.FarRightLFunctionCenter",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionCentralStrip",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionFixedStrip"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionSelectedSubdivisor": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionSelectedSubdivisor.lean",
+      "sha256": "76d364d03e1718979bdade59fc9562ac5db9036120ad9949b082bbb1e502a26b",
+      "line_count": 191,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionFixedDisk"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionZeroShell": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitiveLFunctionZeroShell.lean",
+      "sha256": "8f7d954b644ef0edb32d4eedeac09e19b7fc6dc74bb757286d40644c24e2ef57",
+      "line_count": 127,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroShell",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLocalDivisorMass",
+        "BoundedGaps.BombieriVinogradov.Analytic.FiniteDivisorSubmassBound",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveLFunctionFixedDisk"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrimitivePolyaVinogradov": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrimitivePolyaVinogradov.lean",
+      "sha256": "8c0d90e97ceb514c206b152c520550058e67a2e3c6ef01d50ecd9d28fbecf51c",
+      "line_count": 42,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveCharacterInterval",
+        "BoundedGaps.BombieriVinogradov.Analytic.ReciprocalSineAggregate"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrincipalLFunctionHeightPole": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrincipalLFunctionHeightPole.lean",
+      "sha256": "c8faa8dfac1a8cb9fe88f4e48ace53d09b769d29a2bafb02fa89b71423dccf22",
+      "line_count": 264,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaHeightPole"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrincipalLFunctionZeroTransport": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrincipalLFunctionZeroTransport.lean",
+      "sha256": "b07dee30f86614448f5c446a87831b81d11056cb2d1ad76d5b175e30c5c3e0bb",
+      "line_count": 86,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaZeroFree"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.PrincipalZetaPole": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\PrincipalZetaPole.lean",
+      "sha256": "da103102e2125e24c669d6eb6bbeb1a7aee837fa8c1d53f4acd200edef4c110f",
+      "line_count": 172,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.FarRightLogDerivative",
+        "Mathlib.NumberTheory.Harmonic.ZetaAsymp"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ProductRoughnessRelaxation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ProductRoughnessRelaxation.lean",
+      "sha256": "13b23128ac158cc533639aa7758500020db53d5f1b2653d8d80a340ee06f7e7b",
+      "line_count": 177,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedConductorReindex"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticLValueCutoff": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticLValueCutoff.lean",
+      "sha256": "8881a8f0027468cc97b2c8479e59c1ca8a1961b8cd19c708737514ac0bf4905a",
+      "line_count": 209,
+      "imports": [
+        "Mathlib.Algebra.Order.Floor.Semifield",
+        "Mathlib.Analysis.Complex.ExponentialBounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticLValueLowerBound": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticLValueLowerBound.lean",
+      "sha256": "b0f90d42e3d931fbc82d69b14467bcd419996a33c87b5bfdf9d80a102e0afa32",
+      "line_count": 133,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLFunctionConjugation",
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticLValueCutoff",
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaLFunctionComparison",
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaSquareScaleLower"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticRealZeroGap": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticRealZeroGap.lean",
+      "sha256": "4a6c97af8e67739d378b88f390dec3c4ca2dfef19a922d7855663036e8704da0",
+      "line_count": 159,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.NearOneLFunction",
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticLValueLowerBound",
+        "Mathlib.Analysis.Calculus.MeanValue",
+        "Mathlib.NumberTheory.LSeries.Nonvanishing"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaConvolutionSquare": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticZetaConvolutionSquare.lean",
+      "sha256": "a9df5d11b183b1d40825c7673ce5778af65f8bed98be617785a28dc98ca527c5",
+      "line_count": 52,
+      "imports": [
+        "Mathlib.NumberTheory.LSeries.Nonvanishing"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaDirectEulerRemainder": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticZetaDirectEulerRemainder.lean",
+      "sha256": "4c754c684a0be6ba2874899baca5c3af0ec1b829083634c50aca674602a2c19e",
+      "line_count": 196,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaEulerMaclaurin",
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaSmoothedSquareLower",
+        "BoundedGaps.BombieriVinogradov.Analytic.PositiveDivisorPairReindex",
+        "Mathlib.Algebra.Order.Floor.Semifield"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaEulerMaclaurin": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticZetaEulerMaclaurin.lean",
+      "sha256": "6a1333f461bd918c6fead168a77f428b51e057b1f7f051ed0ef44e5359b52915",
+      "line_count": 136,
+      "imports": [
+        "Mathlib.Algebra.Field.Periodic",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+        "Mathlib.MeasureTheory.Function.Floor",
+        "Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaLFunctionComparison": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticZetaLFunctionComparison.lean",
+      "sha256": "fdf909c77edd7241627d4edc650c8698ddf2d2d3d1768f1f79db5598796aba02",
+      "line_count": 75,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaSwappedEulerRemainder",
+        "BoundedGaps.BombieriVinogradov.Analytic.NonprincipalLFunctionAbel"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaSmoothedSquareLower": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticZetaSmoothedSquareLower.lean",
+      "sha256": "f12c662c226af99ba920f1b032efebe8990e03f7e177883121ace386ddf3ab84",
+      "line_count": 85,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaConvolutionSquare"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaSquareScaleLower": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticZetaSquareScaleLower.lean",
+      "sha256": "1e6d12cada927119631d453c4e8f9e0fb98e6b19d0580cc2d8c97c5735d64ca6",
+      "line_count": 130,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaSmoothedSquareLower"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaSwappedEulerRemainder": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\QuadraticZetaSwappedEulerRemainder.lean",
+      "sha256": "1d9019927193805aaf0242364e781b2c9450227c215dfd2078cb683318d73407",
+      "line_count": 427,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticZetaDirectEulerRemainder",
+        "BoundedGaps.BombieriVinogradov.Analytic.CharacterPartialSummation",
+        "Mathlib.Algebra.Order.Floor.Semifield",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RawPrimitiveAbelSummation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RawPrimitiveAbelSummation.lean",
+      "sha256": "788cf872a4fd740754e1337cb01d0b0eaa4d8235cc80f8a689b11d50621ebd3d",
+      "line_count": 130,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RawPrimitiveMeanNormalization",
+        "Mathlib.NumberTheory.AbelSummation"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RawPrimitiveMaxima": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RawPrimitiveMaxima.lean",
+      "sha256": "19e0e907a2ff96a38c1badfd14677a4e1b59a05a158a3184c41a26cba960fc93",
+      "line_count": 142,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.SquareRootLogRange"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RawPrimitiveMeanNormalization": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RawPrimitiveMeanNormalization.lean",
+      "sha256": "b4a82bab5749f52197b6f66970e005e02cd8e2963932acdfc2db2a5af007416e",
+      "line_count": 158,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RawPrimitiveMaxima",
+        "Mathlib.Algebra.Order.Floor.Semiring"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ReciprocalSineAggregate": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ReciprocalSineAggregate.lean",
+      "sha256": "2e87503d69131c088fa56b07d550e8e5362348fe0e09e52e62d2a8311eaf133e",
+      "line_count": 258,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds",
+        "Mathlib.NumberTheory.Harmonic.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ReciprocalTotientComparison": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ReciprocalTotientComparison.lean",
+      "sha256": "ff6f139531c3a5464b67c1a7b67cb6be84cd1963e2b54954bd49f0525b8a0697",
+      "line_count": 98,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ProductRoughnessRelaxation"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ReciprocalTotientPrefix": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ReciprocalTotientPrefix.lean",
+      "sha256": "4a4078872c32cd08601d8093f111fe56eec5ae738010d412332b3ae8839691bc",
+      "line_count": 71,
+      "imports": [
+        "BoundedGaps.Arithmetic.ReciprocalTotientPrefix",
+        "BoundedGaps.BombieriVinogradov.Analytic.ReciprocalTotientComparison"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RectangleFinitePrincipalPartSum": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RectangleFinitePrincipalPartSum.lean",
+      "sha256": "f943835809a875663792b4fb5265e23a0a18323948785716d855288052e8ec42",
+      "line_count": 117,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RectangleReciprocalWedgeIntegral"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RectangleReciprocalWedgeIntegral": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RectangleReciprocalWedgeIntegral.lean",
+      "sha256": "c1d10524f71e449463c85b57fc48dda8d375e62f1a30708363e38af34202c2b2",
+      "line_count": 228,
+      "imports": [
+        "Mathlib.Analysis.Complex.HasPrimitives",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ReducedFractionFrequencies": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ReducedFractionFrequencies.lean",
+      "sha256": "e9e80d24659c5abe1cc48237e1ce69bb7fa4e85cfa51817b4d0e08e6585ee475",
+      "line_count": 165,
+      "imports": [
+        "Mathlib.Analysis.Normed.Group.AddCircle",
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+        "Mathlib.Data.ZMod.Units"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RegularizedLFunctionProduct": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RegularizedLFunctionProduct.lean",
+      "sha256": "6e08f264f7b82c566a26a6d2b182cc9a9b49328d9ba41d208cd260b1a43802e0",
+      "line_count": 102,
+      "imports": [
+        "Mathlib.NumberTheory.DirichletCharacter.Orthogonality",
+        "Mathlib.NumberTheory.LSeries.Nonvanishing"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RegularizedProductExceptionalZero": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RegularizedProductExceptionalZero.lean",
+      "sha256": "d0eec46224b708c08114daec7a3c0b5cb1d3557b1f5c07cb288fbf18ac7777b5",
+      "line_count": 292,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.NonprincipalExceptionalZero",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrincipalLFunctionZeroTransport",
+        "BoundedGaps.BombieriVinogradov.Analytic.RegularizedLFunctionProduct"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaAbel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaAbel.lean",
+      "sha256": "aaa660b2e21cfd0cf29d187db998f66ec0bec3426f0b8b4a087e7d8fc9264ebc",
+      "line_count": 313,
+      "imports": [
+        "Mathlib.Analysis.Analytic.Uniqueness",
+        "Mathlib.Analysis.Convex.PathConnected",
+        "Mathlib.Analysis.MellinTransform",
+        "Mathlib.MeasureTheory.Function.Floor",
+        "Mathlib.NumberTheory.Harmonic.ZetaAsymp",
+        "Mathlib.NumberTheory.LSeries.SumCoeff"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaClosedStripGrowth": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaClosedStripGrowth.lean",
+      "sha256": "597b8e0d1087b1f40e0974f225c0f95a505ff907b72063e0dde3df56372c19da",
+      "line_count": 73,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusFour",
+        "Mathlib.Analysis.Complex.AbsMax"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaFixedDisk": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaFixedDisk.lean",
+      "sha256": "d314110f795956d763027e9a74ab8327912337b1034950b2df62d45812191668",
+      "line_count": 157,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.FixedDiskLogDerivative",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusTwelve"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaHeightPole": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaHeightPole.lean",
+      "sha256": "6a684720c3d9ea75355fd881e69a3884fad8be2a4bff29c63d2d70047e6eef8f",
+      "line_count": 265,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLZeroDivisor",
+        "BoundedGaps.BombieriVinogradov.Analytic.FixedDiskLogDerivative",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusFour"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaHorizontalEdge": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaHorizontalEdge.lean",
+      "sha256": "71bc12fd4e4da264d45ec5c7e8e3a095c9f4c54fa9c17992ff1a62d4da8327c6",
+      "line_count": 264,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaHorizontalKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrincipalCircleIntegral",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaHorizontalLogDerivative"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaHorizontalLogDerivative": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaHorizontalLogDerivative.lean",
+      "sha256": "82c42fa4d4c6fad1b7954ae8b910cb5f7294ba7e1d07874d455a69c8ccc63d7b",
+      "line_count": 275,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusSixDivisorMass",
+        "BoundedGaps.BombieriVinogradov.Analytic.FiniteDivisorReciprocalBound"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaLeftEdge": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaLeftEdge.lean",
+      "sha256": "21776266a0c37333c05d06d2c56f040067c4d0c3e6d79de0714055c3452b9bf6",
+      "line_count": 333,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaLeftKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaPrincipalCircleIntegral",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletPrimitiveShallowZeros",
+        "BoundedGaps.BombieriVinogradov.Analytic.FiniteDivisorReciprocalBound",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusSixDivisorMass"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusFour": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaRadiusFour.lean",
+      "sha256": "200696edc21b0f4140f2dc217ac441aa2466a698b4edda4b28ed85ae4270222a",
+      "line_count": 372,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.FarRightLFunctionCenter",
+        "BoundedGaps.BombieriVinogradov.Analytic.FixedStripGammaRatio",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaAbel",
+        "Mathlib.NumberTheory.LSeries.Nonvanishing"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusSixDivisorMass": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaRadiusSixDivisorMass.lean",
+      "sha256": "daf743f8f540fb1e97447225a3e6116ca252de6d547f07dc629572bee3952340",
+      "line_count": 125,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaFixedDisk",
+        "Mathlib.Analysis.Complex.ExponentialBounds",
+        "Mathlib.Analysis.Complex.JensenFormula"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusTwelve": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaRadiusTwelve.lean",
+      "sha256": "0ca0f0bcb8e001e33f738904aca878c18a3e83122f4b3fb7d76683b8d4f0a02c",
+      "line_count": 280,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusFour"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaSelectedSubdivisor": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaSelectedSubdivisor.lean",
+      "sha256": "f757738e8b0c34fa2017687e7318c67568e73f25750a36c775c986d7031ab08d",
+      "line_count": 194,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaHeightPole"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaZeroFree": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaZeroFree.lean",
+      "sha256": "c8106c4943df9741b21a2f2e352bd3b28ba7dddb291d29a6a85389901cbd49f5",
+      "line_count": 420,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaSelectedSubdivisor",
+        "BoundedGaps.BombieriVinogradov.Analytic.ThreeFourOne",
+        "BoundedGaps.BombieriVinogradov.Analytic.ZeroFreeRegionArithmetic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaZeroShell": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\RiemannZetaZeroShell.lean",
+      "sha256": "42933e05ee2371dd0fa8a76244750152a902485affc5a5b05d5833f5f52a86b4",
+      "line_count": 164,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaZeroShell",
+        "BoundedGaps.BombieriVinogradov.Analytic.FiniteDivisorSubmassBound",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaFixedDisk",
+        "BoundedGaps.BombieriVinogradov.Analytic.RiemannZetaRadiusSixDivisorMass"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SiegelExceptionalZeroKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SiegelExceptionalZeroKernel.lean",
+      "sha256": "66cb8a2be105d6e1bfe3ab330aba17180c1c3ba5158df3a2735fec4babe38840",
+      "line_count": 94,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExceptionalZeroKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.SiegelZeroFreeRegion"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SiegelWalfisz": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SiegelWalfisz.lean",
+      "sha256": "d9617d429ea8f3025b19c98eb5d5fa124e59d08ed96c23d3862989eb6694278e",
+      "line_count": 151,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormula",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletNonexceptionalZeroSum",
+        "BoundedGaps.BombieriVinogradov.Analytic.SiegelExceptionalZeroKernel",
+        "BoundedGaps.BombieriVinogradov.Analytic.SiegelWalfiszScale"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SiegelWalfiszEndpointMaximum": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SiegelWalfiszEndpointMaximum.lean",
+      "sha256": "1b7ac262c7d1635c437d183201d973bdb5338c7ff9c30af183f4c062702be3c5",
+      "line_count": 229,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.SiegelWalfisz",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFiveTermEndpoint"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SiegelWalfiszScale": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SiegelWalfiszScale.lean",
+      "sha256": "071f088224a2af0954437d4dff93098d7855679e2abd04cf6d640af977de25d0",
+      "line_count": 354,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormulaShallowCorrection",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SiegelZeroFreeRegion": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SiegelZeroFreeRegion.lean",
+      "sha256": "5afd1cb7f76086e5e6fce43cfc92379cb56ef794bc2406566d7f5bf6efd470a5",
+      "line_count": 197,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GoldfeldExceptionalCharacter",
+        "BoundedGaps.BombieriVinogradov.Analytic.InducingEulerProduct",
+        "BoundedGaps.BombieriVinogradov.Analytic.QuadraticRealZeroGap"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SmallConductorMassBound": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SmallConductorMassBound.lean",
+      "sha256": "065a89a5119e0a7725ca0f336aebcb30caafe70759308769559df8065e3fb841",
+      "line_count": 192,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.AllModulusConductorSplit",
+        "BoundedGaps.BombieriVinogradov.Analytic.ReciprocalTotientPrefix",
+        "BoundedGaps.BombieriVinogradov.Analytic.SiegelWalfiszEndpointMaximum"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SmallTermLogSaving": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SmallTermLogSaving.lean",
+      "sha256": "fb1d0c3d83cbdca266d49a34a836701909aec6dfe8cdbb8ff9fdb3feb323781c",
+      "line_count": 271,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanAbelLogSavingCoefficient"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SquareNonprincipalZeroFreeRegion": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SquareNonprincipalZeroFreeRegion.lean",
+      "sha256": "4da194abf1e9990a924cc1355d1748b25b08ffcef4da6b16725ac743812ebea5",
+      "line_count": 276,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ThreeFourOne",
+        "BoundedGaps.BombieriVinogradov.Analytic.ImprimitiveLFunctionTransport",
+        "BoundedGaps.BombieriVinogradov.Analytic.ZeroFreeRegionArithmetic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalCharacterUniqueness": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SquarePrincipalCharacterUniqueness.lean",
+      "sha256": "3bc6fdbfa554ccdf7ebbb00c79b1ccb446317b8ea414390e21218b76e09701da",
+      "line_count": 371,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CrossCharacterPositivity",
+        "BoundedGaps.BombieriVinogradov.Analytic.ImprimitiveLFunctionTransport",
+        "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalRealSimple",
+        "BoundedGaps.BombieriVinogradov.Analytic.ZeroFreeRegionArithmetic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalFixedCharacter": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SquarePrincipalFixedCharacter.lean",
+      "sha256": "7c8ff9b14339ae0c1c0fb8e557bfeaa40f32897f7e32e94252b57394c19ec296",
+      "line_count": 85,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalRealSimple",
+        "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalRealUniqueness"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalNonreal": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SquarePrincipalNonreal.lean",
+      "sha256": "94e56cd64edf00b9774407932da676a6c286f8fbd63d6aee052979b1c35c3946",
+      "line_count": 495,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ThreeFourOne",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletLFunctionConjugation",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrincipalLFunctionHeightPole",
+        "BoundedGaps.BombieriVinogradov.Analytic.ZeroFreeRegionArithmetic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalRealMultiplicity": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SquarePrincipalRealMultiplicity.lean",
+      "sha256": "9ce8d3e6843066e9f896d4663d5629bf96b9729f68a57eb90cf3a7dbd4785a4c",
+      "line_count": 296,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ThreeFourOne",
+        "BoundedGaps.BombieriVinogradov.Analytic.ImprimitiveLFunctionTransport",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrincipalLFunctionHeightPole",
+        "BoundedGaps.BombieriVinogradov.Analytic.ZeroFreeRegionArithmetic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalRealSimple": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SquarePrincipalRealSimple.lean",
+      "sha256": "782f67a4613e9330d6ce4f5828b071664fd2c9607c9332910a086588f2e2a383",
+      "line_count": 77,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalNonreal",
+        "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalRealMultiplicity"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SquarePrincipalRealUniqueness": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SquarePrincipalRealUniqueness.lean",
+      "sha256": "87e424f46a69ea3a5d79d2989bd7149fe9172bf98538c3d984ac58eac4290a98",
+      "line_count": 307,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ThreeFourOne",
+        "BoundedGaps.BombieriVinogradov.Analytic.ImprimitiveLFunctionTransport",
+        "BoundedGaps.BombieriVinogradov.Analytic.PrincipalLFunctionHeightPole",
+        "BoundedGaps.BombieriVinogradov.Analytic.ZeroFreeRegionArithmetic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.SquareRootLogRange": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\SquareRootLogRange.lean",
+      "sha256": "958dcd10271b77ddac5d2a71fafd69366f2dd796d54bcb787c10e2ed1844f080",
+      "line_count": 152,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ReciprocalTotientPrefix",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.StandardAddCharInterval": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\StandardAddCharInterval.lean",
+      "sha256": "cb39a9dd866439e066d29b14a635ec4fe45992ccbfc3dad848a46f9dbbf6a98a",
+      "line_count": 133,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.StandardCompatibility": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\StandardCompatibility.lean",
+      "sha256": "d73229a2bcb766640488932174aa21c510d9ba585ee3e6648aefaebacdf54169",
+      "line_count": 56,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.StandardStatement",
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedStatement"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ThreeFourOne": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ThreeFourOne.lean",
+      "sha256": "790975b22220e2e0ba2878da7508d5ceb86c0a2d8eb2405d0bf5e10af5f9182e",
+      "line_count": 246,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrincipalZetaPole"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.TwoFrequencyPerronKernel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\TwoFrequencyPerronKernel.lean",
+      "sha256": "998186ee52021c873fff4bd3d25ef235b0f79bb7f5b9452dd8b36cf1fafdf3b7",
+      "line_count": 275,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletSineRemainder"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanAbelLogSaving": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanAbelLogSaving.lean",
+      "sha256": "e025f1e98cfc62876e2540d1e1ca90ef4c8f0de635be9306f788336b685048fc",
+      "line_count": 479,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.ElementaryCorrectionAbsorption",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanAbelLogSavingCoefficient": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanAbelLogSavingCoefficient.lean",
+      "sha256": "e4294ce99272bf6d53b7b93f08aec103c37b45c9534bcb288adc57e86308193f",
+      "line_count": 60,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanAbelLogSaving"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanConvolutionIdentity": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanConvolutionIdentity.lean",
+      "sha256": "4282462235eb3a1365d5a9ebd9881a63546d253a4491b8821da2008fa2c62b14",
+      "line_count": 131,
+      "imports": [
+        "Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFirstTermBound": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFirstTermBound.lean",
+      "sha256": "be960b269a12431ccfcebc2405601e55a4edb9f08a8300a2621e4f02c781ac79",
+      "line_count": 159,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitiveConductorFibers",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanTwistedDecomposition",
+        "Mathlib.NumberTheory.DirichletCharacter.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFiveTermEndpoint": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFiveTermEndpoint.lean",
+      "sha256": "02c6d9e360b461060e64642129b1bd359f922eb10f835b38eb24126660d145d8",
+      "line_count": 190,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RawPrimitiveMaxima",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermAggregate",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermSmallAggregate",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermLargeEnergy",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermEnergy"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthCoefficient": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFourthCoefficient.lean",
+      "sha256": "9db312772846102d8ab1a100fd6df2c8ebdcaab222fe5aeeae1101225f71e784",
+      "line_count": 22,
+      "imports": [
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.NumberTheory.ArithmeticFunction.Moebius"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermConclusion": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFourthTermConclusion.lean",
+      "sha256": "2cf88fafe0a6e25d9662d7226024b476d86c16070945226bd693116bec1579d0",
+      "line_count": 320,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.GranvilleRamarePrefix",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermEnergy",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermMangoldtEnergy"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermDyadic": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFourthTermDyadic.lean",
+      "sha256": "433141f827f0fff4834da16db597fa89ae870252b9a7c49da6c55d30442af07b",
+      "line_count": 259,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.BilinearProductCutoffMaximum",
+        "BoundedGaps.BombieriVinogradov.Analytic.Dyadic",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermReindex"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermEnergy": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFourthTermEnergy.lean",
+      "sha256": "83020cb39a9c528da8e0120de6a3ea4b496e0f5a5789e22f9010a1e0f0047a37",
+      "line_count": 279,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.MaximalBilinearConclusion",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermDyadic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermEquation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFourthTermEquation.lean",
+      "sha256": "d1fc3ac1b63c6ccc7a56c76f7c2f0ca68313b684b0ef71c5b507d5e8741727b2",
+      "line_count": 284,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermConclusion",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermScales"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermMangoldtEnergy": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFourthTermMangoldtEnergy.lean",
+      "sha256": "cc8430dca45628c9704420ef576932f4628db7be51f39b2aab955d64c0292d47",
+      "line_count": 152,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermDyadic",
+        "Mathlib.NumberTheory.Chebyshev"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermReindex": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFourthTermReindex.lean",
+      "sha256": "462a05d25f54a8a2953f2b6e572169b8cbe45782abc23e961cee20fd1205b120",
+      "line_count": 142,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PositiveDivisorPairReindex",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthCoefficient",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanTwistedDecomposition"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermScales": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanFourthTermScales.lean",
+      "sha256": "221c4cd7d17e0d21cca4acf5000182c3524f548417269f8771353416e10e3b53",
+      "line_count": 80,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermDyadic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanAbelEstimate": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanAbelEstimate.lean",
+      "sha256": "7650eaa99cad2f62e90d71243ff0f6599b1a0dbbfb8a73fa0f646713c135de45",
+      "line_count": 278,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanAbelIntegrals",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanEquationOneOne",
+        "Mathlib.MeasureTheory.Function.Floor"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanAbelIntegrals": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanAbelIntegrals.lean",
+      "sha256": "9fa9725ff206930dba0cbb4c2b668025754d02ced4e74aee3974edb7d76af0e6",
+      "line_count": 225,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanPowers",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanAlgebra": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanAlgebra.lean",
+      "sha256": "03d2f40d709c00af635269d3f27d1208604f8d916623a23662480f08261befbe",
+      "line_count": 278,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanFactorization"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanAssembly": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanAssembly.lean",
+      "sha256": "1db8cf9a01f525a648b22b63126caddfae46043b317c79941ec9ec60dc80273f",
+      "line_count": 286,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.RawPrimitiveAbelSummation",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFiveTermEndpoint",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFourthTermEquation",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermLargeEquation"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanConductorConclusion": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanConductorConclusion.lean",
+      "sha256": "9b3cfa73a8dbea4b3bc9f106bf97ad0f61cdc1f8f0c903e046a35c794356b6cc",
+      "line_count": 120,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanAbelEstimate"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanEquationOneOne": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanEquationOneOne.lean",
+      "sha256": "33338b7ea4049ab6dc402f19e537db14431c678d10926d955a4aaf1fabe7dab1",
+      "line_count": 217,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanOptimization"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanFactorization": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanFactorization.lean",
+      "sha256": "7252d3dedfb9e15173e0ec9b9f5e5f80391d4e9080d65acfc2b099c799b7f223",
+      "line_count": 289,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanPowers",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanAssembly"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanLogOptimization": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanLogOptimization.lean",
+      "sha256": "c6e14b71ca26a1a6abcb3971a49fad9b71979d143814152c742eee3628622b16",
+      "line_count": 429,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanFactorization"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanOptimization": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanOptimization.lean",
+      "sha256": "c1919935bd10dc5f1ee43d75037962ab3658afe275720d60e53883a555a4c936",
+      "line_count": 133,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanAlgebra",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanLogOptimization"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanPowers": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanPowers.lean",
+      "sha256": "7867ca4bd0149bdf406696702f431dbaf9a34f92542c6323f68365eda81655d8",
+      "line_count": 205,
+      "imports": [
+        "Mathlib.Analysis.Complex.ExponentialBounds",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanProgressionConclusion": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanPrimitiveMeanProgressionConclusion.lean",
+      "sha256": "dab129bd0e04b19638a9a68e53c3ab3e243618225a90c6a69f2e2fb8bcc9a1af",
+      "line_count": 237,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredProgressionCorrection",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanPrimitiveMeanConductorConclusion"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermAggregate": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanSecondTermAggregate.lean",
+      "sha256": "925a89b3c1c150e4f8d45f291dbd42d0b7840a6d393c3eb28aa26b1fb146f123",
+      "line_count": 239,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermTrivial",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermPolyaVinogradov",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFirstTermBound"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermPolyaVinogradov": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanSecondTermPolyaVinogradov.lean",
+      "sha256": "be2e0c02085c4da241aacddca9cf76efdbc58d570d71d0d91fc496d33ddecfed",
+      "line_count": 131,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PrimitivePolyaVinogradov",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermReduction"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermReduction": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanSecondTermReduction.lean",
+      "sha256": "905a0b9526b2460bb2b234e4e3f3318261fa132aa2ba7fbe44ca62e68d857db4",
+      "line_count": 288,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermReindex",
+        "Mathlib.NumberTheory.DirichletCharacter.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermReindex": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanSecondTermReindex.lean",
+      "sha256": "2399933e25eed1bbb538dc34241c3c6875f5d35043e956cf0b5fd4032668324c",
+      "line_count": 177,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanTwistedDecomposition"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermTrivial": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanSecondTermTrivial.lean",
+      "sha256": "299690aa6ca652d08a0cb951a6ad9a7efd21fc9bfb0038040ad49bc171a5d9cf",
+      "line_count": 169,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermReduction",
+        "Mathlib.NumberTheory.Harmonic.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanSourceReindex": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanSourceReindex.lean",
+      "sha256": "28a15d32e608bfd520773450f4d250a7427a671468bab378c77beda8147d532d",
+      "line_count": 126,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanConvolutionIdentity"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdCoefficient": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanThirdCoefficient.lean",
+      "sha256": "dec7c1ebba83804f01508267907ab1e76975b0bf8906158ba3d102c06743cd65",
+      "line_count": 95,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanTwistedDecomposition",
+        "Mathlib.NumberTheory.DirichletCharacter.Bounds"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermLargeConclusion": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanThirdTermLargeConclusion.lean",
+      "sha256": "9ea43a0e9399f38d19150894b57f0b0280853855aee17c62dd2b3b21f1ca4382",
+      "line_count": 259,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermLargeEnergy"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermLargeDyadic": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanThirdTermLargeDyadic.lean",
+      "sha256": "8f637bff86d774a3c68269eecf8ac4cb8ed42cf8a8b8905e5ecb3a88c6fc9d59",
+      "line_count": 252,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.BilinearProductCutoffMaximum",
+        "BoundedGaps.BombieriVinogradov.Analytic.Dyadic",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermReindex"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermLargeEnergy": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanThirdTermLargeEnergy.lean",
+      "sha256": "f0ea6895bc278e38a3c7f2637486b78a9e9eeec433f0a324501fa009c6bcade8",
+      "line_count": 346,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.MaximalBilinearConclusion",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermLargeDyadic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermLargeEquation": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanThirdTermLargeEquation.lean",
+      "sha256": "583c7d20c40c2915d11b712839c5e38e79daf357c75d586c5c4f393d0d02e18a",
+      "line_count": 407,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermLargeConclusion"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermReindex": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanThirdTermReindex.lean",
+      "sha256": "574d69635bed399e13c22d5c2b75f2bc358236da8c9273cb6bb8bb4ed7240630",
+      "line_count": 224,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.PositiveDivisorPairReindex",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermReduction",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdCoefficient"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermSmall": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanThirdTermSmall.lean",
+      "sha256": "b501805cf1e37467cb1d7d7b19a93447f23e6ecc99792c08895f0a5cada905cc",
+      "line_count": 217,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermPolyaVinogradov",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSecondTermTrivial",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermReindex"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermSmallAggregate": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanThirdTermSmallAggregate.lean",
+      "sha256": "14f3862aec7a67f2b079aa477956a57724c8c68e5335685f5b3ab68d2c01456e",
+      "line_count": 234,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanFirstTermBound",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanThirdTermSmall"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.VaughanTwistedDecomposition": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\VaughanTwistedDecomposition.lean",
+      "sha256": "5f4842c1d40a3e6b2c8f248e1844204d815f627c7756ca5f8200a59725cd9c7a",
+      "line_count": 127,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CharacterOrthogonality",
+        "BoundedGaps.BombieriVinogradov.Analytic.VaughanSourceReindex"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.WeightedCenterBridge": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\WeightedCenterBridge.lean",
+      "sha256": "8ad69b97cd964c44fc19775592c1c469f7da65d267fbe79b3037dcfbcadb7340",
+      "line_count": 318,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.StandardCompatibility",
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredProgressionCorrection",
+        "BoundedGaps.Arithmetic.ReciprocalTotientPrefix",
+        "BoundedGaps.BombieriVinogradov.Analytic.SquareRootLogRange"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.WeightedConductorReindex": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\WeightedConductorReindex.lean",
+      "sha256": "c8676f76198f924a1f164a583e1e56cfa72c90779aefe9e7abc9bc5438f85e53",
+      "line_count": 136,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredPrimitiveMaxima",
+        "BoundedGaps.BombieriVinogradov.Analytic.PositiveDivisorPairReindex"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.WeightedCutoff": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\WeightedCutoff.lean",
+      "sha256": "cb628004441d565c73e153ec804776b7745da78048bb323eb37e0cd57299d91d",
+      "line_count": 82,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Statement",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Order.Filter.AtTopBot.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.WeightedPntPrefix": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\WeightedPntPrefix.lean",
+      "sha256": "ca3d01cee284a305b649ff95c3012b8d1d3b3060d95b7eb587fe0768348e9663",
+      "line_count": 285,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.StandardStatement",
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedCenterBridge",
+        "BoundedGaps.PrimeNumberTheorem.Analytic.StrongChebyshev",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Data.Finset.Lattice.Fold",
+        "Mathlib.Order.Filter.AtTopBot.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.WeightedPrimeLevel": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\WeightedPrimeLevel.lean",
+      "sha256": "a3875e572425dc42e6fa7969ff3a07cae3b29a7ab5a2d3d229378646c4d519bc",
+      "line_count": 230,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.StandardCompatibility",
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedCenterBridge",
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredPrimeCountingComposition",
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedPrimePower",
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedCutoff",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.WeightedPrimePower": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\WeightedPrimePower.lean",
+      "sha256": "b8be5c2ee787e6c3229fd5147f177e80af7414aec8ec9adc57aec9869dda430c",
+      "line_count": 62,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.NumberTheory.Chebyshev"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.WeightedStatement": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\WeightedStatement.lean",
+      "sha256": "60419dea6b170ae765e53c66ff683ea95eaed2d545c105c3fc4a2fd987362e03",
+      "line_count": 92,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Statement",
+        "Mathlib.Data.Finset.Lattice.Fold",
+        "Mathlib.NumberTheory.Chebyshev"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Analytic.ZeroFreeRegionArithmetic": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Analytic\\ZeroFreeRegionArithmetic.lean",
+      "sha256": "d97d7210dcfa5ae6fa1023ab1ee5292ffda57e2b7f0454b5479dba50d2cb2c60",
+      "line_count": 99,
+      "imports": [
+        "Mathlib.NumberTheory.LSeries.Nonvanishing"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Proof.MainTheorem": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Proof\\MainTheorem.lean",
+      "sha256": "a58dd0df398be7decbe00c0419e0abda7c145bdeed78646c42999dc2352c05b3",
+      "line_count": 17,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Proof.WeightedComposition"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Proof.StandardToNatural": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Proof\\StandardToNatural.lean",
+      "sha256": "2dbdfb587b04e037ac434eeab784290eaa29067eb42ef876ca142de262fdf3b7",
+      "line_count": 21,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedPrimeLevel"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Proof.WeightedComposition": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Proof\\WeightedComposition.lean",
+      "sha256": "625a437b321b2121225d2739f8f85cdeea12b642df586aa3556e207158583d6e",
+      "line_count": 21,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Proof.WeightedMainTheorem",
+        "BoundedGaps.BombieriVinogradov.Proof.StandardToNatural"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Proof.WeightedMainTheorem": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Proof\\WeightedMainTheorem.lean",
+      "sha256": "2836e3a946bf982aa881d8d44164dcd3215752da4852dd473cf308841768bdea",
+      "line_count": 170,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.BelowCutoffLogSaving",
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedCenterBridge",
+        "BoundedGaps.BombieriVinogradov.Analytic.WeightedPntPrefix"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.StandardStatement": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\StandardStatement.lean",
+      "sha256": "7d50fee3ebe6003eec7f849168cd34a9392341942e8f186b99d97bf549552220",
+      "line_count": 76,
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Data.Finset.Interval",
+        "Mathlib.Data.Finset.Lattice.Fold",
+        "Mathlib.NumberTheory.Chebyshev"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.BombieriVinogradov.Statement": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\BombieriVinogradov\\Statement.lean",
+      "sha256": "8db6e46810187bc8794f823d3ab8078f7496a60693df02d7520464bcd7035ba3",
+      "line_count": 80,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Data.Finset.Card",
+        "Mathlib.Data.Finset.Interval",
+        "Mathlib.NumberTheory.PrimeCounting"
+      ],
+      "flags": []
+    },
+    "BoundedGaps.PrimeNumberTheorem.Analytic.StrongChebyshev": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\.lake\\packages\\BoundedGaps\\BoundedGaps\\BoundedGaps\\PrimeNumberTheorem\\Analytic\\StrongChebyshev.lean",
+      "sha256": "3a9269201b5685a1bb934c6542a99cbc8103353b94516bd125cebe87aee04ccc",
+      "line_count": 180,
+      "imports": [
+        "BoundedGaps.BombieriVinogradov.Analytic.CenteredCharacterReduction",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletExplicitFormula",
+        "BoundedGaps.BombieriVinogradov.Analytic.DirichletNonexceptionalZeroSum",
+        "BoundedGaps.BombieriVinogradov.Analytic.SiegelWalfiszScale"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos13.Erdos13Kneser": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos13\\Erdos13Kneser.lean",
+      "sha256": "616b82e8e85bb83216876dd358998ee294fce6942bc7cf3e30e82bbf6d309ce3",
+      "line_count": 537,
+      "imports": [
+        "Mathlib.Algebra.Ring.Divisibility.Basic",
+        "Mathlib.Tactic.Abel",
+        "Mathlib.Tactic.Linarith",
+        "ErdosProblems.Erdos13.Erdos13MulStab"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos13.Erdos13MulStab": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos13\\Erdos13MulStab.lean",
+      "sha256": "9f57d1e93cee87a828af61d79ad383ed7a3e7e52f34ccb862f8003b4ce027c61",
+      "line_count": 417,
+      "imports": [
+        "Mathlib.Algebra.Pointwise.Stabilizer",
+        "Mathlib.GroupTheory.Coset.Card",
+        "Mathlib.GroupTheory.GroupAction.Blocks",
+        "Mathlib.GroupTheory.GroupAction.Quotient"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos285.PrimePowers": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos285\\PrimePowers.lean",
+      "sha256": "c4c084d894658dfebe70678733ddd37019de1dd4c1ff5a3dc9154e7dcdf660fc",
+      "line_count": 253,
+      "imports": [
+        "Mathlib",
+        "UnitFractions.AuxiliaryLemmas",
+        "UnitFractions.Fourier"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos285.RoughCounts": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos285\\RoughCounts.lean",
+      "sha256": "52bad7f50933ee51fb33cd805a8232da7a6294c66be0e31f3419c553d1499c61",
+      "line_count": 1289,
+      "imports": [
+        "ErdosProblems.Erdos285.PrimePowers",
+        "UnitFractions.Fourier"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos38": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos38.lean",
+      "sha256": "bb9ab7a428c388a8bb2a5e7ceb0d97516eb902ea693c7614e3d603a128088c33",
+      "line_count": 2439,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos387.AnalyticInputs": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos387\\AnalyticInputs.lean",
+      "sha256": "11c45002deb5dc27653f3a9afcfe7949d9e37907be823db5e01305c93d3023ae",
+      "line_count": 683,
+      "imports": [
+        "PrimeNumberTheoremAnd.Consequences"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos387.CoverAlgebra": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos387\\CoverAlgebra.lean",
+      "sha256": "a004815cfd49428dc7a721895b5f0351f862d7ed12c8a1292b10162e25d611c7",
+      "line_count": 299,
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Algebra.BigOperators.Intervals",
+        "Mathlib.Algebra.GCDMonoid.Nat",
+        "Mathlib.Data.Finset.Card",
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Data.Nat.Basic",
+        "Mathlib.Data.Nat.ChineseRemainder",
+        "Mathlib.Data.Nat.Choose.Basic",
+        "Mathlib.Data.Nat.Factorial.Basic",
+        "Mathlib.Data.Nat.Factorial.BigOperators",
+        "Mathlib.Data.Nat.Factorization.Basic",
+        "Mathlib.Data.Nat.Prime.Basic",
+        "Mathlib.Data.Nat.Prime.Factorial",
+        "Mathlib.Order.Interval.Finset.Basic",
+        "Mathlib.Order.Interval.Finset.Nat"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos387.LocalDensity": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos387\\LocalDensity.lean",
+      "sha256": "72335280bf3cc07875bd95015ae54f5962d42c4b2a821e7d352f4eb098f37f39",
+      "line_count": 458,
+      "imports": [
+        "ErdosProblems.Erdos387.CoverAlgebra",
+        "Mathlib.Data.Int.CardIntervalMod",
+        "Mathlib.Data.Nat.Squarefree",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos387.UniformAnalyticInputs": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos387\\UniformAnalyticInputs.lean",
+      "sha256": "4543d689c3aceb8b1ddbcf90c7a8ba6b559a50b97c508e194a9086113bf0f03c",
+      "line_count": 659,
+      "imports": [
+        "ErdosProblems.Erdos387.AnalyticInputs",
+        "BoundedGaps.BombieriVinogradov.Proof.MainTheorem"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos469": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos469.lean",
+      "sha256": "8e95b8924ec7359949bc2268b330fff6619d95caf7d3579f0d92f2017e142865",
+      "line_count": 20580,
+      "imports": [
+        "Mathlib",
+        "Util.Density"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.AlmostPeriods": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\AlmostPeriods.lean",
+      "sha256": "1c086653f43d0030b942cf7be48f8a8dcfe8de574f892a21ba2e83fc92cbdefa",
+      "line_count": 246,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.Core": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\Core.lean",
+      "sha256": "fcc441512d52f86ef7eb9b61caf1d9c80922f5435bb74e240a1e91e457c3356e",
+      "line_count": 195,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.CyclicGrowth": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\CyclicGrowth.lean",
+      "sha256": "0d7807ff3993a2049838e8043650db10c85161dfabdb7afe7d03d47b6d3d0994",
+      "line_count": 762,
+      "imports": [
+        "ErdosProblems.Erdos54.AlmostPeriods",
+        "ErdosProblems.Erdos54.CyclicGrowthArithmetic",
+        "ErdosProblems.Erdos54.CyclicGrowthParameters",
+        "ErdosProblems.Erdos54.CyclicGrowthTail",
+        "ErdosProblems.Erdos54.FiniteSums",
+        "ErdosProblems.Erdos54.IteratedSumset",
+        "ErdosProblems.Erdos54.Probability",
+        "ErdosProblems.Erdos54.RoughNumbers"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.CyclicGrowthArithmetic": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\CyclicGrowthArithmetic.lean",
+      "sha256": "011fd8f8924951253187b5f048d1745ba235640ba458b116cf3b82b7f5dff2d5",
+      "line_count": 406,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.CyclicGrowthParameters": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\CyclicGrowthParameters.lean",
+      "sha256": "4000c8b6f7e3561b5ecf134e88593b190b38238ea551db64e7375d8b5fffb7cf",
+      "line_count": 533,
+      "imports": [
+        "ErdosProblems.Erdos54.RoughNumbers"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.CyclicGrowthTail": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\CyclicGrowthTail.lean",
+      "sha256": "ef9137d788a6b552e682a05fb53d38600b02e10cd2fb673c3fde238fd212e5e6",
+      "line_count": 90,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.FiniteSums": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\FiniteSums.lean",
+      "sha256": "00daf0109ebfd5061a65f6f11cd937643c07b57b42e893c487ff9e2cdefd016b",
+      "line_count": 315,
+      "imports": [
+        "ErdosProblems.Erdos54.Core",
+        "Mathlib.Combinatorics.Additive.SubsetSum"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.IteratedSumset": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\IteratedSumset.lean",
+      "sha256": "57860ff04f41d4eaf202ad6478fd6c4bff30d3ef6b8153ceafbbd6077e605923",
+      "line_count": 188,
+      "imports": [
+        "Mathlib",
+        "ErdosProblems.Erdos13.Erdos13Kneser"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.MertensLower": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\MertensLower.lean",
+      "sha256": "1ed7affc4ccafe7e73927113f3f17413479e74b2a24956005515833c85aba79b",
+      "line_count": 101,
+      "imports": [
+        "Mathlib",
+        "UnitFractions.ForMathlib.BasicEstimates"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.Probability": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\Probability.lean",
+      "sha256": "be7efd4b06c45afd4015d3d65ef4edcc2de7ab1dd98071dfd0a26319e3a4895a",
+      "line_count": 587,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos54.RoughNumbers": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos54\\RoughNumbers.lean",
+      "sha256": "18c163691152d1f1aef10131f95fe62fda84e136779ee76d3a34d2b9029582c9",
+      "line_count": 409,
+      "imports": [
+        "Mathlib",
+        "ErdosProblems.Erdos54.MertensLower"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos55.FiniteSums": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos55\\FiniteSums.lean",
+      "sha256": "db4b84c1ecf53f2707a7ef7c33ddf007476c9fc0d273ac27a1967bbae2b04a08",
+      "line_count": 284,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos771": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos771.lean",
+      "sha256": "ad58725be7d9216fb46dd5b80b48a2246482d1744d23b00dc6ec86fcbc701540",
+      "line_count": 4562,
+      "imports": [
+        "Mathlib",
+        "PrimeNumberTheoremAnd.Consequences",
+        "ErdosProblems.Erdos469",
+        "ErdosProblems.Erdos38",
+        "ErdosProblems.Erdos285.RoughCounts",
+        "ErdosProblems.Erdos55.FiniteSums",
+        "ErdosProblems.Erdos54.CyclicGrowth",
+        "ErdosProblems.Erdos88.Fourier",
+        "ErdosProblems.Erdos387.LocalDensity",
+        "ErdosProblems.Erdos387.UniformAnalyticInputs"
+      ],
+      "flags": []
+    },
+    "ErdosProblems.Erdos88.Fourier": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\ErdosProblems\\Erdos88\\Fourier.lean",
+      "sha256": "63aa18112f21b843548326b9864788e3bd3ec60e7028fe2475ad4bcf1a8ba0fb",
+      "line_count": 2006,
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Analysis.Complex.Exponential",
+        "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds",
+        "Mathlib.Data.Fintype.OfMap",
+        "Mathlib.Data.Fintype.Pi",
+        "Mathlib.Data.Fintype.Powerset",
+        "Mathlib.Data.Nat.Choose.Vandermonde",
+        "Mathlib.Logic.Equiv.Fintype",
+        "Mathlib.Logic.Equiv.Set",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.GCongr",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Consequences": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Consequences.lean",
+      "sha256": "1f49f1d25d0ed79141ce5bbf4b4d0a0c2548f69ff21b22d4a73f9b59356d429c",
+      "line_count": 2339,
+      "imports": [
+        "Mathlib.NumberTheory.Harmonic.Bounds",
+        "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "PrimeNumberTheoremAnd.Defs",
+        "PrimeNumberTheoremAnd.Wiener"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Defs": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Defs.lean",
+      "sha256": "65d7d40de0ed9e39f8d817adfbc8b5bc7536504a0a15418355cb030edd76fd0a",
+      "line_count": 203,
+      "imports": [
+        "PrimeNumberTheoremAnd.Fourier",
+        "Mathlib.NumberTheory.Chebyshev"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Fourier": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Fourier.lean",
+      "sha256": "0e4ffad6b71404d8d8b3d033228d72e86b5d7caa1368b0dec570e66cdecf6701",
+      "line_count": 80,
+      "imports": [
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+        "Mathlib.MeasureTheory.Integral.IntegralEqImproper",
+        "Mathlib.Topology.ContinuousMap.Bounded.Basic",
+        "Mathlib.Order.Filter.ZeroAndBoundedAtFilter",
+        "Mathlib.Analysis.Fourier.FourierTransformDeriv",
+        "PrimeNumberTheoremAnd.Sobolev"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Mathlib\\Algebra\\Notation\\Support.lean",
+      "sha256": "39ab214528ac8a3831230b2906ee15f9faf9aff5d8ce2fa1f21564b0fe2e3397",
+      "line_count": 18,
+      "imports": [
+        "Mathlib.Algebra.Notation.Support"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Mathlib\\Analysis\\Asymptotics\\Asymptotics.lean",
+      "sha256": "e87532f1d4f32939fe7d86b29d10bd2de1cdc94ea00322ceb323c8b8907f6e56",
+      "line_count": 46,
+      "imports": [
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Topology.Order.Compact"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Mathlib\\Analysis\\SpecialFunctions\\Log\\Basic.lean",
+      "sha256": "905978d247b678df8630ae9604d1dfb3903d536c9a884e78355622d5fcbe5411",
+      "line_count": 22,
+      "imports": [
+        "Mathlib.Algebra.Order.Floor.Defs",
+        "Mathlib.Algebra.Order.Floor.Ring",
+        "Mathlib.Algebra.Order.Floor.Semiring",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Continuity"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.SmoothExistence": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\SmoothExistence.lean",
+      "sha256": "d612da13afab26cfcbc9f1fb5d85da0e8137edc503e06cf52c94b52e5a3dfc53",
+      "line_count": 96,
+      "imports": [
+        "Batteries.Tactic.Lemma",
+        "Mathlib.Geometry.Manifold.PartitionOfUnity",
+        "Mathlib.Tactic.Bound",
+        "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Sobolev": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Sobolev.lean",
+      "sha256": "5e57038348188790f3deff2c87ce5f3ea43e4d828b3c8edb480804572cad55dd",
+      "line_count": 381,
+      "imports": [
+        "Mathlib.Analysis.Calculus.Deriv.Support",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+        "Mathlib.Order.Filter.ZeroAndBoundedAtFilter"
+      ],
+      "flags": []
+    },
+    "PrimeNumberTheoremAnd.Wiener": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\PrimeNumberTheoremAnd\\Wiener.lean",
+      "sha256": "fe58248a229ac8927a65bcbb0385f0653f2b03375088cb505edbea0796c2acfa",
+      "line_count": 3758,
+      "imports": [
+        "Mathlib.Analysis.Fourier.RiemannLebesgueLemma",
+        "Mathlib.Analysis.Normed.Group.Tannery",
+        "Mathlib.Analysis.SumIntegralComparisons",
+        "Mathlib.NumberTheory.Chebyshev",
+        "Mathlib.NumberTheory.LSeries.PrimesInAP",
+        "Mathlib.NumberTheory.MulChar.Lemmas",
+        "Mathlib.Topology.EMetricSpace.BoundedVariation",
+        "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics",
+        "PrimeNumberTheoremAnd.Fourier",
+        "PrimeNumberTheoremAnd.SmoothExistence",
+        "Mathlib.Analysis.Convolution"
+      ],
+      "flags": []
+    },
+    "UnitFractions.AuxiliaryLemmas": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\AuxiliaryLemmas.lean",
+      "sha256": "2f4fdcd0ed1ea48d72cca3f33302ec0242230807de1a13c4c0c22ced25c87011",
+      "line_count": 4717,
+      "imports": [
+        "Mathlib.Algebra.Order.Monoid.Defs",
+        "Mathlib.Algebra.Order.Ring.Defs",
+        "UnitFractions.Definitions",
+        "UnitFractions.ForMathlib.BasicEstimates",
+        "UnitFractions.ForMathlib.Misc"
+      ],
+      "flags": []
+    },
+    "UnitFractions.Definitions": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\Definitions.lean",
+      "sha256": "ee2358069aa2a17d77e487c3c3c331840ed9050d353d1ff954616cd159b702ae",
+      "line_count": 395,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "UnitFractions.ForMathlib.BasicEstimates": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\ForMathlib\\BasicEstimates.lean",
+      "sha256": "6f0ba5d3ea2642aa0e66cf9868d5d04b726d37b575fa65a9f7e7e977c80bcd5d",
+      "line_count": 3345,
+      "imports": [
+        "Mathlib",
+        "UnitFractions.ForMathlib.IntegralRPow",
+        "UnitFractions.ForMathlib.Misc"
+      ],
+      "flags": []
+    },
+    "UnitFractions.ForMathlib.IntegralRPow": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\ForMathlib\\IntegralRPow.lean",
+      "sha256": "aab38aeb568c48422f8428a8cf456b7d5c649be5359896c48c401dbf73de7bee",
+      "line_count": 83,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+      ],
+      "flags": []
+    },
+    "UnitFractions.ForMathlib.Misc": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\ForMathlib\\Misc.lean",
+      "sha256": "0529a95d028e862dd584ff7a921a427de264f20a4f18ea809543e54382a13bcc",
+      "line_count": 140,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    },
+    "UnitFractions.Fourier": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\UnitFractions\\Fourier.lean",
+      "sha256": "e7f0af203c7ecd8f5d344a672e1e42da4ba315096258b13e4e512b4e0468cc44",
+      "line_count": 2599,
+      "imports": [
+        "Mathlib",
+        "UnitFractions.Definitions",
+        "UnitFractions.AuxiliaryLemmas",
+        "UnitFractions.ForMathlib.BasicEstimates",
+        "UnitFractions.ForMathlib.Misc"
+      ],
+      "flags": []
+    },
+    "Util.Density": {
+      "path": "reproduction\\lean-proofs\\src\\latest\\Util\\Density.lean",
+      "sha256": "34ae99edca1e9314933b9180fa601c09c06da86bd2406f2f5e98285034a66a56",
+      "line_count": 116,
+      "imports": [
+        "Mathlib"
+      ],
+      "flags": []
+    }
+  },
+  "external_imports": [
+    "Batteries.Tactic.Lemma",
+    "Mathlib",
+    "Mathlib.Algebra.BigOperators.Field",
+    "Mathlib.Algebra.BigOperators.Finprod",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+    "Mathlib.Algebra.BigOperators.Intervals",
+    "Mathlib.Algebra.BigOperators.Module",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Field.GeomSum",
+    "Mathlib.Algebra.Field.Periodic",
+    "Mathlib.Algebra.GCDMonoid.Nat",
+    "Mathlib.Algebra.Notation.Support",
+    "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+    "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Order.Floor.Defs",
+    "Mathlib.Algebra.Order.Floor.Ring",
+    "Mathlib.Algebra.Order.Floor.Semifield",
+    "Mathlib.Algebra.Order.Floor.Semiring",
+    "Mathlib.Algebra.Order.Monoid.Defs",
+    "Mathlib.Algebra.Order.Ring.Defs",
+    "Mathlib.Algebra.Pointwise.Stabilizer",
+    "Mathlib.Algebra.Ring.Divisibility.Basic",
+    "Mathlib.Analysis.Analytic.Uniqueness",
+    "Mathlib.Analysis.Asymptotics.Lemmas",
+    "Mathlib.Analysis.Calculus.BumpFunction.InnerProduct",
+    "Mathlib.Analysis.Calculus.Deriv.Slope",
+    "Mathlib.Analysis.Calculus.Deriv.Star",
+    "Mathlib.Analysis.Calculus.Deriv.Support",
+    "Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas",
+    "Mathlib.Analysis.Calculus.LogDeriv",
+    "Mathlib.Analysis.Calculus.MeanValue",
+    "Mathlib.Analysis.Complex.AbsMax",
+    "Mathlib.Analysis.Complex.Basic",
+    "Mathlib.Analysis.Complex.BorelCaratheodory",
+    "Mathlib.Analysis.Complex.CauchyIntegral",
+    "Mathlib.Analysis.Complex.Exponential",
+    "Mathlib.Analysis.Complex.ExponentialBounds",
+    "Mathlib.Analysis.Complex.HasPrimitives",
+    "Mathlib.Analysis.Complex.JensenFormula",
+    "Mathlib.Analysis.Complex.Liouville",
+    "Mathlib.Analysis.Complex.Norm",
+    "Mathlib.Analysis.Complex.RealDeriv",
+    "Mathlib.Analysis.Complex.RemovableSingularity",
+    "Mathlib.Analysis.Convex.PathConnected",
+    "Mathlib.Analysis.Convolution",
+    "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+    "Mathlib.Analysis.Distribution.SchwartzSpace.Fourier",
+    "Mathlib.Analysis.Fourier.FourierTransformDeriv",
+    "Mathlib.Analysis.Fourier.RiemannLebesgueLemma",
+    "Mathlib.Analysis.Fourier.ZMod",
+    "Mathlib.Analysis.Matrix.Hermitian",
+    "Mathlib.Analysis.Matrix.Spectrum",
+    "Mathlib.Analysis.MellinInversion",
+    "Mathlib.Analysis.MellinTransform",
+    "Mathlib.Analysis.Meromorphic.Divisor",
+    "Mathlib.Analysis.Meromorphic.FactorizedRational",
+    "Mathlib.Analysis.Normed.Group.AddCircle",
+    "Mathlib.Analysis.Normed.Group.Tannery",
+    "Mathlib.Analysis.PSeries",
+    "Mathlib.Analysis.Real.Pi.Bounds",
+    "Mathlib.Analysis.Real.Sqrt",
+    "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+    "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+    "Mathlib.Analysis.SpecialFunctions.Exponential",
+    "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+    "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Log.Base",
+    "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Log.InvLog",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Complex",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Continuity",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds",
+    "Mathlib.Analysis.SumIntegralComparisons",
+    "Mathlib.Combinatorics.Additive.SubsetSum",
+    "Mathlib.Data.Complex.Basic",
+    "Mathlib.Data.Finset.Card",
+    "Mathlib.Data.Finset.Interval",
+    "Mathlib.Data.Finset.Lattice.Fold",
+    "Mathlib.Data.Fintype.BigOperators",
+    "Mathlib.Data.Fintype.OfMap",
+    "Mathlib.Data.Fintype.Pi",
+    "Mathlib.Data.Fintype.Pigeonhole",
+    "Mathlib.Data.Fintype.Powerset",
+    "Mathlib.Data.Int.CardIntervalMod",
+    "Mathlib.Data.Nat.Basic",
+    "Mathlib.Data.Nat.Cast.Order.Field",
+    "Mathlib.Data.Nat.ChineseRemainder",
+    "Mathlib.Data.Nat.Choose.Basic",
+    "Mathlib.Data.Nat.Choose.Vandermonde",
+    "Mathlib.Data.Nat.Factorial.Basic",
+    "Mathlib.Data.Nat.Factorial.BigOperators",
+    "Mathlib.Data.Nat.Factorization.Basic",
+    "Mathlib.Data.Nat.Log",
+    "Mathlib.Data.Nat.Prime.Basic",
+    "Mathlib.Data.Nat.Prime.Factorial",
+    "Mathlib.Data.Nat.Squarefree",
+    "Mathlib.Data.Nat.Totient",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Data.Real.Sign",
+    "Mathlib.Data.Set.Subsingleton",
+    "Mathlib.Data.ZMod.Units",
+    "Mathlib.Geometry.Manifold.PartitionOfUnity",
+    "Mathlib.GroupTheory.Coset.Card",
+    "Mathlib.GroupTheory.GroupAction.Blocks",
+    "Mathlib.GroupTheory.GroupAction.Quotient",
+    "Mathlib.Logic.Equiv.Fintype",
+    "Mathlib.Logic.Equiv.Set",
+    "Mathlib.MeasureTheory.Function.Floor",
+    "Mathlib.MeasureTheory.Integral.IntegralEqImproper",
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic",
+    "Mathlib.MeasureTheory.Integral.Prod",
+    "Mathlib.NumberTheory.AbelSummation",
+    "Mathlib.NumberTheory.ArithmeticFunction.Misc",
+    "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+    "Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt",
+    "Mathlib.NumberTheory.Chebyshev",
+    "Mathlib.NumberTheory.DirichletCharacter.Basic",
+    "Mathlib.NumberTheory.DirichletCharacter.Bounds",
+    "Mathlib.NumberTheory.DirichletCharacter.Orthogonality",
+    "Mathlib.NumberTheory.Divisors",
+    "Mathlib.NumberTheory.Harmonic.Bounds",
+    "Mathlib.NumberTheory.Harmonic.ZetaAsymp",
+    "Mathlib.NumberTheory.LSeries.Basic",
+    "Mathlib.NumberTheory.LSeries.DirichletContinuation",
+    "Mathlib.NumberTheory.LSeries.Nonvanishing",
+    "Mathlib.NumberTheory.LSeries.PrimesInAP",
+    "Mathlib.NumberTheory.LSeries.SumCoeff",
+    "Mathlib.NumberTheory.MulChar.Lemmas",
+    "Mathlib.NumberTheory.PrimeCounting",
+    "Mathlib.NumberTheory.ZetaValues",
+    "Mathlib.Order.Filter.AtTopBot.Basic",
+    "Mathlib.Order.Filter.ZeroAndBoundedAtFilter",
+    "Mathlib.Order.Interval.Finset.Basic",
+    "Mathlib.Order.Interval.Finset.Nat",
+    "Mathlib.RingTheory.Radical.NatInt",
+    "Mathlib.Tactic.Abel",
+    "Mathlib.Tactic.Bound",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.GCongr",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.LinearCombination",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Topology.ContinuousMap.Bounded.Basic",
+    "Mathlib.Topology.EMetricSpace.BoundedVariation",
+    "Mathlib.Topology.Order.Compact"
+  ]
+}

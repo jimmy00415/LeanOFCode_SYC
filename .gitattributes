@@ -1,0 +1,7 @@
+* text=auto eol=lf
+# Keep original evidence byte-for-byte, including recorded Windows line endings.
+logs/** -text -whitespace
+reproduction/** -text -whitespace
+research/history/** -text -whitespace
+research/experiments/*.txt -text -whitespace
+lean/*.lean -text

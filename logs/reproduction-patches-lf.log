@@ -1,0 +1,9 @@
+Applying exact blob formalpantheon-v4.33.0.patch to BoundedGaps; bytes=12667, CRLF=0
+Applying exact blob formalpantheon-v4.33.0-s2.patch to BoundedGaps; bytes=2090, CRLF=0
+Applying exact blob boundedgaps-linter-v4.33.0.patch to BoundedGaps; bytes=33530, CRLF=0
+Applying exact blob aintlib-v4.33.0.patch to AINTLIB; bytes=10246, CRLF=0
+Applying exact blob hasseweil-linter-v4.33.0.patch to AINTLIB; bytes=635656, CRLF=0
+Applying exact blob chebotarev-linter-v4.33.0.patch to AINTLIB; bytes=106545, CRLF=0
+Applying exact blob dedekind-flt-linter-v4.33.0.patch to AINTLIB; bytes=239864, CRLF=0
+Applying exact blob leancert-linter-v4.33.0.patch to leancert; bytes=330, CRLF=0
+Applying exact blob waring-linter-v4.33.0.patch to Waring; bytes=44287, CRLF=0
