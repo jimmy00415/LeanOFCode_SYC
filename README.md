@@ -4,6 +4,8 @@ Start with [REPORT.md](REPORT.md). It distinguishes the original mathematical st
 
 Current decision: **GO for contribution submission and attribution review**, following the applicant's statement that they are the original contributor. The applicant selected [jimmy00415/LeanOFCode_SYC](https://github.com/jimmy00415/LeanOFCode_SYC) as the publication repository. See [submission status](submission/STATUS.md). Official priority and eligibility remain subject to review.
 
+Published evidence: [`2d587ad0493f3eb82e1fd77455a346081cb0188a`](https://github.com/jimmy00415/LeanOFCode_SYC/commit/2d587ad0493f3eb82e1fd77455a346081cb0188a). Official contribution review: [TheJustinSunPrize/awards#5508](https://github.com/TheJustinSunPrize/awards/pull/5508), opened as a draft on 30 October 2026. The award claim follows the required contribution merge and attribution review.
+
 ## Evidence
 
 - [Mathematical architecture and library inventory](research/mathematical-audit.md)

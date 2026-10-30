@@ -219,4 +219,4 @@ The rules provide a route for qualifying formalizations, subject to verification
 
 ## G. One next action
 
-**Publish the verified source and audit bundle to the applicant's selected repository and open the legacy contribution PR for statement and attribution review, preserving the original source credits.**
+**Published:** the evidence bundle is at [commit `2d587ad`](https://github.com/jimmy00415/LeanOFCode_SYC/commit/2d587ad0493f3eb82e1fd77455a346081cb0188a), and [official PR #5508](https://github.com/TheJustinSunPrize/awards/pull/5508) is open as a draft for statement and attribution review. Original source credits are preserved. The next application step is to resolve those review items and obtain the required contribution merge before filing the Lean award claim.

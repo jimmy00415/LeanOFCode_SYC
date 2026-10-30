@@ -30,10 +30,10 @@ Target: [`src/latest/ErdosProblems/Erdos771.lean`, `Erdos771.erdos_771`](https:/
 Applicant-selected publication repository, including the pinned complete proof as a submodule and the additional audit modules:
 
 ```json
-[{"repository":"https://github.com/jimmy00415/LeanOFCode_SYC","branch":"main","commit":"EVIDENCE_COMMIT"}]
+[{"repository":"https://github.com/jimmy00415/LeanOFCode_SYC","branch":"main","commit":"2d587ad0493f3eb82e1fd77455a346081cb0188a"}]
 ```
 
-[Report](https://github.com/jimmy00415/LeanOFCode_SYC/blob/EVIDENCE_COMMIT/REPORT.md) · [setup and commands](https://github.com/jimmy00415/LeanOFCode_SYC/blob/EVIDENCE_COMMIT/README.md) · [reproduction record](https://github.com/jimmy00415/LeanOFCode_SYC/blob/EVIDENCE_COMMIT/research/lean-reproduction.md) · [explicit-statement bridge](https://github.com/jimmy00415/LeanOFCode_SYC/blob/EVIDENCE_COMMIT/lean/FaithfulnessAudit.lean).
+[Report](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/REPORT.md) · [setup and commands](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/README.md) · [reproduction record](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/research/lean-reproduction.md) · [explicit-statement bridge](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/lean/FaithfulnessAudit.lean).
 
 ## Verification
 
@@ -57,7 +57,7 @@ All four checks exited 0. The axiom audit executes `#print axioms` for both fina
 
 The statement bridge separately proves `originalPredicate_eq`, `originalF_eq`, and `original_statement_from_prior_proof`; all have the same standard axiom list. No `sorryAx` or additional mathematical axiom appears in these final results. Mathlib was cached, rather than rebuilt from source; no Nanoda or Comparator replay is claimed.
 
-Actual logs: [target build](https://github.com/jimmy00415/LeanOFCode_SYC/blob/EVIDENCE_COMMIT/logs/reproduction-erdos771-build.log), [axiom audit](https://github.com/jimmy00415/LeanOFCode_SYC/blob/EVIDENCE_COMMIT/logs/reproduction-axiom-audit.log), [statement audit](https://github.com/jimmy00415/LeanOFCode_SYC/blob/EVIDENCE_COMMIT/logs/reproduction-statement-audit-fixed.log), [faithfulness bridge](https://github.com/jimmy00415/LeanOFCode_SYC/blob/EVIDENCE_COMMIT/logs/reproduction-faithfulness-audit.log). An earlier failed experiment is labeled separately and is not counted as verification.
+Actual logs: [target build](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/logs/reproduction-erdos771-build.log), [axiom audit](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/logs/reproduction-axiom-audit.log), [statement audit](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/logs/reproduction-statement-audit-fixed.log), [faithfulness bridge](https://github.com/jimmy00415/LeanOFCode_SYC/blob/2d587ad0493f3eb82e1fd77455a346081cb0188a/logs/reproduction-faithfulness-audit.log). An earlier failed experiment is labeled separately and is not counted as verification.
 
 ## Attribution and related submissions
 
