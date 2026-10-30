@@ -1,145 +1,110 @@
 {
-  "purpose": "Prepared submission evidence; no official attribution, priority or eligibility determination",
-  "verified_source": "https://github.com/plby/lean-proofs",
-  "verified_commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
-  "target": "Erdos771.erdos_771",
+  "purpose": "Locally developed LCM-cutoff proof, complete-limit assembly and executable verification",
+  "publication_repository": "https://github.com/jimmy00415/LeanOFCode_SYC",
+  "publication_branch": "main",
+  "authors_of_local_contribution": [
+    "Jimmy (jimmy00415)",
+    "Codex"
+  ],
+  "target": "JSP000632Progression.erdosF_asymptotic_via_progression",
+  "proof_file": "lean/ProgressionUpperBound.lean",
   "axioms": [
     "propext",
     "Classical.choice",
     "Quot.sound"
   ],
-  "applicant_account": "jimmy00415",
-  "applicant_attribution_status": "Applicant asserts independent origination, without claiming upstream authorship; separate complete derivation/implementation not supplied in current artifacts",
+  "verification": {
+    "started_utc": "2026-10-30T05:06:27Z",
+    "finished_utc": "2026-10-30T05:07:40Z",
+    "command": "./tools/verify-progression.ps1",
+    "exit": 0,
+    "child_exits": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "negative_control": "expected dependency rejection",
+    "visited_constants": 72948,
+    "reused_Erdos771_declarations_including_generated_helpers": 285,
+    "scope": "Fresh compilation of submitted module and audit against prepared pinned library artifacts; no second clean dependency rebuild"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "submodules": [
+    {
+      "path": "reproduction/lean-proofs",
+      "repository": "https://github.com/plby/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e"
+    }
+  ],
+  "mathematical_source": "N. Alon and G. Freiman, On sums of subsets of a set of integers, Combinatorica 8 (1988), 297-306, Theorem 1.2 and p.298, including the Erdos-Graham lower bound",
+  "official_pr": "https://github.com/TheJustinSunPrize/awards/pull/5508",
+  "manifest_scope": "SHA-256 values cover exact Git blob bytes at the commit containing this manifest. The manifest excludes itself and subsequent submission metadata updates.",
   "file_hashes": [
     {
-      "path": ".gitattributes",
-      "bytes": 261,
-      "sha256": "222e4c1849694c48e0dac381404f97b9e87cdc7cae191b53bd65f3b3fbf54ae8"
-    },
-    {
-      "path": ".gitignore",
-      "bytes": 430,
-      "sha256": "0c5beb524ef0390a679f8334ee0a44420eee9e6810ff6fd7e4162a8aeea48bdf"
-    },
-    {
-      "path": ".gitmodules",
-      "bytes": 119,
-      "sha256": "3ff215c1a6b8b14b972b744e56b3d4e4868f57de658c286777717ce768506d6e"
-    },
-    {
       "path": "README.md",
-      "bytes": 3881,
-      "sha256": "3a2d6ef79f993bf9113182be743e3f9419a19df25a350546016a862a12ed2678"
+      "bytes": 2832,
+      "sha256": "66f0ed06f86e40ba5d65e560d93bf881fc6b0560d4d91e9be8e7e1f5bc323bf8"
     },
     {
       "path": "REPORT.md",
-      "bytes": 19245,
-      "sha256": "317cc6695ebeb856742325f9b01d0a08159a3f306216d3b7cda812b49f10900a"
+      "bytes": 5883,
+      "sha256": "b4ca29c0d7e7d00f3f86bf1345ccc9e4a59ef83415eccd779d32d42dd74c2c64"
     },
     {
-      "path": "docs/superpowers/plans/2026-10-30-jsp-000632-audit.md",
-      "bytes": 3581,
-      "sha256": "6cb9100019840a92efac94bafe57fd9d9034d5242d24f37d1f0beaf9be057178"
+      "path": "METHOD.zh-CN.md",
+      "bytes": 7141,
+      "sha256": "d0bf95dfb9a6cd58778cdf939dbfeaf9e41abd2e2481737c8ea86c66e2295a16"
     },
     {
-      "path": "lean/AxiomAudit.lean",
-      "bytes": 376,
-      "sha256": "cddf7aaa054ab320e991c6fa39fd527559b1121e9829cda3416ace67d067ab0c"
+      "path": "research/method-note.md",
+      "bytes": 17728,
+      "sha256": "d4ef0ccc671aa7f268625814ed7327cef758c73f3eb4dd84bee4ea17cc8fa7a3"
     },
     {
-      "path": "lean/FaithfulnessAudit.lean",
-      "bytes": 1668,
-      "sha256": "1f0984e3079b8bf95176eaa2de38c1c4ed59939bb46540eeafdde2d3d4cc4a1b"
+      "path": "research/progression-reproduction.md",
+      "bytes": 9999,
+      "sha256": "cf4ca65e9ff0f9396261c8409db97774edf653e91064b088f7f682f519def4d0"
     },
     {
-      "path": "lean/StatementAudit.lean",
-      "bytes": 5163,
-      "sha256": "80d54d0f506bdf31a61c2f6ec48beb1f58121fb8490e1332482ab6430743c4bd"
+      "path": "lean/ProgressionUpperBound.lean",
+      "bytes": 10245,
+      "sha256": "b96c29cd3ee4b889d1bbbc8e8268403f08fdca29de28e89524582bdcdb7b43d1"
     },
     {
-      "path": "logs/reproduction-axiom-audit.log",
-      "bytes": 1592,
-      "sha256": "cb5a0658a5973806d4ab615c74f4ee87bc4b60ec6e0b00e1284bd4ab03b2a666"
+      "path": "lean/ProofDependencyAudit.lean",
+      "bytes": 2063,
+      "sha256": "1a98b205b501f188a22d898f54236a68e34ad2b1c53cdd5ed6a77aa0024b6cc2"
     },
     {
-      "path": "logs/reproduction-erdos771-build.log",
-      "bytes": 30156,
-      "sha256": "7c423f81c51c02d7db81f5cdc7d0d21fce4a0652d71e51f828d74d1f2d88fd3c"
+      "path": "lean/ProgressionDependencyAudit.lean",
+      "bytes": 290,
+      "sha256": "5bfe86c841789c085d9852fec48f136a06079ff6bba0b5bd0678893aa88f6670"
     },
     {
-      "path": "logs/reproduction-faithfulness-audit.log",
-      "bytes": 1558,
-      "sha256": "7a1558c5ce2cb52d762cf2b169af00dd4d21bc318519bccfe91e984f1778a41f"
+      "path": "lean/DependencyAuditNegative.lean",
+      "bytes": 266,
+      "sha256": "d61a01200b7547406d8f084b58b19f548f275c219a4284368d87cc0d0d9c0f34"
     },
     {
-      "path": "logs/reproduction-final-provenance.log",
-      "bytes": 831,
-      "sha256": "ef380d5f6e3d6f158aa13cdce525de7c6d0939e9096c619f6e6805bb3f801ea8"
+      "path": "tools/verify-progression.ps1",
+      "bytes": 2141,
+      "sha256": "5da5b82122d22f2e06c2ed762b28d4671138f8996be87ae80fb11fc590770600"
     },
     {
-      "path": "logs/reproduction-patches-lf.log",
-      "bytes": 760,
-      "sha256": "bbd2c704ce491982d04eb1376b171276c57fd67e2bd4696960df78126780a9a8"
+      "path": "tools/lean-run.ps1",
+      "bytes": 1162,
+      "sha256": "ff44a51dac5810532095ede540014991b1ac7f114c609de99d069fceb85055b4"
     },
     {
-      "path": "logs/reproduction-patches.log",
-      "bytes": 265,
-      "sha256": "2b7670791261c2d4c1ebd1b17a471b7415267dfafc3e9c9e100944d1ff704975"
+      "path": "tools/lean-fetch-dependencies.py",
+      "bytes": 1682,
+      "sha256": "5a2140193aa5f76866e0c6f97517ff39018626c7167e0eee67979bd1b3f38515"
     },
     {
-      "path": "logs/reproduction-pinned-metadata.log",
-      "bytes": 1464,
-      "sha256": "a5ece011d81d1a5ace938c9be1b8297cfc771b79c02764abd20ab8e053d34966"
-    },
-    {
-      "path": "logs/reproduction-runtime-sha256.log",
-      "bytes": 66,
-      "sha256": "46d754c4b3f93fd59072204ce200ad1ecf5ee7529b6e666c14ddf757d663f490"
-    },
-    {
-      "path": "logs/reproduction-runtime-versions.log",
-      "bytes": 3855,
-      "sha256": "6db92fb096543feb10961a64109a1eddac77e117f548ca3332cb763d2bd6d976"
-    },
-    {
-      "path": "logs/reproduction-statement-audit-fixed.log",
-      "bytes": 1958,
-      "sha256": "3ffd96b699a148d0a08698df9d1fa8fafa3a0d76c234912cacdf0b65f750bb18"
-    },
-    {
-      "path": "logs/reproduction-statement-audit.log",
-      "bytes": 2185,
-      "sha256": "40d28e6c9ee8b917767630de420a408df4f25dc0fe1d0aa09d47bdd383305483"
-    },
-    {
-      "path": "logs/reproduction-submission-recheck-axiom.log",
-      "bytes": 1592,
-      "sha256": "acbb275ffbbe955ee8b1b3b83eaac872c7cc087ac5e463c4ce09377023a4bd3f"
-    },
-    {
-      "path": "logs/reproduction-submission-recheck-faithfulness.log",
-      "bytes": 1558,
-      "sha256": "d1e0741b34a2b1bd3dd42f6653ee7d84925bca48b9535b1998670e7abdb94d9d"
-    },
-    {
-      "path": "logs/reproduction-submission-recheck-full-target.log",
-      "bytes": 1414,
-      "sha256": "b29aa2a4e9eccb903384d369c29e5732e715f4d4dfe5ca73e4e94e8d4e7bb6e3"
-    },
-    {
-      "path": "logs/reproduction-submission-recheck-provenance.log",
-      "bytes": 3571,
-      "sha256": "de216b8151a8cc59d3ee090f3842eb270cba0189c962421a61162273222a3993"
-    },
-    {
-      "path": "reproduction/import-audit-with-dependencies.json",
-      "bytes": 187330,
-      "sha256": "f3e0e3c584e4332fd82b6143f8a99c4238102512124ceb6572f9b63775e2b52d"
-    },
-    {
-      "path": "reproduction/import-audit.json",
-      "bytes": 22325,
-      "sha256": "fd57f10ce32a0637237ce528b70be6fdf7a534a019b0421ab436f87e21e3c255"
+      "path": "tools/lean-apply-patches.py",
+      "bytes": 1277,
+      "sha256": "899e6ac9e4f54d102a3b071014a5f43a878fc3d62169f45270d488b21a12c933"
     },
     {
       "path": "reproduction/pinned-lake-manifest.json",
@@ -157,92 +122,29 @@
       "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
     },
     {
-      "path": "research/eligibility-audit.md",
-      "bytes": 16347,
-      "sha256": "a1ae4abcbce305cf38af56718d09adfbe36b239c8bb560981f6b5555a62e3453"
+      "path": ".gitmodules",
+      "bytes": 119,
+      "sha256": "3ff215c1a6b8b14b972b744e56b3d4e4868f57de658c286777717ce768506d6e"
     },
     {
-      "path": "research/experiments/README.md",
-      "bytes": 345,
-      "sha256": "88a73e64c94965616d1dd59544f1db1fcf857adc7db1e1ff5575bef7c2ccbaa1"
+      "path": "logs/reproduction-progression-proof.log",
+      "bytes": 2027,
+      "sha256": "46a80e4ab84b1a2f0b7b8e9994f8681d26914e5f35cc4466dea26ba445dd8746"
     },
     {
-      "path": "research/experiments/StatementAudit.initial-failed.lean.txt",
-      "bytes": 4347,
-      "sha256": "f386a7105f0a10b0dadcaf2f51c13da9ba10aebf9a7fb895ef39d223abb2996e"
+      "path": "logs/reproduction-progression-audit-tool.log",
+      "bytes": 874,
+      "sha256": "e87dfcab331253b78fd8b5f3062501ccf4081e8a5f872974651258f92895e8b0"
     },
     {
-      "path": "research/history/2026-10-30-initial-feasibility-audit.md",
-      "bytes": 17737,
-      "sha256": "b77fdcb17a940fed78db07dae1a68dc29c6a31e4f6fc70e1e81477dd52664830"
+      "path": "logs/reproduction-progression-dependency-check.log",
+      "bytes": 14888,
+      "sha256": "ced1bea7c5db68c171292fcef2990edd001a466b579d38336836a76eac7dfb9f"
     },
     {
-      "path": "research/lean-reproduction.md",
-      "bytes": 9214,
-      "sha256": "4c93fa5499f6e049b314d3ca8f81f6da181625f469666fc2aec66a80bc084c67"
-    },
-    {
-      "path": "research/mathematical-audit.md",
-      "bytes": 26150,
-      "sha256": "856d006c0e628172a5e998b4788d7d99e20c1f90797211fce8d5cabea4ede6b1"
-    },
-    {
-      "path": "research/referee-audit.md",
-      "bytes": 12936,
-      "sha256": "c876a130d37bffa89d612f55fc3de5006e74479957799d1d45d21ba2edcbb944"
-    },
-    {
-      "path": "research/submission/current-process.md",
-      "bytes": 11997,
-      "sha256": "006de30c59f2d4ee0123bc9c404bfa8e0ba7f9439bd0db04e19f65427d353289"
-    },
-    {
-      "path": "submission/CLAIM_DRAFT.md",
-      "bytes": 1247,
-      "sha256": "ea5787005a426bdc51ba444101513dc5721aaa8abb7b6ecfb50b11ecda94552d"
-    },
-    {
-      "path": "submission/PR_BODY.md",
-      "bytes": 6664,
-      "sha256": "9d1c4be2067256959899f8e49b78e1357a128f4267e1f4d76cab3e9dcea0eb71"
-    },
-    {
-      "path": "submission/STATUS.md",
-      "bytes": 2832,
-      "sha256": "f04b3e2e5c27d17450a6948e912058ba2e33a5262d3bae8bb68644b0d75a5650"
-    },
-    {
-      "path": "tools/lean-apply-patches.py",
-      "bytes": 1277,
-      "sha256": "899e6ac9e4f54d102a3b071014a5f43a878fc3d62169f45270d488b21a12c933"
-    },
-    {
-      "path": "tools/lean-audit-imports.py",
-      "bytes": 3247,
-      "sha256": "199cbf8225ac06a70f45b6c8d6c06b581927a1d70683601578349f25aa1b2e8b"
-    },
-    {
-      "path": "tools/lean-fetch-dependencies.py",
-      "bytes": 1682,
-      "sha256": "5a2140193aa5f76866e0c6f97517ff39018626c7167e0eee67979bd1b3f38515"
-    },
-    {
-      "path": "tools/lean-run.ps1",
-      "bytes": 1162,
-      "sha256": "ff44a51dac5810532095ede540014991b1ac7f114c609de99d069fceb85055b4"
+      "path": "logs/reproduction-progression-negative-control.log",
+      "bytes": 1217,
+      "sha256": "e0c2ac95e8a4996f832944a96e9f628edd3a2d61bc5dfb841bfdc1d25fca7aac"
     }
-  ],
-  "publication_repository": "https://github.com/jimmy00415/LeanOFCode_SYC",
-  "publication_branch": "main",
-  "manifest_scope": "File hashes refer to the published evidence commit below, not later application-status updates; this manifest is excluded from its own file list.",
-  "submodules": [
-    {
-      "path": "reproduction/lean-proofs",
-      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e"
-    }
-  ],
-  "publication_evidence_commit": "2d587ad0493f3eb82e1fd77455a346081cb0188a",
-  "official_pr": "https://github.com/TheJustinSunPrize/awards/pull/5508",
-  "official_pr_status": "Open, ready for review; REVIEW_REQUIRED",
-  "official_pr_head": "c69b53d88dc2aba127a8fea69cb4c8d0df68d516"
+  ]
 }

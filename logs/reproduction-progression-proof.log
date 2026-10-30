@@ -1,0 +1,21 @@
+Started UTC: 2026-10-30T05:06:27.0049342Z
+Working directory: D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest
+Command: D:\VS_Project\LeanCode\tools\lean-4.33.0-windows\bin\lake.exe env lean -o .lake/build/lib/lean/ProgressionUpperBound.olean ProgressionUpperBound.lean
+warning: Waring: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\Waring' has local changes
+warning: BoundedGaps: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\BoundedGaps' has local changes
+warning: AINTLIB: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\AINTLIB' has local changes
+warning: leancert: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\leancert' has local changes
+'JSP000632Progression.lowerEndpoint_mul_le_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Progression.lowerEndpoint_lt_cutoffTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Progression.cutoffTarget_mem_subsetSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Progression.eventually_erdosF_lt_cutoffThreshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Progression.cutoff_ratio_tendsto_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Progression.natDiv_cutoff_ratio_tendsto_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Progression.cutoff_error_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Progression.cutoffThreshold_ratio_tendsto_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000632Progression.eventually_erdosF_ratio_le_cutoffThreshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'JSP000632Progression.erdosF_asymptotic_via_progression' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exit code: 0
+Finished UTC: 2026-10-30T05:06:50.0095068Z

@@ -1,51 +1,35 @@
-# JSP-000632 research audit
+# Erdős 771: a direct lcm-cutoff proof
 
-Start with [REPORT.md](REPORT.md). It distinguishes the original mathematical statement, the official catalogue wording, prior public work, and actual verification results.
+This repository records the derivation, Lean implementation, and verification developed locally by Jimmy (`jimmy00415`) and Codex on 30 October 2026.
 
-Current decision: **GO for contribution submission and review**. The applicant asserts independent origination of a method, without claiming to be an author of the upstream repository; see the [clarification and current artifact scope](submission/APPLICANT_STATEMENT.md). The applicant selected [jimmy00415/LeanOFCode_SYC](https://github.com/jimmy00415/LeanOFCode_SYC) as the publication repository. See [submission status](submission/STATUS.md). A separate implementation of the independently claimed method is not yet supplied; official priority and eligibility remain subject to review.
+For each positive target `m`, choose a set `S⊆{1,…,n}` whose subset sums avoid `m`. Let `f(n)` be the largest cardinality that can be achieved for every target, allowing `S` to depend on `m`. The local Lean module proves the complete limit
 
-Published evidence: [`2d587ad0493f3eb82e1fd77455a346081cb0188a`](https://github.com/jimmy00415/LeanOFCode_SYC/commit/2d587ad0493f3eb82e1fd77455a346081cb0188a). Official contribution review: [TheJustinSunPrize/awards#5508](https://github.com/TheJustinSunPrize/awards/pull/5508), opened on 30 October 2026 and now **ready for review**. The award claim follows the required contribution merge and review.
+\[
+\boxed{\displaystyle\lim_{n\to\infty}\frac{f(n)}{n/\log n}=\frac12.}
+\]
 
-## Evidence
+The final declaration is [`JSP000632Progression.erdosF_asymptotic_via_progression`](lean/ProgressionUpperBound.lean). The logarithm is natural, and the final theorem has no remaining numerical hypotheses.
 
-- [Mathematical architecture and library inventory](research/mathematical-audit.md)
-- [Priority and eligibility audit](research/eligibility-audit.md)
-- [Independent adversarial review](research/referee-audit.md)
-- [Environment and build reproduction](research/lean-reproduction.md)
-- [Independent elementary Lean experiment](lean/StatementAudit.lean)
-- [Public-proof axiom audit](lean/AxiomAudit.lean)
-- [Literal-statement bridge to the verified proof](lean/FaithfulnessAudit.lean)
-- [Unmodified pinned main proof](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos771.lean)
-- [Submitted PR body](submission/PR_BODY.md) and [later claim draft](submission/CLAIM_DRAFT.md)
+The construction sets `m=lcm(1,…,r)`, where `r` is the largest cutoff whose lcm lies below the chosen upper endpoint. Using this same `r` as the parameter of the uniform representation lemma makes every returned modulus divide `m`. Our endpoint estimate places `m` inside the represented interval and gives an eventual bound
 
-`logs/` preserves successful and failed commands. The local-only `sources/` and `research/eligibility/` directories preserve retrieved primary evidence and are excluded from Git. The failed initial elementary experiment is retained separately under `research/experiments/`; it is not an accepted proof. The complete proof project is linked as the `reproduction/lean-proofs` Git submodule at the verified commit. Its source history and credits are preserved. Runtime and caches are excluded; their exact pins and recreation steps are recorded in the reproduction report.
+\[
+f(n)<\left\lfloor\frac nr\right\rfloor+16B^{16}+r,
+\qquad B=\lfloor\log_2n\rfloor+1,
+\qquad r\sim2\log n.
+\]
 
-## Obtain the complete source
+After normalization, the error tends to zero. Combining the upper bound with the uniform lower bound gives the full limit. The source header and pinned submodule retain the library inputs and their credits, including the representation, prime-number asymptotic, and lower-bound lemmas.
 
-```powershell
-git clone --recurse-submodules https://github.com/jimmy00415/LeanOFCode_SYC.git
-Set-Location LeanOFCode_SYC
-Copy-Item -LiteralPath lean/AxiomAudit.lean,lean/StatementAudit.lean,lean/FaithfulnessAudit.lean `
-  -Destination reproduction/lean-proofs/src/latest/
-```
+Read the [local proof report](REPORT.md), [Chinese method explanation](METHOD.zh-CN.md), and [detailed mathematical derivation](research/method-note.md) for the process, results, and conclusion.
 
-The submodule is pinned to `plby/lean-proofs@8822f7ddef30fadbd92e1c6ab4ed897af356af5e`; the audit files are additional modules in this repository. Follow [environment setup](research/lean-reproduction.md) before running the commands below. The new publication repository records this verification work and does not by itself establish authorship of the pre-existing main proof.
+Fresh verification on 30 October 2026, 05:06:27–05:07:40 UTC, passed: proof compilation, audit-tool compilation, and the transitive dependency check each exited 0; the negative control exited 1 as expected. The final theorem reports only `[propext, Classical.choice, Quot.sound]`. The dependency audit traversed 72,948 constants; the [reproduction guide](research/progression-reproduction.md) links the full logs and explains the check's scope.
 
-## Recheck in the prepared Windows workspace
-
-From this directory, run these PowerShell commands. The runner uses the local Lean 4.33.0 runtime and the pinned project; it does not require a global Elan installation.
+In a prepared Windows PowerShell workspace, run:
 
 ```powershell
-& './tools/lean-run.ps1' -LogName 'recheck-main' `
-  -LakeArgs @('build','+ErdosProblems.Erdos771:olean')
-& './tools/lean-run.ps1' -LogName 'recheck-axioms' `
-  -LakeArgs @('env','lean','AxiomAudit.lean')
-& './tools/lean-run.ps1' -LogName 'recheck-statement' `
-  -LakeArgs @('env','lean','StatementAudit.lean')
-& './tools/lean-run.ps1' -LogName 'recheck-faithfulness' `
-  -LakeArgs @('env','lean','FaithfulnessAudit.lean')
+& './tools/verify-progression.ps1'
 ```
 
-Read the exit code and entire diagnostic output. A failed elaboration can still print declaration names and `sorryAx`; that is not successful verification. `JSP000632Audit.ExactTarget` is only a proposition definition. Any full result in `FaithfulnessAudit` is explicitly derived from the prior public proof and confers no new priority.
+For a fresh checkout, follow the [complete setup and verification instructions](research/progression-reproduction.md). The [verification runner](tools/verify-progression.ps1) copies the four local Lean modules into the pinned project, compiles them, and checks the expected negative-control failure.
 
-The pinned repository, original manifests and upstream compatibility patches remain available. Recreating the environment on another machine is documented in the reproduction report and helper scripts under `tools/`. Preserve the attribution and licenses of the third-party source.
+Mathematical reference: N. Alon and G. Freiman, *On sums of subsets of a set of integers*, Combinatorica 8 (1988), 297–306 ([paper](https://web.math.princeton.edu/~nalon/PDFS/Publications/On%20sums%20of%20subsets%20of%20a%20set%20of%20integers.pdf)). The asymptotic estimates also use the prime number theorem in its Chebyshev forms.

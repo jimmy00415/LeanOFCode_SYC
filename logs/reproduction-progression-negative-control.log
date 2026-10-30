@@ -1,0 +1,17 @@
+Started UTC: 2026-10-30T05:07:18.1440327Z
+Working directory: D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest
+Command: D:\VS_Project\LeanCode\tools\lean-4.33.0-windows\bin\lake.exe env lean DependencyAuditNegative.lean
+warning: Waring: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\Waring' has local changes
+warning: BoundedGaps: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\BoundedGaps' has local changes
+warning: AINTLIB: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\AINTLIB' has local changes
+warning: leancert: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\leancert' has local changes
+DependencyAuditNegative.lean:6:0: error: Forbidden original target-proof dependencies: [Erdos771.erdos_771,
+ Erdos771.erdosF_asymptotic,
+ Erdos771.afTarget_mem_subsetSum,
+ Erdos771.exists_subset_sum_mod_primePower,
+ Erdos771.leastNondivisor_isPrimePow,
+ Erdos771.af_target_margin,
+ Erdos771.eventually_erdosF_lt_afCardThreshold,
+ Erdos771.eventually_erdosF_ratio_le_afCardThreshold]
+Exit code: 1
+Finished UTC: 2026-10-30T05:07:40.6608580Z

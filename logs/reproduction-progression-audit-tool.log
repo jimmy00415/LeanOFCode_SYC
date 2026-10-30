@@ -1,0 +1,9 @@
+Started UTC: 2026-10-30T05:06:50.0194989Z
+Working directory: D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest
+Command: D:\VS_Project\LeanCode\tools\lean-4.33.0-windows\bin\lake.exe env lean -o .lake/build/lib/lean/ProofDependencyAudit.olean ProofDependencyAudit.lean
+warning: Waring: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\Waring' has local changes
+warning: BoundedGaps: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\BoundedGaps' has local changes
+warning: AINTLIB: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\AINTLIB' has local changes
+warning: leancert: repository 'D:\VS_Project\LeanCode\reproduction\lean-proofs\src\latest\.lake/packages\leancert' has local changes
+Exit code: 0
+Finished UTC: 2026-10-30T05:06:55.3072518Z
